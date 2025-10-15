@@ -4,7 +4,7 @@
     title: "F-Klubbens Fabelagtige Sangbog"
 )
 
-#include "sange/unsorted/viharlejrbålher.typ"
+#include "sange/unsorted/tinepingvin.typ"
 
 #pagebreak()
 
