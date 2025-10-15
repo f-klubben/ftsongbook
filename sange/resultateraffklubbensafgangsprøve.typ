@@ -29,7 +29,7 @@
     #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
     På Mat 3 lærte vi om didaktik, \
     om Russell og Frege og Bourbaki \
-    - et pæd-lal-semester - men dog til grin: \
+    \- et pæd-lal-semester - men dog til grin: \
     På Mat 3 læste vi stadig Rudin \
     #em[Det fik vi ...]
   ]
@@ -44,7 +44,7 @@
     Dæ sæv værkli' in' ! 
   ]
 
-  #note[ \ ] //spacing
+  #note[ \ \ ] //spacing
 
   #vers[
     #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/]  \
