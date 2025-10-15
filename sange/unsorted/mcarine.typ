@@ -15,6 +15,7 @@
     Og resten a verset \
     ka' jeg slet ikke læse \
     det er skrevet med en $cal("FRYGTELIG  SKRIFT")$//$mathscr{FRYGTELIG\ SKRIFT}$
+    // $scr()$ kommer i en senere version af Typst
   ]
 
   #omkvæd[

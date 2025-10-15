@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Drunken sailor", subtext: "Mel: Du må få min gamle...", cols: 1)[
+#sang("Du må få min C-compiler når jeg dør", subtext: "Mel: Du må få min gamle...", cols: 1)[
   #vers[
     :| Du må få min c-compiler når jeg dør, når jeg dør |: \
     Og hvis ld ter' sig tosset, ka' du dælme få den osse. \
