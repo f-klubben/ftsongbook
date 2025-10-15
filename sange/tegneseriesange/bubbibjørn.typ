@@ -9,10 +9,10 @@
   ]
 
   #omkvæd[
-    _Bubbi bjørn \
+    Bubbi bjørn \
     hopper op og ned og hid og did \
     helt fortryllet når han ta'r sin tørn  \
-    så'n er en bubbi bjørn _
+    så'n er en bubbi bjørn 
   ]
 
   #vers[
@@ -23,11 +23,11 @@
   ]
 
   #omkvæd[
-    _Bubbi bjørn \
+    Bubbi bjørn \
     hopper op og ned og hid og did \
     helt fortryllet når han ta'r sin tø+rn \
     så'n er en bubbi bjørn \
-    *så'n er en bubbi bjørn*_
+    *så'n er en bubbi bjørn*
   ]
 
 ]

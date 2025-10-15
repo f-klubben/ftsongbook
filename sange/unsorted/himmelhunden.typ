@@ -9,14 +9,14 @@
   ]
 
   #omkvæd[
-    _Hej, du spillemand kan du sige mig med det samme \
+    Hej, du spillemand kan du sige mig med det samme \
     Og vær ærlig for jeg mener hvert et ord \
     Når vorherre slukker livets flamme \
     Og man skal forlade denne jord. \
     Må man ta' hunden med sig ind i himlen \
     Den er sød og den har vær't min bedste ven \
     Den er klog og fin og har lige vær't i bad \
-    Hvis man må du spillemand så bli'r jeg glad_
+    Hvis man må du spillemand så bli'r jeg glad
   ]
 
   #vers[

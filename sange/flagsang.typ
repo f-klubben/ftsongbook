@@ -9,12 +9,12 @@
     ]
 
     #omkvæd[
-        _Åh-åh, hvorfor skal vi hejse et flag? \
+        Åh-åh, hvorfor skal vi hejse et flag? \
         Vi står og drikker bajer, i stille ro og mag, \
         Åh-åh-åh-åh \
         Hvad gør det godt for? \
         Målet er så vagt, \
-        Åh-åh, hvorfor skal vi hejse et flag?_
+        Åh-åh, hvorfor skal vi hejse et flag?
     ]
 
     #vers[
@@ -25,12 +25,12 @@
     ]
 
     #omkvæd[
-        _Åh-åh, hvorfor skal vi hejse et flag? \
+        Åh-åh, hvorfor skal vi hejse et flag? \
         Vi står og drikker bajer, i stille ro og mag, \
         Åh-åh-åh-åh \
         Hvad gør det godt for? \
         Målet er så vagt, \
-        Åh-åh, hvorfor skal vi hejse et flag?_
+        Åh-åh, hvorfor skal vi hejse et flag?
     ]
 
     #vers[
@@ -43,7 +43,7 @@
     #note[_Der skåles_]
 
     #omkvæd[
-        _Deeeeeeet derfor vi hejser et flag! \
+        Deeeeeeet derfor vi hejser et flag! \
         At samles i en weekend: Det bliver skønne dage \
         Åh-åh-åh-åh \
         Og lidt til næbbet, \
@@ -51,6 +51,6 @@
         Åh-åh \
         Det' derfor vi hejser et flag, Ja! \
         Det' derfor vi hejser et flag, Åh! \
-        Det' derfor vi hejser et flaaaaaaag!_
+        Det' derfor vi hejser et flaaaaaaag!
     ]
 ]

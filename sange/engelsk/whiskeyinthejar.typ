@@ -12,10 +12,10 @@
   ]
 
   #omkvæd[
-    _Musha ringum daram da \
+    Musha ringum daram da \
     whack fol the daddy o \
     whack fol the daddy o \
-    there's whiskey in the jar_
+    there's whiskey in the jar
   ]
 
   #vers[

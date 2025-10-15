@@ -16,10 +16,10 @@
   ]
 
   #omkvæd[
-    _Åh Buster \
+    Åh Buster \
     Åh Buster \
     Åh Buster kigger på stjernerne \
-    og drømmer sig langt ud i det blå_
+    og drømmer sig langt ud i det blå
   ]
 
   #vers[
@@ -44,13 +44,13 @@
   ]
 
   #omkvæd[
-    _Åh Buster \
+    Åh Buster \
     Åh Buster \
     Som sprunget ud af et eventyr \
     rider han afsted på et fabeldyr \
     jaaaahhhh.... \
     og drømmer sig langt ud i det blå \
     Åh Buster \
-    Åh Buster_
+    Åh Buster
   ]
 ]

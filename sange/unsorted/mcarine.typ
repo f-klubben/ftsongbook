@@ -19,10 +19,10 @@
   ]
 
   #omkvæd[
-    _Gamle McArine har et hjemmebrænderi, \
+    Gamle McArine har et hjemmebrænderi, \
     han brænder selv sin whisky \
     tolderen siger McArine ikke må, \
-    men det vil McArine sgu da skide på._
+    men det vil McArine sgu da skide på.
   ]
 
   #vers[

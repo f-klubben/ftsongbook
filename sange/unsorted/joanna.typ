@@ -9,10 +9,10 @@
   ]
 
   #omkvæd[
-    _Ta' mig med til Joanna. \
+    Ta' mig med til Joanna. \
     Ta' mig med, ta' mig med, ta' mig med.  \
     Hvis det er der, hvor man ikke bare \
-    skal passe sig selv. _
+    skal passe sig selv.
   ]
   
   #vers[

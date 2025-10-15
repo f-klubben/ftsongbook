@@ -10,11 +10,11 @@
   ]
 
   #omkvæd[
-    _På Costa del sol, hvor solen den danser \
+    På Costa del sol, hvor solen den danser \
     en inciterende flamingo i min swimmingpool \
     har keep cool altid været mit motto \
     Mit navn er Günter \
-    men folk hernede kalder mig Otto_
+    men folk hernede kalder mig Otto
   ]
 
   #vers[
@@ -55,6 +55,6 @@
   ]
 
   #vers[
-    For øjeblikket ...
+    _For øjeblikket ..._
   ]
 ]

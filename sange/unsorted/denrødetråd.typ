@@ -23,10 +23,10 @@
   ]
 
   #omkvæd[
-    _Jeg voksed og koksed. \
+    Jeg voksed og koksed. \
     Jeg fandt en plads i solen. \
     I skolen lærte jeg at \
-    skrive De med stort._
+    skrive De med stort.
   ]
 
   #vers[
@@ -37,10 +37,10 @@
   ]
 
   #omkvæd[
-    _Jeg voksed -- og koksed \
+    Jeg voksed -- og koksed \
     jeg fandt min plads i skyggen \
     med ryggen op mod muren \
-    hvorfor blev jeg født?_
+    hvorfor blev jeg født?
   ]
 
   #vers[

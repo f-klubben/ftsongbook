@@ -9,10 +9,10 @@
   ]
 
   #omkvæd[
-    _Det syder af fusel og bobler af gær, \
+    Det syder af fusel og bobler af gær, \
     din lever tar skade og øjet får stær, \
     det smager som rævepis og terpentin, \
-    men det er billligt og så bli'r man fuld som et svin._
+    men det er billligt og så bli'r man fuld som et svin.
   ]
 
   #vers[

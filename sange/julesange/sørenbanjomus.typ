@@ -2,14 +2,14 @@
 
 #sang("Søren Banjomus", subtext: "Mel: Lige ud af landevejen")[
   #omkvæd[
-    _Skillemadinkadinkadu, skillemadinkadu \
+    Skillemadinkadinkadu, skillemadinkadu \
     Hør på Søren Banjomus, han spiller nemlig nu \
     Skillemadinkadinkadu, skillemadinkadu \
     Kom og syng og dans med os, det syn's vi at du sku' \
     Vi glæder os til juleaften, så bli'r træet tændt, \
     Og vi får fine julegaver, ihh hvor er vi spændt \
     Skillemadinkadinkadu, skillemadinkadu \
-    Bar' det altså snart var nu!_
+    Bar' det altså snart var nu!
   ]
 
   #vers[
@@ -21,8 +21,9 @@
     han drømmer sødt om røget sild med flødeovertræk \
     Så pusler det og pludselig frem fra musehullet klang \
     en munter lille banjosang \
-    _Skillemadinkadinkadu_
   ]
+
+  #note[Omkvæd: _Skillemadinkadinkadu ..._]
 
   #vers[
     Kom med sagde Søren Banjomus, de sover begge to \
@@ -33,7 +34,10 @@
     Og lille Tim bandt nissens skæg om missekattens hals \
     Og mens de slutted' af med ost og julelækkeri, \
     sang alle med på denne melodi \
-    _Skillemadinkadinkadu_ \
+  ]
+  
+  #omkvæd[
+    _Skillemadinkadinkadu ..._  \
     Kan ikke vente. \
     Bar' det altså snart var nu.
   ]

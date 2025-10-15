@@ -9,10 +9,10 @@
   ]
 
   #omkvæd[
-    _Hooray and up she rises, \
+    Hooray and up she rises, \
     hooray and up she rises, \
     hooray and up she rises, \
-    earl-ay in the morning._
+    earl-ay in the morning.
   ]
 
   #vers[

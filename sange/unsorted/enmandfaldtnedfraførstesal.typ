@@ -9,10 +9,10 @@
   ]
 
   #omkvæd[
-    _Molak Molak MakMakMak \
     Molak Molak MakMakMak \
     Molak Molak MakMakMak \
-    kom op og få lidt kaffe._
+    Molak Molak MakMakMak \
+    kom op og få lidt kaffe.
   ]
 
   #vers[
@@ -133,9 +133,9 @@
   ]
 
   #omkvæd[
-    _Molak Molak MakMakMak \
     Molak Molak MakMakMak \
     Molak Molak MakMakMak \
-    går hen og laver uro._
+    Molak Molak MakMakMak \
+    går hen og laver uro.
   ]
 ]

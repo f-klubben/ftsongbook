@@ -13,9 +13,9 @@
   ]
 
   #omkvæd[
-    _Men i aften, når Tin og Kul går ned. \
+    Men i aften, når Tin og Kul går ned. \
     Blir' nettet stille. \
-    Du blir' ene, åh så ene._
+    Du blir' ene, åh så ene.
   ]
 
   #vers[
@@ -30,9 +30,9 @@
   ]
 
   #omkvæd[
-    _Control X-S, og emacs gemmer nu. \
+    Control X-S, og emacs gemmer nu. \
     Og Control C-C \
-    Den compiler, åh compiler!._
+    Den compiler, åh compiler!.
   ]
 
   #vers[
@@ -47,9 +47,9 @@
   ]
 
   #omkvæd[
-    _cd slash rm streg r streg f, \
+    cd slash rm streg r streg f, \
     og en lille stjerne \
     For alt at fjerne \
-    åh, at fjerne. _
+    åh, at fjerne.
   ]
 ]
