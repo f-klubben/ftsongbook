@@ -1,0 +1,45 @@
+#import "//template.typ": *
+
+#sang("Ma´matik", subtext: "Mel: Bubbi-bjørnene", cols: 2)[
+  #vers[
+    Vektorfunktioner it tre dimensioner \
+    skal opereres med curl og divergens \
+    $nabla^{2}$ gir koldsved på panden \
+    planintegraler er en pestilens
+  ]
+
+  #omkvæd[
+    Ma´matik \
+    strider ofte mod en hver logik \
+    Men har du elektrodynamik \
+    Så skal du kun mat´matik
+  ]
+
+  #vers[
+    Kan en hermetisk og injektiv matrix \
+    Have negativ trace men en nul-determinant? \
+    Solovej siger dens egenværdier \
+    vil være reelle, men er det mon sandt?
+  ]
+
+  #omkvæd[
+    Ma´matik \
+    Strider ofte mod en hver logik \
+    Men hvis du har kvantemekanik \
+    Så skal du kun mat´matik
+  ]
+
+  #vers[
+    $T_{a}$ vil gi' SU(3) symmetri \
+    og Lagrangeoperator'n er Gaugeinvariant \
+    Når operatorne virker på kvarkeme \
+    får de en farve og smagen af kvant
+  ]
+
+  #omkvæd[
+    Mat´matik \
+    Strider ofte mod en hver logik \
+    Men i kvantekromodynamik \
+    Så skal du kun mat´matik
+  ]
+]
