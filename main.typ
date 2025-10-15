@@ -4,6 +4,10 @@
     title: "F-Klubbens Fabelagtige Sangbog"
 )
 
+#include "sange/påcassiopeiatilfoobar.typ"
+
+#pagebreak()
+
 #include "sange/resultateraffklubbensafgangsprøve.typ"
 
 #pagebreak()
