@@ -1,6 +1,11 @@
 #import "//template.typ": *
 
 #sang("Et sidste farvel", subtext: "Mel: Hvor smiler fager (den danske kyst?)", cols: 2)[
+  #note[
+    #set text(.9em)
+    Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. 
+  ]
+
   #vers[
     Her skal der lyde et højt #sc[HURRA] \
     til alle jer der blev kandidater \
