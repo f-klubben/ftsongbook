@@ -149,6 +149,33 @@
   }
 }
 
+// Helper function to process lines with hanging indent
+#let process-lines(body) = {
+    // Convert body to array of lines by splitting on linebreak
+    let lines = ()
+    let current = []
+    
+    // Process the body content
+    for child in body.children {
+        if child == linebreak() {
+            if current != [] {
+                lines.push(current)
+                current = []
+            }
+        } else {
+            current += child
+        }
+    }
+    // Don't forget the last line
+    if current != [] {
+        lines.push(current)
+    }
+    
+    // Apply hanging indent to each line
+    lines.map(line => {
+        par(first-line-indent: 0em, hanging-indent: 1.5em, spacing: 0.65em)[#line]
+    }).join([])
+}
 
 // note funktion
 #let note(cols: 1, body) = {
@@ -208,7 +235,8 @@
   table(
     rows: 2,
     columns: (0.75em, auto),
-    row-gutter: 0.5em, //0.325em 0.65em
+    row-gutter: 0.5em,
+    //0.325em 0.65em
     column-gutter: 0.5em,
     stroke: none,
     inset: 0em,
@@ -399,7 +427,7 @@
 
 
 
-/* 
+/*
  * Værktøjer!!!
  */
 
@@ -425,15 +453,15 @@
     size: 0.7em,
   )
   let T = (
-    x_offset: -0.12em    
+    x_offset: -0.12em,
   )
   let E = (
     x_offset: -0.2em,
     y_offset: 0.23em,
-    size: 1em
+    size: 1em,
   )
   let X = (
-    x_offset: -0.1em
+    x_offset: -0.1em,
   )
   [L#h(A.offset.x)#text(size: A.size, baseline: A.offset.y)[A]#h(T.x_offset)T#h(E.x_offset)#text(size: E.size, baseline: E.y_offset)[E]#h(X.x_offset)X]
 }

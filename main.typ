@@ -4,7 +4,7 @@
     title: "F-Klubbens Fabelagtige Sangbog"
 )
 
-#include "sange/unsorted/tinepingvin.typ"
+#include "sange/resultateraffklubbensafgangsprøve.typ"
 
 #pagebreak()
 

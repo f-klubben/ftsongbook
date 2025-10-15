@@ -2,11 +2,11 @@
 
 #sang("Vi er ikke humanister", subtext: [Jeanette Pinderup (TÅGEKAMMERT) 2007 - Mel: Vi er ikke rigtig voksne])[
   #omkvæd[
-    _Vi er ikke humanister \
+    Vi er ikke humanister \
     Vi har ikke samfundsfag \
-    Medicin er også noget for de andre_ #v(-2.5em) \ // Seb: dont ask me, det var sjovt for mig
+    Medicin er også noget for de andre #v(-2.5em) \ // Seb: dont ask me, det var sjovt for mig
     #sl[Vi er ikke teologer og går ik' på Business School] #v(-2em)\
-    _og de andre synes ikke vi er cool_
+    og de andre synes ikke vi er cool
   ]
 
   #vers[
