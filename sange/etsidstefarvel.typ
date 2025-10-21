@@ -1,11 +1,7 @@
 #import "//template.typ": *
 
 #sang("Et sidste farvel", subtext: "Mel: Hvor smiler fager (den danske kyst?)", cols: 2)[
-  #note[
-    #set text(.9em)
-    Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. 
-  ]
-
+  
   #vers[
     Her skal der lyde et højt #sc[HURRA] \
     til alle jer der blev kandidater \
@@ -29,7 +25,8 @@
     over scient'er der prøved' lykken  \
     som meget højtlønnet datalog  \
     og endte nederst i folkekøkken ?  \
-    Næh, håndvægtens vægt bli'r nok ikk' et ton \
+    Næh, håndvægtens vægt bli'r nok \
+      #h(2em) ikk' et ton \
     \- den bliver snarere $epsilon$
   ]
 
@@ -68,4 +65,11 @@
     Så her skal lyde et højt #underline[FARVEL]! \
     Tag jeres tøj på og lev så vel \u{2026}
   ]
+
+  #note[
+    #set text(.9em)
+    Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. 
+  ]
+
+  #note[ \ \ ]
 ]

@@ -1,14 +1,8 @@
 #import "//template.typ": *
 
 #sang("Resultater af F-klubbens afgangsprøve", subtext: "Mel: What did you learn in school today", cols: 2)[
-  #note[
-    #set text(.9em)
-    Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. \ #v(-.25em)
-    F-klubbens afgangsprøve til kandidatfesten februar 1987 resulterede i et antal besvarelser, bl.a. disse vers. 
-  ]
-
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     Jeg lært' at elske matematik \
     Men pigerne fik nok og gik \
     For studiet er for folk med hår på brystet \
@@ -17,7 +11,7 @@
   ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     På Mat 2 blev vi F-fordelt, \
     at det var normalt, vidst' vi ikke helt \
     Vi holdt os rank', da vi var kernesund' \
@@ -26,7 +20,7 @@
   ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     På Mat 3 lærte vi om didaktik, \
     om Russell og Frege og Bourbaki \
     \- et pæd-lal-semester - men dog til grin: \
@@ -35,7 +29,7 @@
   ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     Jeg lært' at solen skinner på Peder \
     at læs' Rudin eller hva' han hedder \
     at KGL er modal model, \
@@ -44,10 +38,8 @@
     Dæ sæv værkli' in' ! 
   ]
 
-  #note[ \ \ ] //spacing
-
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/]  \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|]  \
     Jeg lært' at piger osse kan  \
     at studiet ej kun er for mænd  \
     For pigerne de kan jo godt,  \
@@ -56,7 +48,7 @@
   ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     Jeg lærte at studiet er 3 ting: \
     Det' øl, Rudin og damesving \
     Nu laver jeg specialefunk, \
@@ -66,7 +58,7 @@
  ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     Og hjælpelærer var jeg oss' \
     De små basister var nu toss' \
     De pukled' med et gnatprojekt \
@@ -75,7 +67,7 @@
   ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     Jeg lært' at hade samf. og lal. \
     Jeg stemte MS til hvert valg \
     Jeg håber jeg bli'r direktør, \
@@ -85,12 +77,18 @@
   ]
 
   #vers[
-    #em[/: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :/] \
+    #em[|: Hvad fik du lært på AUC, \ #h(1.25em) F-sektorkandidat ? :|] \
     Jeg lært' at BBK er klog, \
     at BETA er det bedste sprog \
     For hovedfag er noget lal, \
     hvis ikke man får glemt PASCAL. \
     Det har jeg lært på AUC, \
     Det fik jeg programmer't
+  ]
+
+  #note[
+    #set text(.9em)
+    Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. \ #v(-.25em)
+    F-klubbens afgangsprøve til kandidatfesten februar 1987 resulterede i et antal besvarelser, bl.a. disse vers. 
   ]
 ]

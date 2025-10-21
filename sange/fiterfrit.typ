@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Fit er frit", subtext: "Mel: Bella Ciao", cols: 2)[
+#sang("Fit er frit", subtext: "2022 - Mel: Bella Ciao", cols: 2)[ // Laurits?
   #vers[
     Koden. \
     Den er åben \
@@ -40,4 +40,6 @@
     når formanden han vil høres \
     Så kan han lav’ et pull request 
   ]
+
+  #note[ \ \ ]
 ]

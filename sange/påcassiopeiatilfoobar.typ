@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("På Cassiopeia til FooBar", subtext: "Mel: Imellem Esbjerg og Fanø", cols: 2)[
+#sang("På Cassiopeia til FooBar", subtext: "2021 - Mel: Imellem Esbjerg og Fanø", cols: 2)[ // Laurits?
   #vers[
     Der var en Boand, \
     Og han ku' C. \

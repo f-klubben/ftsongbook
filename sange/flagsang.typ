@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Flagsang", subtext: "Laurits - Mel: Hvorfor går Louise til bal?", cols: 1)[
+#sang("Flagsang", subtext: "Laurits, 2023 - Mel: Hvorfor går Louise til bal?", cols: 1)[
     #vers[
         Nu er vi samlet her igen på fyttetur, \
         Og det er fordi vi alle synes at det dur'. \

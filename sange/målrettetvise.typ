@@ -28,13 +28,13 @@
     -- en datalog fik sig smigret ind \
     Han slog sig flux ned ved tastaturet \
     og glemte langsomt sit barnesind
-    #v(-0.7mm) // Meget particulært
+    #v(-.9mm) // Meget particulært
     #tt[#small[Han~læste~standards~og~manualer
-    #v(-0.7mm)
+    #v(-.9mm)
     og~gamle~Yourdon~(for~han~var~go')  \
-    #v(-0.7mm)
+    #v(-.9mm)
     og~ingeniører~har~ingen~kvaler \
-    #v(-0.7mm)
+    #v(-.9mm)
     med~sorte~mapper~og~spidse~sko] ]
   ]
 

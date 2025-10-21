@@ -39,20 +39,26 @@
     ideer havde han mange af \
     Men en af disse ku' ej det blive \
     Thi studienævnet har sagt, man ska' \
+    #v(-.9mm)
     #tt[#small[Ta' lidt fra Rudin, lidt analyse \
+    #v(-.9mm)
     og lidt fra Kreisky, den ingeniør \
+    #v(-.9mm)
     Men pædagoger vil ud vi fryse \
+    #v(-.9mm)
     Thi de har blå ble og andefø'r]]
   ]
 
   #vers[
-    Oh, stolte broder, den dag vil komme 
-    da cand.scient.'er vi kaldes må 
-    Du som adjunkt vil på prøve komme 
-    og du vil følgende skudsmål få: 
+    Oh, stolte broder, den dag vil komme \
+    da cand.scient.'er vi kaldes må  \
+    Du som adjunkt vil på prøve komme \
+    og du vil følgende skudsmål få:  \
     #em[Han ka' blot Rudin og analyse \
     og gamle Kreisky, den ingeniør \
     Han mat'matikken kan ej belyse \
     skønt han har tillagt sig andefø'r]
   ]
+
+  #note[ \ \ \ \ \ \ ]
 ]

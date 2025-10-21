@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Livet", subtext: [Mel: Lumberjack Song #h(1em) Undfanget: Fyttetur 2005], cols: 2)[
+#sang("Livet", subtext: [Undfanget: Fyttetur 2005 - Mel: Lumberjack Song], cols: 2)[
   #vers[
     Jeg er datalog, jeg arbejder hårdt \
     jeg koder i C og hader sport \

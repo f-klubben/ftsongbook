@@ -10,17 +10,19 @@
     song-title-font: "Source Sans 3",
     subtext-font: "Source Serif 4",
     song-text-font: "Source Serif 4", //"Times New Roman",
+    indhold-entry-font: "Source Serif 4",
     // Size
     main-text-size: 10pt,
     song-title-size: 14pt,
     subtext-text-size: 9pt,
     song-text-size: 8pt,
-    indhold-entry-size: 9pt,
+    indhold-entry-size: 8pt,
     // Weight
     main-text-weight: "regular",
     song-title-weight: "bold",
     subtext-text-weight: "regular",
     song-text-weight: "medium",
+    indhold-entry-weight: "regular",
     // Document
     title: "F-Klubbens Sangbog",
     description: "F-Klubbens Fabelagtige Sangbog",
@@ -128,6 +130,8 @@
 #let tt(content) = text(font: "Courier New")[#content]
 #let small(content) = text(size: 0.9em)[#content]
 #let em(content) = emph[#content]
+
+#let big(content) = text(size: 1.1em)[#content]
 
 // https://gist.github.com/felsenhower/a975c137732e20273f47a117e0da3fd1
 #let LaTeX = {
@@ -388,7 +392,7 @@
     )[Indholdsfortegnelse])
 
     v(0.5cm)
-    set par(leading: 0.25em)
+    set par(leading: 0.30em)
 
     columns(cols, gutter: 0.5cm, {
         context {

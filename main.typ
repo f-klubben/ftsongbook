@@ -17,9 +17,6 @@
 
 #kapitelside(titel: "F-Klub Sange")
 
-
-
-// song includes (generated) - each song starts on a new page
 #pagebreak()
 #include "sange/clrs.typ"
 #pagebreak()

@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Vi er ikke humanister", subtext: [F-Klubben | TÅGEKAMEMRT ? - Mel: Vi er ikke rigtig voksne])[ // Jeanette Pinderup (TÅGEKAMMERT) 2007 - Mel: Vi er ikke rigtig voksne
+#sang("Vi er ikke humanister", subtext: [Mel: Vi er ikke rigtig voksne])[ // F-Klubben | TÅGEKAMEMRT ? //Jeanette Pinderup (TÅGEKAMMERT, julerevy), 2007 - Mel: Vi er ikke rigtig voksne
   #omkvæd[
     Vi er ikke humanister \
     Vi har ikke samfundsfag \
@@ -25,8 +25,8 @@
     er de blevet meget glade for #em[fysik]
   ]
 
-  #omkvæd[
-    _Vi er ikke humanister ..._ 
+  #note[ 
+    Omkvæd: _Vi er ikke humanister ..._ 
   ]
 
   #vers[
@@ -34,14 +34,10 @@
     Hey - hvem tror du dog du er? \
     Du er lige meget her \
     Men hvis de så har et spørgsmål til en vigtig statistik \
-    ved de godt at svaret er på $"mat'matik"$
+    ved de godt at svaret er på #big[$"mat'matik"$]
   ]
 
-  #omkvæd[
-    _Vi er ikke humanister \
-    Vi har ikke samfundsfag \
-    Medicin er også noget for de andre_ #v(-2.5em) \ // Seb: dont ask me, det var sjovt for mig
-    #sl[Vi er ikke teologer og går ik' på Business School] #v(-2em)\
-    _og de andre synes ikke vi er cool_
+  #note[ 
+    Omkvæd: _Vi er ikke humanister ..._ 
   ]
 ]

@@ -1,7 +1,11 @@
 #import "//template.typ": *
 
 #sang("Jeg er en nørd", subtext: "Mel: Pokémon Theme Song", cols: 2)[
-  #note[\[Note: Der hvor der står \"\/\/for støtte\" behøves kun synges af foret eller støttevokalister der kender sangens kadence\]]
+  #note[
+    #set text(.9em) 
+    \[SV: støttevokalister\]
+  ]
+
   #vers[
     AD\&D det er min leg \
     og Go det er min sport \
@@ -19,7 +23,7 @@
   #omkvæd[
     JEG' EN NØRD! \
     (og er stolt af det!) \
-    Jeg' stolt af det.#h(1.5em)#small[\/\/ for støtte] \
+    Jeg' stolt af det.#h(1.5em)#small[\/\/ SV] \
     Jeg læser XKCD. \
 
     JEG' EN NØRD! \
@@ -28,13 +32,13 @@
 
     JEG' EN NØRD! \
     (og er stolt af det!) \
-    Nu er jeg ved #h(1.5em)#small[\/\/ for støtte] \
+    Nu er jeg ved #h(1.5em)#small[\/\/ SV] \
     at finde en at nørde med, \
     som kan ta' min uskyldighed \
 
     JEG' EN NØRD! \
     (og er stolt af det!) \
-    Og er stolt af det ! #h(1.5em)#small[\/\/ for støtte] \
+    Og er stolt af det ! #h(1.5em)#small[\/\/ SV] \
     Yeaaaah ..
   ]
 
@@ -55,7 +59,7 @@
   #omkvæd[
     JEG' EN NØRD! \
     (og er stolt af det!) \
-    Jeg' stolt af det. #h(1.5em)#small[\/\/ for støtte]\
+    Jeg' stolt af det. #h(1.5em)#small[\/\/ SV]\
     Jeg læser XKCD \
   
     JEG' EN NØRD! \
@@ -64,13 +68,13 @@
 
     JEG EN' NØRD! \
     (og er stolt af det!) \
-    Nu er jeg ved #h(1.5em)#small[\/\/ for støtte] \
+    Nu er jeg ved #h(1.5em)#small[\/\/ SV] \
     at finde en at nørde med, \
     som kan ta' min uskyldighed \
 
     JEG' EN NØRD! \
     (og er stolt af det!) \
-    Jeg er stolt af de #h(1.5em)#small[\/\/ for støtte]\
+    Jeg er stolt af de #h(1.5em)#small[\/\/ SV]\
     Yeaah ...
   ]
 ]

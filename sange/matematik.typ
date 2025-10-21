@@ -4,7 +4,7 @@
   #vers[
     Vektorfunktioner it tre dimensioner \
     skal opereres med curl og divergens \
-    $nabla^{2}$ gir koldsved på panden \
+    $nabla^2$ gir koldsved på panden \
     planintegraler er en pestilens
   ]
 
@@ -30,7 +30,7 @@
   ]
 
   #vers[
-    $T_{a}$ vil gi' SU(3) symmetri \
+    $T_a$ vil gi' SU(3) symmetri \
     og Lagrangeoperator'n er Gaugeinvariant \
     Når operatorne virker på kvarkeme \
     får de en farve og smagen af kvant

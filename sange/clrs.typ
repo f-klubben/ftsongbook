@@ -1,9 +1,9 @@
 #import "//template.typ": *
 
-#sang("CLRS", subtext: "Topholt et al. - Mel: Tørfisk - VLTJ")[
+#sang("CLRS", subtext: "Topholt et al. - Mel: Tørfisk - VLTJ", cols: 2)[
   #vers[
     Et sted derude mod store O \
-    Derude hvor $n^2$ er go' \/\/ n i anden \
+    Derude hvor $n^2$ er go' #text(fill: luma(100))[\/\/ n i anden] \
     Kører nestet loops med rekursion \
     Mod nye mål med min og if \
     Mod nye mål med max og if \
@@ -13,8 +13,10 @@
   #omkvæd[
     Den starter med Insertion Sort \
     Går' over til run time analys' \
-    Tar' hen mod bubble hvor den $N$'er helt i $"O"(n^2)$ \/\/ Kvadratisk \
-    Alg'en er en dejlig hurtig op på stacken, ind i heapen, gennem queuen, når \
+    Tar' hen mod bubble hvor den $N$'er \
+      #h(2em) helt i $"O"(n^2)$ #text(fill: luma(100))[\/\/ Kvadratisk] \
+    Alg'en er en dejlig hurtig op på stacken,  \
+      #h(2em) ind i heapen, gennem queuen, når \
     Man læser i CLRS
   ]
 
@@ -23,8 +25,10 @@
     Læses bøgerne med manglende lyst \
     Dog læses bogen mer' og mer' \
     Læse alg på Cass-i-ope-ia \
-    \$#em[s du ved godt det ikke hedder Cass-i-ope-ia, det hedder Cass-i-opeia] \
-    #em[Det kan $(h a n parallel  h u n)$ da ikke selv gøre for (nå)] \
+    \$#em[s du ved godt det ikke hedder Cass-i-ope-ia,  \
+      #h(2em) det hedder Cass-i-opeia] \
+    #em[Det kan $(h a n parallel  h u n)$ da ikke selv gøre for  \
+      #h(2em) (nå)] \
     Læse alg på Cass-i-opeia! \
     Med Bacci som lektor
   ]
@@ -39,8 +43,8 @@
     En dejlig run-time syns' de \
     Hvor alg'en vender og kører mod top \
     Hvor alg'en vender og kører mod top \
-    Mod $"O"(log n)$ tid (Wrhh!) \/\/ Logaritmisk \
-    Var det seg fault?
+    Mod $"O"(log n)$ tid (Wrhh!) #text(fill: luma(100))[\/\/ Logaritmisk] \
+    _Var det seg fault?_
   ]
 
   #note[ 
@@ -53,14 +57,15 @@
     Alg'en holdte til input og vi har fået \
     En tur med hash og graf så skøn \
     En tur med hash og graf så skøn \
-    Med $"O"(1)$ tids lookup \/\/ Konstant \
-    Hashmap!
+    Med $"O"(1)$ tids lookup #text(fill: luma(100))[\/\/ Konstant] \
+    _Hashmap!_
   ]
 
   #omkvæd[
     _Den starter med Insertion Sort ..._ \
     Alg'en, alg'en \
-    Alg'en er en dejlig hurtig op på stacken, ind i heapen, gennem queuen, når \
+    Alg'en er en dejlig hurtig op på stacken,  \
+      #h(2em) ind i heapen, gennem queuen, når \
     Man læser i CLRS
   ]
 ]

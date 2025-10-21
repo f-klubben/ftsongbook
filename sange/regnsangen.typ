@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Regnsangen", subtext: "Mel: Tinge-linge-later", cols: 2)[
+#sang("Regnsangen", subtext: "Mel: Tinge-linge-later", cols: 3)[
   #vers[
     4 $times$ 6 = 24 \
     9 $times$ 7 = 63 \
@@ -89,8 +89,9 @@
     100 cm = 1 m \
     1000 mm = ligeså \
     1000 m = 1 km \
-    og det er man 10 min om at gå.
+    og det er man 10 min \
+      #h(2em) om at gå.
   ]
 
-  #note[ \ \ ] // filll
+  #note[ \ \ \ \ \ \ \ ] // filll
 ]

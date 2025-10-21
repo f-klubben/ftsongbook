@@ -52,4 +52,28 @@
     Han lå så stille \
     Og nu er han faktisk rigtig død
   ]
+
+  #vers[
+    Og BoAnd var så sød \
+    På maven var han rød \
+    Han lå så stille \
+    Og nu er han faktisk rigtig død \
+    Og BoAnd var så sød \
+    På maven var han rød \
+    Han lå så stille \
+    Og nu er han faktisk rigtig død
+  ]
+
+  #vers[
+    Og BoAnd var så sød \
+    På maven var han rød \
+    Han lå så stille \
+    Og nu er han faktisk rigtig død \
+    Og BoAnd var så sød \
+    På maven var han rød \
+    Han lå så stille \
+    Og nu er han faktisk rigtig død
+  ]
+
+  #note[ \ \ \ \ \ ]
 ]

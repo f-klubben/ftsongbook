@@ -50,10 +50,14 @@
     ideer havde han mange af \
     Men en af disse ku' ej det blive \
     Thi studienævnet har sagt, man ska'
-    #v(1mm) // Weird spacing fra det gamle latex
+    //#v(1mm) // Weird spacing fra det gamle latex
+    #v(-.9mm) // Ny weird spaceing
     #small[#tt[Ta' lidt fra Rudin, lidt analyse \
+    #v(-.9mm)
     og lidt fra Kreisky, den ingeniør \
+    #v(-.9mm)
     Men pædagoger vil ud vi fryse \
+    #v(-.9mm)
     Thi de har blå ble og andefø'r]]
   ]
 
