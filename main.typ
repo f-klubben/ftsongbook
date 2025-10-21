@@ -79,5 +79,18 @@
 #pagebreak()
 #include "sange/vierikkehumanister.typ"
 
-
+#kapitelside(titel: "Lejerbålsange", asset: "assets/eps2png/lejrbaal.png")
+#pagebreak()
+#image("assets/eps2png/calvinandhobbes.png")
+#pagebreak()
+#kapitelside(titel: "Festsange", asset: "assets/eps2png/dream.png")
+#pagebreak()
+#image("assets/eps2png/party.png")
+#image("assets/eps2png/calvinanswer.png")
+#image("assets/eps2png/bondemand.png")
+#image("assets/eps2png/compiling.png")
+#pagebreak()
+#kapitelside(titel: "Julesange", asset: "assets/eps2png/jule.png")
+#pagebreak()
+#kapitelside(titel: "Grå Sange", asset: "assets/eps2png/sex.png")
 
