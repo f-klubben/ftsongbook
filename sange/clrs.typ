@@ -23,14 +23,14 @@
     Læses bøgerne med manglende lyst \
     Dog læses bogen mer' og mer' \
     Læse alg på Cass-i-ope-ia \
-    \$s du ved godt det ikke hedder Cass-i-ope-ia, det hedder Cass-i-opeia_ \
-    _Det kan $(h a n parallel  h u n)$ da ikke selv gøre for (nå)_ \
+    \$#em[s du ved godt det ikke hedder Cass-i-ope-ia, det hedder Cass-i-opeia] \
+    #em[Det kan $(h a n parallel  h u n)$ da ikke selv gøre for (nå)] \
     Læse alg på Cass-i-opeia! \
     Med Bacci som lektor
   ]
 
-  #omkvæd[
-    _Den starter med Insertion Sort ..._
+  #note[ 
+    Omkvæd: _Den starter med Insertion Sort ..._ 
   ]
 
   #vers[
@@ -43,8 +43,8 @@
     Var det seg fault?
   ]
 
-  #omkvæd[
-    _Den starter med Insertion Sort ..._
+  #note[ 
+    Omkvæd: _Den starter med Insertion Sort ..._ 
   ]
 
   #vers[
@@ -56,9 +56,9 @@
     Med $"O"(1)$ tids lookup \/\/ Konstant \
     Hashmap!
   ]
+
   #omkvæd[
     _Den starter med Insertion Sort ..._ \
-    #v(-0.25em)
     Alg'en, alg'en \
     Alg'en er en dejlig hurtig op på stacken, ind i heapen, gennem queuen, når \
     Man læser i CLRS
