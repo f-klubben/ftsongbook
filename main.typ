@@ -18,6 +18,11 @@
 #kapitelside(titel: "F-Klub Sange")
 
 #pagebreak()
+#include "sange/luciasangenfredagsfranskbrød.typ"
+#include "sange/luciasangenikkeonsdag.typ"
+#pagebreak()
+#include "sange/brødsangen.typ"
+#pagebreak()
 #include "sange/eksaminanderneskort.typ"
 #pagebreak()
 #include "sange/clrs.typ"

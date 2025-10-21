@@ -1,11 +1,7 @@
 
 typst 0.13.1
 
-songs to add - diverse fra https://fklub.dk/sange/start (Eksaerminatornes kort)
-
 NYE SANGE der skal TILFØJET:
-- Brødsangen
-- De to luciasange
 - Alle Dat'er er glade for porter
 - Mini Blir Bortført (Alle dat'er er meget glade for Mini)
 - Hvad skal vi kode i nat
