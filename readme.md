@@ -1,4 +1,3 @@
-`typst watch --font-path fonts --ignore-system-fonts main.typ`
 
 typst 0.13.1
 
@@ -85,3 +84,53 @@ OG rækkefølge:
 - Grå sange (sex billede)
   - en mand faldt ned fra første sal
   - lille prinsesse
+
+
+## Req.
+
+- typst >= 0.13.1
+- imagemagick
+
+```bash
+sudo pacman -S typst imagemagick
+```
+
+## Usage
+
+### Basic Conversion
+```bash
+make png    # Convert EPS files to PNG (default, 300 DPI)
+make svg    # Convert EPS files to SVG
+make pdf    # Convert EPS files to PDF
+```
+
+### Typst Compilation
+```bash
+make kontinuertpdf    # Convert to PNG + compile main.typ
+make bookletpdf       # Convert to PNG + compile + booklet processing (TODO)
+make watch            # Convert to PNG + start typst watch mode
+```
+
+### Cleanup
+```bash
+make clean            # Remove all converted files
+make clean-png        # Remove PNG files only
+make clean-svg        # Remove SVG files only
+make clean-pdf        # Remove PDF files only
+```
+
+### Other
+```bash
+make list    # Show all EPS files found
+make help    # Show help
+```
+
+## Structure
+
+- Input: `assets/*.eps`
+- Output: `assets/eps2png/`, `assets/eps2svg/`, `assets/eps2pdf/`
+
+## Requirements
+
+- ImageMagick (`convert` command)
+- Typst (for compilation targets)
