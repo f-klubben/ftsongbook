@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("En målrettet vise", subtext: "Mel: Jeg plukker fløjlsgræs", cols: 2)[
+#sang("En målrettet vise", subtext: "Hans Hüttel - Mel: Jeg plukker fløjlsgræs", cols: 2)[
   #vers[
     Se udi Aalborg i myldretiden \
     en stud.scient sad i bussen hjem \
@@ -28,12 +28,13 @@
     -- en datalog fik sig smigret ind \
     Han slog sig flux ned ved tastaturet \
     og glemte langsomt sit barnesind
-    #v(-0.5mm) // Weird spacing fra det gamle latex
+    #v(-0.7mm) // Meget particulært
     #tt[#small[Han~læste~standards~og~manualer
-    #v(-0.5mm)
+    #v(-0.7mm)
     og~gamle~Yourdon~(for~han~var~go')  \
+    #v(-0.7mm)
     og~ingeniører~har~ingen~kvaler \
-    #v(-0.5mm)
+    #v(-0.7mm)
     med~sorte~mapper~og~spidse~sko] ]
   ]
 

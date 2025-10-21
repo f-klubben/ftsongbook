@@ -4,37 +4,10 @@
     title: "F-Klubbens Fabelagtige Sangbog"
 )
 
-#include "sange/meyersvise.typ"
-#include "sange/livet.typ"
-
-#pagebreak()
-
-#include "sange/resultateraffklubbensafgangsprøve.typ"
-
-#pagebreak()
-
-#include "sange/vierikkehumanister.typ"
-
-#pagebreak()
-
-#include "sange/målrettetvise.typ"
-
-#pagebreak()
-
-#include "sange/enmegetnostalgiskvise.typ"
-
-#pagebreak()
-
-#include "sange/dumåfåminccompilernårjegdør.typ"
-
-#pagebreak()
-
-#include "sange/flagsang.typ"
-
 
 //#pagebreak()
 //#include "sange/enkortenlang.typ"
-/* #forside
+#forside
 
 #forord
 
@@ -45,16 +18,62 @@
 #kapitelside(titel: "F-Klub Sange")
 
 
+
+// song includes (generated) - each song starts on a new page
 #pagebreak()
-
-
+#include "sange/clrs.typ"
 #pagebreak()
-
-
-#pagebreak()
-
 #include "sange/danskernessaneglæde.typ"
-
 #pagebreak()
+#include "sange/dat62.typ"
+#pagebreak()
+#include "sange/denlillegrønnefrø.typ"
+#pagebreak()
+#include "sange/drunkenboand.typ"
+#pagebreak()
+#include "sange/dumåfåminccompilernårjegdør.typ"
+#pagebreak()
+#include "sange/enkortenlang.typ"
+#pagebreak()
+#include "sange/enmegetnostalgiskvise.typ"
+#pagebreak()
+#include "sange/enpædagogiskvise.typ"
+#pagebreak()
+#include "sange/etsidstefarvel.typ"
+#pagebreak()
+#include "sange/fiterfrit.typ"
+#pagebreak()
+#include "sange/flagsang.typ"
+#pagebreak()
+#include "sange/fytteturssangen.typ"
+#pagebreak()
+#include "sange/hvemsidderforanskærmen.typ"
+#pagebreak()
+#include "sange/introduktionsvise.typ"
+#pagebreak()
+#include "sange/jegerennørd.typ"
+#pagebreak()
+#include "sange/krabbeboand.typ"
+#pagebreak()
+#include "sange/livet.typ"
+#pagebreak()
+#include "sange/masserafcc.typ"
+#pagebreak()
+#include "sange/matematik.typ"
+#pagebreak()
+#include "sange/meyersvise.typ"
+#pagebreak()
+#include "sange/målrettetvise.typ"
+#pagebreak()
+#include "sange/påcassiopeiatilfoobar.typ"
+#pagebreak()
+#include "sange/regnsangen.typ"
+#pagebreak()
+#include "sange/resultateraffklubbensafgangsprøve.typ"
+#pagebreak()
+#include "sange/veteranensnostalgiskesang.typ"
+#pagebreak()
+#include "sange/vierikkehumanister.typ"
 
-#include "sange/julesange/sørenbanjomus.typ" */
+
+
