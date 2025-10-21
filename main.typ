@@ -18,6 +18,8 @@
 #kapitelside(titel: "F-Klub Sange")
 
 #pagebreak()
+#include "sange/eksaminanderneskort.typ"
+#pagebreak()
 #include "sange/clrs.typ"
 #pagebreak()
 #include "sange/danskernessaneglæde.typ"
