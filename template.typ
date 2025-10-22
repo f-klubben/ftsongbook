@@ -242,7 +242,7 @@
     counter("verse").update(0)
     
     // Label for sangindex
-    let song-label = label(title.replace(" ", "-").replace(",", "").replace(".", ""))
+    let song-label = label(repr(title).replace(" ", "-").replace(",", "").replace(".", ""))
 
     block(
         width: 100%,
