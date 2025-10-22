@@ -6,7 +6,7 @@
     Du ligger på en klippeø \
     og venter kun på mig \
     Du kan li at lege, du var min ven \
-    men kære puff vi kommer aldrig til at leg \ #h(1.25em) igen
+    men kære puff vi kommer aldrig til at leg \ #h(1.5em) igen
   ]
 
   #vers[
@@ -14,14 +14,14 @@
     jeg sad på halen, stor og bred \
     du svømmede med mig \
     Alle sænker flaget hilser på dig \
-    vi fandt en skat med sølv og guld - og \ #h(1.25em) delte du og jeg
+    vi fandt en skat med sølv og guld - og \ #h(1.5em) delte du og jeg
   ]
 
   #vers[
     Puff vi sad på stranden, solen gik ned \
-    en havskildpadde gemmer sine æg et \ #h(1.25em) hemmeligt sted \
+    en havskildpadde gemmer sine æg et \ #h(1.5em) hemmeligt sted \
     Tropevinden suser, natten bliver sort \
-    vi føler begge to vi sidder nær ved \ #h(1.25em) lykkens port
+    vi føler begge to vi sidder nær ved \ #h(1.5em) lykkens port
   ]
 
   #vers[
@@ -29,7 +29,7 @@
     hvor prinser og prinsesser boede \
     Nej hvor var det flot \
     Kongen og hans dronning gav mig en ring \
-    men ringen var en tryllering - nu er den \ #h(1.25em) ingenting
+    men ringen var en tryllering - nu er den \ #h(1.5em) ingenting
   ]
 
   #vers[
@@ -37,7 +37,7 @@
     for drager lever tusind år \
     hvor er min fantasi \
     Du kan li´at lege du var min ven \
-    men kære puff jeg blir jo aldrig som et \ #h(1.25em) barn igen.
+    men kære puff jeg blir jo aldrig som et \ #h(1.5em) barn igen.
   ]
 
   #note[ \ \ \ ] // fill

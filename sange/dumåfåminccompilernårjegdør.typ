@@ -78,7 +78,8 @@
     20 GOTO 30 \
     30 GOTO 20 \
     Når jeg dør. \
-    (Synges: „20 GOTO 30 GOTO 20 GOTO 30 GOTO 20 GOTO 30 \ #h(3em)... GOTO~30~GOTO~20~til~jeg~dør)
+    (Synges: „20 GOTO 30 GOTO 20 GOTO 30 GOTO 20 GOTO 30 \ 
+    #h(1.5em)... GOTO~30~GOTO~20~til~jeg~dør)
   ]
   
   #vers[

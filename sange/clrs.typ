@@ -14,9 +14,9 @@
     Den starter med Insertion Sort \
     Går' over til run time analys' \
     Tar' hen mod bubble hvor den $N$'er \
-      #h(2em) helt i $"O"(n^2)$ #text(fill: luma(100))[\/\/ Kvadratisk] \
+      #h(1.5em) helt i $"O"(n^2)$ #text(fill: luma(100))[\/\/ Kvadratisk] \
     Alg'en er en dejlig hurtig op på stacken,  \
-      #h(2em) ind i heapen, gennem queuen, når \
+      #h(1.5em) ind i heapen, gennem queuen, når \
     Man læser i CLRS
   ]
 
@@ -26,9 +26,9 @@
     Dog læses bogen mer' og mer' \
     Læse alg på Cass-i-ope-ia \
     \$#em[s du ved godt det ikke hedder Cass-i-ope-ia,  \
-      #h(2em) det hedder Cass-i-opeia] \
+      #h(1.5em) det hedder Cass-i-opeia] \
     #em[Det kan $(h a n parallel  h u n)$ da ikke selv gøre for  \
-      #h(2em) (nå)] \
+      #h(1.5em) (nå)] \
     Læse alg på Cass-i-opeia! \
     Med Bacci som lektor
   ]
@@ -65,7 +65,7 @@
     _Den starter med Insertion Sort ..._ \
     Alg'en, alg'en \
     Alg'en er en dejlig hurtig op på stacken,  \
-      #h(2em) ind i heapen, gennem queuen, når \
+      #h(1.5em) ind i heapen, gennem queuen, når \
     Man læser i CLRS
   ]
 ]

@@ -26,7 +26,7 @@
     som meget højtlønnet datalog  \
     og endte nederst i folkekøkken ?  \
     Næh, håndvægtens vægt bli'r nok \
-      #h(2em) ikk' et ton \
+      #h(1.5em) ikk' et ton \
     \- den bliver snarere $epsilon$
   ]
 

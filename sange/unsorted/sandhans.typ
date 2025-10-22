@@ -7,7 +7,7 @@
     i det salt vand og det' flot \
     det' edderbrodereme flot \
     køber mig en pølle og en havnerstang \
-    pumper baderingen men ventilen er \ #h(1.25em) trang \ //spacing
+    pumper baderingen men ventilen er \ #h(1.5em) trang \ //spacing
     det' træls, det' edderbroderme træls
   ]
 

@@ -4,9 +4,9 @@
   #vers[
     På loftet sidder nissen med sin julegrød, \
     sin julegrød, så god og sød, \
-    han nikker, og han spiser, og han er så \ #h(1.25em) glad \
+    han nikker, og han spiser, og han er så \ #h(1.5em) glad \
     for julegrød er hans bedste mad. \
-    Men rundt omkring står alle de små \ #h(1.25em) rotter, \
+    Men rundt omkring står alle de små \ #h(1.5em) rotter, \
     og de skotter, og de skotter: \
     "Vi vil så gerne ha' lidt julegodter," \
     og de danser, danser rundt i ring.
@@ -27,7 +27,7 @@
     Men nissefar han er en lille hidsigprop, \
     og med sin krop han gør et hop: \
     "Jeg henter katten, hvis I ikke holder op, \
-    når katten kommer, skal det nok bli' \ #h(1.25em) stop." \
+    når katten kommer, skal det nok bli' \ #h(1.5em) stop." \
     Så bliver alle rotterne så bange, \
     åh, så bange, åh, så bange, \
     de vender sig og danser et par gange, \

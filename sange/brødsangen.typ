@@ -7,7 +7,7 @@
     du sikrer dig lidt brød i dag, \
     to stykker, ja det må du ha' \
     med rigrigt dejlig smør fra  \
-      #h(2em) Bakkedal™/#small[Lurpak™/#small[Kærgården™]] dertil
+      #h(1.5em) Bakkedal™/#small[Lurpak™/#small[Kærgården™]] dertil
   ]
 
   #vers[
@@ -16,6 +16,6 @@
     At endestykket ligger der, \
     Og skåret af en anden kært \
     Så må man ta' den med sig,  \
-      #h(2em) for den er så god
+      #h(1.5em) for den er så god
   ]
 ]
