@@ -1,12 +1,14 @@
 #import "//template.typ": *
 
 #sang("En kort en lang")[
-  #image("/sange/assets/enkortenlang/enkortenlangs1.png")
-  #image("/sange/assets/enkortenlang/enkortenlangs2.png")
-  #image("/sange/assets/enkortenlang/enkortenlangs3.png")
-  #image("/sange/assets/enkortenlang/enkortenlangs4.png")
-  #image("/sange/assets/enkortenlang/enkortenlangs5.png")
-  #image("/sange/assets/enkortenlang/enkortenlangs6.png")
+  #align(center)[
+    #image("/sange/assets/enkortenlang/enkortenlangs1.png")
+    #image("/sange/assets/enkortenlang/enkortenlangs2.png")
+    #image("/sange/assets/enkortenlang/enkortenlangs3.png")
+    #image("/sange/assets/enkortenlang/enkortenlangs4.png")
+    #image("/sange/assets/enkortenlang/enkortenlangs5.png")
+    #image("/sange/assets/enkortenlang/enkortenlangs6.png")
+  ]
 ]
 
 /* 

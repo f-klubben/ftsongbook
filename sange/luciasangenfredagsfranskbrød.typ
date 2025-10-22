@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("F-Klubbens Lucia Sang (den franske version)", subtext: "Mel: Sankta Lucia", cols: 2)[
+#sang("F-Klubbens Lucia Sang (den franske version)", subtext: "2023 - Mel: Sankta Lucia", cols: 2)[
   #vers[
     Nu er det juletid, \
     Det skal jo fejres: \
