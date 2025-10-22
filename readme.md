@@ -1,12 +1,7 @@
 
 typst 0.13.1
 
-NYE SANGE der skal TILFØJET:
-- Alle Dat'er er glade for porter
-- Mini Blir Bortført (Alle dat'er er meget glade for Mini)
-
 TODO:
-- resten af sange
 - kapitler
 - kapitel tal-headings F G H osv.
 - forord

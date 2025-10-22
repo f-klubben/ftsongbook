@@ -18,6 +18,8 @@
 #kapitelside(titel: "F-Klub Sange")
 
 #pagebreak()
+#include "sange/alledatererfladeforporter.typ"
+#pagebreak()
 #include "sange/miniblirbortført.typ"
 #pagebreak()
 #include "sange/hvadskalvikodeinat.typ"
