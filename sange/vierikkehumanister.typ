@@ -24,7 +24,7 @@
     Men når de skal bruge laser eller nano-mekanik \
     er de blevet meget glade for #em[fysik]
   ]
-
+  
   #note[ 
     Omkvæd: _Vi er ikke humanister ..._ 
   ]

@@ -31,9 +31,7 @@
     // Spacing configuration
     par-spacing: 0.65em,            // Line spacing WITHIN verses/chorus
     par-leading: 0.65em,            // Line height WITHIN verses/chorus
-    verse-to-verse: 0.5em,          // Space between verses
-    verse-to-omkvæd: 0.5em,         // Space from verse to chorus
-    omkvæd-to-verse: 0.5em,         // Space from chorus to verse
+    song-element-spacing: 1em,    // Space between all song elements (verses, chorus, notes)
     omkvæd-label-gap: 0.0em,        // Space from "Omkvæd:" to its text
     // Document
     title: "F-Klubbens Sangbog",
@@ -127,7 +125,6 @@
 
 // Note function - for annotations and instructions
 #let note(cols: 1, body) = {
-    v(config.verse-to-verse)
     block(
         width: 95%,
         spacing: 0em,
@@ -153,7 +150,7 @@
             apply-song-text(body)
         }
     )
-    v(config.verse-to-verse)
+    v(config.song-element-spacing)
 }
 
 // Verse function with hanging indent (default behavior)
@@ -188,7 +185,7 @@
         }
     )
     
-    v(config.verse-to-verse)
+    v(config.song-element-spacing)
     counter("verse").step()
 }
 
@@ -214,7 +211,7 @@
                     )
                     
                     // Invisible spacer to push content down past the label
-                    v(1em)  // Height of one line to clear the "Omkvæd:" label
+                    v(1em)
                 }
             )
             
@@ -241,7 +238,7 @@
         }
     )
     
-    v(config.omkvæd-to-verse)
+    v(config.song-element-spacing)
 }
 
 // Song function - main container for songs
@@ -286,7 +283,7 @@
                 }
                 hide(place[#heading(level: 1, numbering: none, outlined: true)[#title]])
             })
-            v(0.5em)
+            v(0.25em)
             
             // Add left padding to align with song title
             if cols > 1 {

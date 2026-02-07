@@ -1,7 +1,6 @@
 #import "//template.typ": *
 
 #sang("Du må få min C-compiler når jeg dør", subtext: [Simon Kongshøj, Jesper Brix Rosenkilde og Petur Olsen \ #h(4.5em) Mel: Du må få min gamle...], cols: 1)[
-  #note[#text(fill: luma(100))[16 vers over to sider!]]
   
   #vers[
     :| Du må få min c-compiler når jeg dør, når jeg dør |: \
@@ -74,6 +73,8 @@
     Ufrivillig obfuskering, kendt som oo-programmering. \
     Når du ser min kildekode bli'r du skør.
   ]
+
+  #note[#text(fill: luma(70%))[Fortsættes... \ på næste side!]]
   
   #vers[
     :| Du må få min BASIC kode når jeg dør, når jeg dør |: \
