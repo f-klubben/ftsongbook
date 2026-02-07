@@ -26,11 +26,11 @@
   #vers[
     Beat him with a cat 'til his back is bleedin' ...
   ]
-  
+
   #vers[
     Put him in the scuppers with a hose-pipe on him ...
   ]
-  
+
   #vers[
     Heave him by the leg in a running bowlin' ...
   ]

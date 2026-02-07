@@ -74,6 +74,4 @@
     Han lå så stille \
     Og nu er han faktisk rigtig død
   ]
-
-  #note[ \ \ \ \ \ ]
 ]

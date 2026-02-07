@@ -18,12 +18,10 @@
     i selskab med dette ark. \
     Når fat'nen er lykkeligt ovre, \
     så får den et kys som tak. \
-    Så sig dog ikke, min verden er \
-      #h(1.5em) trist og banal, \
-    jeg finder lykke hos en plade med \
-      #h(1.5em) hele tal.
+    Så sig dog ikke, min verden er trist og banal, \
+    jeg finder lykke hos en plade med hele tal.
   ]
-
+ 
   #vers[
     I tirsdags var jeg med min søster \
     til bingo i Aabenaa, \
@@ -41,9 +39,8 @@
     i tankerne med min eg'n. \
     Jeg så til min skræk, at jeg ville \
     ha' vundet en graveregn. \
-    Det sker ej mere. Nu har jeg truffet \
-      #h(1.5em) mit valg: \
-    Jeg svigter aldrig mere min plade med \
-      #h(1.5em) hele tal.
+    Det sker ej mere. Nu har jeg truffet mit valg: \
+    Jeg svigter aldrig mere min plade med hele tal.
   ]
 ]
+

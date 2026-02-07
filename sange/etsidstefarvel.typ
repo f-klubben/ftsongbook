@@ -25,8 +25,7 @@
     over scient'er der prøved' lykken  \
     som meget højtlønnet datalog  \
     og endte nederst i folkekøkken ?  \
-    Næh, håndvægtens vægt bli'r nok \
-      #h(1.5em) ikk' et ton \
+    Næh, håndvægtens vægt bli'r nok ikk' et ton \
     \- den bliver snarere $epsilon$
   ]
 
@@ -70,6 +69,4 @@
     #set text(.9em)
     Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. 
   ]
-
-  #note[ \ \ ]
 ]

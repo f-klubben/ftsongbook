@@ -40,6 +40,4 @@
     når formanden han vil høres \
     Så kan han lav’ et pull request 
   ]
-
-  #note[ \ \ ]
 ]

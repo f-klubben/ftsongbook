@@ -6,8 +6,7 @@
     Furra, Furra, Furraa \
     du sikrer dig lidt brød i dag, \
     to stykker, ja det må du ha' \
-    med rigrigt dejlig smør fra  \
-      #h(1.5em) Bakkedal™/#small[Lurpak™/#small[Kærgården™]] dertil
+    med rigrigt dejlig smør fra Bakkedal™/#small[Lurpak™/#small[Kærgården™]] dertil
   ]
 
   #vers[
@@ -15,7 +14,6 @@
     Furra, furra, furraa \
     At endestykket ligger der, \
     Og skåret af en anden kært \
-    Så må man ta' den med sig,  \
-      #h(1.5em) for den er så god
+    Så må man ta' den med sig,  for den er så god
   ]
 ]
