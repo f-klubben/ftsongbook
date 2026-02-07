@@ -1,5 +1,5 @@
 
-typst 0.13.1
+typst 0.14.2
 
 TODO:
 - kapitler
@@ -7,7 +7,8 @@ TODO:
 - forord
 - alternate covers
 
-
+ADD song:
+- Bingospilleren af FVJ
 
 OG rækkefølge:
 
@@ -82,7 +83,7 @@ OG rækkefølge:
 - imagemagick
 
 ```bash
-sudo pacman -S typst imagemagick
+sudo pacman -S typst imagemagick ghostscript
 ```
 
 ## Usage

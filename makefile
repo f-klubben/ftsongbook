@@ -36,17 +36,17 @@ $(PNG_DIR) $(SVG_DIR) $(PDF_DIR):
 # Conversion rules for PNG
 $(PNG_DIR)/%.png: $(INPUT_DIR)/%.eps | $(PNG_DIR)
 	@echo "Converting $< to $@"
-	@convert -density $(DPI) $< -flatten $@
+	@magick -density $(DPI) $< -flatten $@
 
 # Conversion rules for SVG
 $(SVG_DIR)/%.svg: $(INPUT_DIR)/%.eps | $(SVG_DIR)
 	@echo "Converting $< to $@"
-	@convert $< $@
+	@magick $< $@
 
 # Conversion rules for PDF
 $(PDF_DIR)/%.pdf: $(INPUT_DIR)/%.eps | $(PDF_DIR)
 	@echo "Converting $< to $@"
-	@convert $< $@
+	@magick $< $@
 
 # Precursor targets
 .PHONY: kontinuertpdf
