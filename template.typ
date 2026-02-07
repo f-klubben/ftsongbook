@@ -1,4 +1,5 @@
 // A5 Sangbog template, made by naitsa/lorenzen, and the typst gods (some chat)
+// Refactored for better structure with consistent zero-indexing and working hanging indents
 
 // ============================================================================
 // CONFIGURATION
@@ -9,7 +10,7 @@
     main-font: "Source Serif 4",
     song-title-font: "Source Sans 3",
     subtext-font: "Source Serif 4",
-    song-text-font: "Source Serif 4", //"Times New Roman",
+    song-text-font: "Source Serif 4",
     indhold-entry-font: "Source Serif 4",
     // Size
     main-text-size: 10pt,
@@ -23,6 +24,17 @@
     subtext-text-weight: "regular",
     song-text-weight: "medium",
     indhold-entry-weight: "regular",
+    // Layout
+    verse-indent: 0.5em,
+    verse-gutter: 0.75em,
+    hanging-indent: 1.5em,
+    // Spacing configuration
+    par-spacing: 0.65em,            // Line spacing WITHIN verses/chorus
+    par-leading: 0.65em,            // Line height WITHIN verses/chorus
+    verse-to-verse: 0.5em,          // Space between verses
+    verse-to-omkvæd: 0.5em,         // Space from verse to chorus
+    omkvæd-to-verse: 0.5em,         // Space from chorus to verse
+    omkvæd-label-gap: 0.0em,        // Space from "Omkvæd:" to its text
     // Document
     title: "F-Klubbens Sangbog",
     description: "F-Klubbens Fabelagtige Sangbog",
@@ -44,13 +56,7 @@
 // UTILITY FUNCTIONS
 // ============================================================================
 
-// Page numbering helper (0-indexed)
-#let page0() = {
-    let p = here().page() - 1
-    str(p)
-}
-
-// Format authors list
+// Format authors list with proper grammar
 #let format-authors(authors) = {
     let names = authors.map(a => a.name)
     if names.len() == 1 {
@@ -63,58 +69,30 @@
     }
 }
 
-// Process lines with hanging indent
-#let process-lines(body) = {
-    // Convert body to array of lines by splitting on linebreak
-    let lines = ()
-    let current = []
-    
-    // Process the body content
-    for child in body.children {
-        if child == linebreak() {
-            if current != [] {
-                lines.push(current)
-                current = []
-            }
-        } else {
-            current += child
-        }
-    }
-    // Don't forget the last line
-    if current != [] {
-        lines.push(current)
-    }
-    
-    // Apply hanging indent to each line
-    lines.map(line => {
-        par(first-line-indent: 0em, hanging-indent: 1.5em, spacing: 0.65em)[#line]
-    }).join([])
-}
+// Helper to apply song text styling consistently
+#let apply-song-text(body) = text(
+    font: config.song-text-font,
+    size: config.song-text-size,
+    weight: config.song-text-weight,
+)[#body]
 
 // ============================================================================
 // LAYOUT HELPERS
 // ============================================================================
 
-// https://github.com/typst/typst/issues/466
-#let balanced-cols(cols: 2, content) = style(styles => {
-    let h = measure(content, styles).height / cols
-    block(height: h, columns(cols, content))
-})
-
-// https://github.com/typst/typst/issues/466
-#let eqcolumns(cols, gutter: 2%, content) = {
-    layout(size => [
-        #let (height,) = measure(
-            block(
-                width: (1 / cols) * size.width * (1 - float(gutter) * (cols - 1)),
-                content,
-            ),
-        )
-        #block(
-            height: height / cols + 1em, // cursed 1em
-            columns(cols, gutter: gutter, content),
-        )
-    ])
+// Improved column balancing - measures content and distributes evenly
+#let balanced-columns(cols, content, gutter: 1em) = {
+    layout(size => {
+        // Measure the full content height at full width first
+        let full-measure = measure(block(width: size.width, content))
+        let total-height = full-measure.height
+        
+        // Calculate the target height per column (with some buffer)
+        let target-height = (total-height / cols) * 1.1  // 10% buffer for better flow
+        
+        // Render columns with calculated height and gutter
+        block(height: target-height, columns(cols, gutter: gutter, content))
+    })
 }
 
 // ============================================================================
@@ -130,7 +108,6 @@
 #let tt(content) = text(font: "Courier New")[#content]
 #let small(content) = text(size: 0.9em)[#content]
 #let em(content) = emph[#content]
-
 #let big(content) = text(size: 1.1em)[#content]
 
 // https://gist.github.com/felsenhower/a975c137732e20273f47a117e0da3fd1
@@ -160,85 +137,128 @@
 // SONG COMPONENTS
 // ============================================================================
 
-// Note function
+// Note function - for annotations and instructions
 #let note(cols: 1, body) = {
-    v(0em)
+    v(config.verse-to-verse)
     block(
-        width: 100%,
-        [
-            #if cols > 1 [
-                #eqcolumns(cols, gutter: 1em)[
-                    #text(
+        width: 95%,
+        spacing: 0em,
+        if cols > 1 {
+            balanced-columns(cols, {
+                show linebreak: it => [ #parbreak() ]
+                set par(
+                    first-line-indent: 0em,
+                    hanging-indent: 0em,  // No hanging indent for notes
+                    spacing: config.par-spacing,
+                    leading: config.par-leading,
+                )
+                apply-song-text(body)
+            }, gutter: 1em)
+        } else {
+            show linebreak: it => [ #parbreak() ]
+            set par(
+                first-line-indent: 0em,
+                hanging-indent: 0em,  // No hanging indent for notes
+                spacing: config.par-spacing,
+                leading: config.par-leading,
+            )
+            apply-song-text(body)
+        }
+    )
+    v(config.verse-to-verse)
+}
+
+// Verse function with hanging indent (default behavior)
+#let vers(body) = {    
+    block(
+        width: 95%,
+        spacing: 0em,
+        {
+            // Place verse number to the left
+            place(
+                dx: -(config.verse-indent + config.verse-gutter),
+                dy: 0em,
+                text(
+                    font: config.song-text-font,
+                    size: config.song-text-size,
+                    weight: config.song-text-weight,
+                )[#context counter("verse").display().]
+            )
+            
+            // Content with hanging indent - each \ creates new paragraph
+            show linebreak: it => [ #parbreak() ]
+            set par(
+                hanging-indent: config.hanging-indent,
+                spacing: config.par-spacing,
+                leading: config.par-leading,
+            )
+            text(
+                font: config.song-text-font,
+                size: config.song-text-size,
+                weight: config.song-text-weight,
+            )[#body]
+        }
+    )
+    
+    v(config.verse-to-verse)
+    counter("verse").step()
+}
+
+// Chorus function with hanging indent (default behavior)
+#let omkvæd(body) = {    
+    block(
+        width: 95%,
+        spacing: 0em,
+        {
+            // "Omkvæd:" label - positioned to the left like verse numbers
+            block(
+                width: 100%,
+                spacing: 0em,
+                {
+                    place(
+                        dx: -(config.verse-indent + config.verse-gutter),
+                        dy: 0em,
+                        text(
+                            font: config.song-text-font,
+                            size: config.song-text-size,
+                            weight: config.song-text-weight,
+                        )[Omkvæd:]
+                    )
+                    
+                    // Invisible spacer to push content down past the label
+                    v(1em)  // Height of one line to clear the "Omkvæd:" label
+                }
+            )
+            
+            v(config.omkvæd-label-gap)
+            
+            // Content with hanging indent - starts at same position as verse text
+            block(
+                width: 100%,
+                spacing: 0em,
+                {
+                    show linebreak: it => [ #parbreak() ]
+                    set par(
+                        hanging-indent: config.hanging-indent,
+                        spacing: config.par-spacing,
+                        leading: config.par-leading,
+                    )
+                    text(
                         font: config.song-text-font,
                         size: config.song-text-size,
                         weight: config.song-text-weight,
                     )[#body]
-                ]
-            ] else [
-                #text(
-                    font: config.song-text-font,
-                    size: config.song-text-size,
-                    weight: config.song-text-weight,
-                )[#body]
-            ]
-        ],
+                }
+            )
+        }
     )
-    v(0em)
+    
+    v(config.omkvæd-to-verse)
 }
 
-// Verse function
-#let vers(body) = {
-    v(0em)
-    table(
-        rows: 1,
-        columns: (0.75em, auto),
-        row-gutter: 0.5em,
-        column-gutter: 0.5em,
-        stroke: none,
-        inset: 0em,
-        align: (left, left),
-        [#text(
-            font: config.song-text-font,
-            size: config.song-text-size,
-            weight: config.song-text-weight,
-        )[#context counter("verse").display().]],
-        [#text(
-            font: config.song-text-font,
-            size: config.song-text-size,
-            weight: config.song-text-weight,
-        )[#body]],
-    )
-    v(0em)
-    counter("verse").step()
-}
-
-// Chorus function
-#let omkvæd(body) = {
-    v(0em)
-    table(
-        rows: 2,
-        columns: (0.75em, auto),
-        row-gutter: 0.5em,
-        column-gutter: 0.5em,
-        stroke: none,
-        inset: 0em,
-        table.cell(colspan: 2)[#text(
-            font: config.song-text-font,
-            size: config.song-text-size,
-            weight: config.song-text-weight,
-        )[Omkvæd:]],
-        [],
-        [#text(
-            font: config.song-text-font,
-            size: config.song-text-size,
-            weight: config.song-text-weight,
-        )[#body]],
-    )
-}
-
-// Song function
+// Song function - main container for songs
 #let sang(title, subtext: none, cols: 1, subtext-indent: 4em, body) = {
-    // Initialize verse counter to 0 so the first `vers()` call displays 0
+    // Initialize verse counter to 0 (zero-indexed)
     counter("verse").update(0)
     
     // Label for sangindex
@@ -247,8 +267,8 @@
     block(
         width: 100%,
         inset: (bottom: 0em),
-        [
-            #layout(size => {
+        {
+            layout(size => {
                 let title-with-number = [
                     #text(font: config.song-title-font, size: config.song-title-size, weight: config.song-title-weight)[
                         #context counter("song").display(). #title
@@ -278,15 +298,24 @@
                 }
                 hide(place[#heading(level: 1, numbering: none, outlined: true)[#title]])
             })
-            #v(0.5em)
-            #if cols > 1 [
-                #eqcolumns(cols)[#body]
-            ] else [
-                #body
-            ]
-            // increment song counter after rendering so songs are 0-indexed
-            #counter("song").step()
-        ],
+            v(0.5em)
+            
+            // Add left padding to align with song title and reduce gutter
+            if cols > 1 {
+                pad(
+                    left: config.verse-indent + config.verse-gutter,
+                    balanced-columns(cols, body, gutter: 0.5em)  // Smaller gutter
+                )
+            } else {
+                pad(
+                    left: config.verse-indent + config.verse-gutter,
+                    body
+                )
+            }
+            
+            // Increment song counter AFTER rendering (maintains zero-indexed display)
+            counter("song").step()
+        }
     )
 }
 
@@ -320,14 +349,19 @@
             right: 1.2cm,
         ),
         numbering: none, // Disable default numbering
-        footer: context [
-            #if calc.odd(here().page()) [
-                #align(right)[#page0()]
-            ] else [
-                #align(left)[#page0()]
-            ]
-        ],
+        footer: context {
+            // Zero-indexed page numbers
+            let page-num = here().page() - 1
+            if calc.odd(here().page()) {
+                align(right)[#page-num]
+            } else {
+                align(left)[#page-num]
+            }
+        },
     )
+
+    // Initialize song counter to 0 (zero-indexed)
+    counter("song").update(0)
 
     // Normal text appearance
     set text(
@@ -456,11 +490,11 @@
                 // Print all chapters in this group
                 for chapter in groups.at(group_key) {
                     let loc = chapter.location()
-                    // Minus 1 fordi alt er freaking zero indexed
-                    let page = loc.page() - 1
+                    // Zero-indexed page numbering (single subtraction)
+                    let page-num = loc.page() - 1
                     link(
                         loc,
-                        [ #chapter.body #(page - 1) \ ] ,
+                        [ #chapter.body #page-num \ ] ,
                     )
                 }
             }
