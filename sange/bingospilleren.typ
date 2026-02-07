@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Bingospilleren", subtext: "FTJ (Finn Verner Jensen) - Mel: Manden på risten", cols: 2)[
+#sang("Bingospilleren", subtext: "FVJ (Finn Verner Jensen) - Mel: Manden på risten", cols: 2)[
   #vers[
     Jeg sidder hver torsdag med pladen, \
     med palden til bingospil. \
