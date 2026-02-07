@@ -10,8 +10,9 @@ TODO:
 
 ## Req.
 
-- typst >= 0.13.1
-- imagemagick
+- ImageMagick
+- GhgostScript (used by ImageMagick)
+- Typst
 
 ```bash
 sudo pacman -S typst imagemagick ghostscript
@@ -51,9 +52,3 @@ make help    # Show help
 
 - Input: `assets/*.eps`
 - Output: `assets/eps2png/`, `assets/eps2svg/`, `assets/eps2pdf/`
-
-## Requirements
-
-- ImageMagick
-- GgostScript (used by ImageMagick)
-- Typst
