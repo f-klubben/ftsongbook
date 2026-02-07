@@ -54,5 +54,6 @@ make help    # Show help
 
 ## Requirements
 
-- ImageMagick (`convert` command)
-- Typst (for compilation targets)
+- ImageMagick
+- GgostScript (used by ImageMagick)
+- Typst
