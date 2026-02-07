@@ -4,7 +4,7 @@
     title: "F-Klubbens Fabelagtige Sangbog"
 )
 
-#set block(stroke: 2pt + red)
+//#set block(stroke: 2pt + red)
 
 #forside
 
@@ -85,7 +85,8 @@
 #include "sange/etsidstefarvel.typ"
 #pagebreak()
 #include "sange/resultateraffklubbensafgangsprøve.typ"
-
+#pagebreak()
+#include "sange/bingospilleren.typ"
 
 
 //#pagebreak()
