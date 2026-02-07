@@ -5,7 +5,8 @@
   
   #note[
     #set text(.9em)
-    _User's Manual_: De lange linier synges af de studerende, de korte i parentes af vejlederne (sådan er livet!)
+    _User's Manual_: De lange linier synges af de studerende, \ 
+    de korte i parentes af vejlederne (sådan er livet!)
   ]
 
   #vers[

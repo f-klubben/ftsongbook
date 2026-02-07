@@ -29,6 +29,8 @@
     man får set sin første ingeniør
   ]
 
+  #csplit
+
   #vers[
     Hvis det altså ikke helt slog klik \
     kan man jo ha' valgt at ta' fysik, \

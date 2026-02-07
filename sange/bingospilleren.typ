@@ -21,6 +21,8 @@
     Så sig dog ikke, min verden er trist og banal, \
     jeg finder lykke hos en plade med hele tal.
   ]
+
+  #csplit
  
   #vers[
     I tirsdags var jeg med min søster \

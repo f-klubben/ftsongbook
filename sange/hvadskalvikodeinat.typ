@@ -42,6 +42,8 @@
     Med din kompilering
   ]
 
+  #csplit
+
   #vers[
     #em["Hun"]: \
     Det er utroligt,  \

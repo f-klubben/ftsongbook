@@ -36,6 +36,8 @@
     2 $times$ 6 er bare 12
   ]
 
+  #csplit
+
   #vers[
     12 $times$ 4 = 48 \
     17 $times$ 6 = 102 \
@@ -71,6 +73,8 @@
     16 $times$ 7 = 112
   ]
 
+  #csplit
+
   #vers[
     6 $times$ 6 = \
     14 $times$ 6 = \
@@ -89,9 +93,6 @@
     100 cm = 1 m \
     1000 mm = ligeså \
     1000 m = 1 km \
-    og det er man 10 min \
-      #h(2em) om at gå.
+    og det er man 10 min om at gå.
   ]
-
-  #note[ \ \ \ \ \ \ \ ] // filll
 ]

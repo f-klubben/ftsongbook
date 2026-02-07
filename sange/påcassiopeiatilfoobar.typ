@@ -25,6 +25,8 @@
     På Cassiopeia til FooBar.
   ]
 
+  #csplit
+
   #note[Omkvæd: _For Kildekoden den ..._]
 
   #vers[

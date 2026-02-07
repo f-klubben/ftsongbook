@@ -42,6 +42,8 @@
     Yeaaaah ..
   ]
 
+  #csplit
+
   #vers[
     Jeg er level 10 i sværd \
     så spil nu ikke smart. \

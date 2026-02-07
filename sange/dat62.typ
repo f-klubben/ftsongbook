@@ -12,6 +12,8 @@
     og kode som gale
   ]
 
+  #csplit
+
   #omkvæd[
     Ja ja ja ja ja - det må vi gerne\
     \

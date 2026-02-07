@@ -22,6 +22,8 @@
     At jeg altid kun drømmer om dig
   ]
 
+  #csplit
+
   #omkvæd[
     Og lidt om en Dry Stout, Pilsner og Lambic \
     Og Triple og Classic, Pale Ale og Bock \

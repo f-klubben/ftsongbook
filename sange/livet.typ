@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Livet", subtext: [Undfanget: Fyttetur 2005 - Mel: Lumberjack Song], cols: 2)[
+#sang("Livet", subtext: [Undfanget ved fyttetur 2005 - Mel: Lumberjack Song], cols: 2)[
   #vers[
     Jeg er datalog, jeg arbejder hårdt \
     jeg koder i C og hader sport \
@@ -33,6 +33,8 @@
     han sover hver dag,  \
     mens han downloader pr0n!
   ]
+
+  #csplit
 
   #vers[
     Jeg Googled lidt og fandt en $\pi$ hendes fornavn' er WWW \

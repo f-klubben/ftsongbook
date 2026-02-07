@@ -38,6 +38,8 @@
     (og glem den s..... til skolebænk)
   ]
 
+  #csplit
+
   #vers[
     Men jeres fremtid vil få et hul \
     der mangler fortidens store stjerner; \
@@ -66,7 +68,6 @@
   ]
 
   #note[
-    #set text(.9em)
-    Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. 
+    #small[Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. ]
   ]
 ]

@@ -29,6 +29,8 @@
     Med Bacci som lektor
   ]
 
+  #csplit
+
   #note[ 
     Omkvæd: _Den starter med Insertion Sort ..._ 
   ]

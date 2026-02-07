@@ -12,17 +12,17 @@
     i Harboør'.  \
     Men når jeg er her i mit gamle hus  \
     vejrer jeg jo fordums sus.  \
-    Jeg drømmer mig tilbage til det gamle \
-      #h(2em) institut,  \
+    Jeg drømmer mig tilbage til det gamle institut,  \
     til de kurser som vi nød,  \
-    til lærersnak ved tavlen, som jo aldrig \
-      #h(2em) Kunne slutt',  \
+    til lærersnak ved tavlen, som jo aldrig Kunne slutt',  \
     kaffestuens fredagsbrød.  \
     En pause kunne strækkes meget længe,  \
     for kaf'maskin' var ganske uden fut.  \
     Jo, vi forstod i kaffestuen at hænge  \
     på det gamle institut.
   ]
+
+  #csplit
 
   #vers[
     Tænker på de fine F-klub-fester  \
@@ -33,16 +33,15 @@
     det er lidt hårdt.  \
     For det er jo her, at mit hjerte slår  \
     gennem mange, skønne år.  \
-    Jeg drømmer mig tilbage til det gamle \
-      #h(2em) institut,  \
+    Jeg drømmer mig tilbage til det gamle institut,  \
     grupperummet, hvor vi sad  \
-    og drak af klubbens kasser, mens vi  \
-      #h(2em) gumled' en cerut  \
+    og drak af klubbens kasser, mens vi  gumled' en cerut  \
     snakked' lidt om hvem ved hvad.  \
     I Brønderslev er fuldt af amazoner,  \
     der sørger for, at freden den bli'r brudt  \
     mens der var rare mænd og ingen koner\*  \
     på det gamle institut.
   ]
-  #note[\* I senere udgaver blev det "rare koner", \ og det i grunden ikke så galt. \~FVJ]
+  
+  #note[#small[\* I senere udgaver blev det "rare koner", \ og det i grunden ikke så galt. \~FVJ]]
 ]

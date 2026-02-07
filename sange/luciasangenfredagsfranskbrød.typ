@@ -11,6 +11,8 @@
     Cassiopeia, Cassiopeia
   ]
 
+  #csplit
+
   #vers[
     Her ved vor fønskefest, \
     sangen skal kime, \

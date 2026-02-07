@@ -27,16 +27,15 @@
     Men året efter, da blev han luret; \
     -- en datalog fik sig smigret ind \
     Han slog sig flux ned ved tastaturet \
-    og glemte langsomt sit barnesind
-    #v(-.9mm) // Meget particulært
-    #tt[#small[Han~læste~standards~og~manualer
-    #v(-.9mm)
-    og~gamle~Yourdon~(for~han~var~go')  \
-    #v(-.9mm)
-    og~ingeniører~har~ingen~kvaler \
-    #v(-.9mm)
-    med~sorte~mapper~og~spidse~sko] ]
+    og glemte langsomt sit barnesind \
+    #context[#set par(spacing: 0.9em, leading: 0.5em)
+    #tt[#small[Han~læste~standards~og~manualer]] \
+    #tt[#small[og~gamle~Yourdon~(for~han~var~go')]]  \
+    #tt[#small[og~ingeniører~har~ingen~kvaler]] \
+    #tt[#small[med~sorte~mapper~og~spidse~sko]]]
   ]
+
+  #csplit
 
   #vers[
     Han blev forgabt i en dejlig pige \
@@ -53,10 +52,10 @@
     Han syntes livet var endt i tomgang; \
     de andre syntes han blev lidt sær \
     for når på værtshus han gav en omgang, \
-    ja, så forkyndte han for enhver: #v(-2.5em)\
-    #sl['Skråt op med $nabla$ og integraler!] #v(-2.5em) \ // Hvis du er forundret
-    #sl[til H\u{2026} med Yourdon, den demagog!]  #v(-2.5em) \ // Rør det ikke
-    #sl[Vi dataloger går i sandaler] #v(-2.25em) \
+    ja, så forkyndte han for enhver: \
+    #sl['Skråt op med $nabla$ og integraler!] \ // Hvis du er forundret
+    #sl[til H\u{2026} med Yourdon, den demagog!] \ // Rør det ikke
+    #sl[Vi dataloger går i sandaler] \
     #sl[og trækker #em[aldrig] i spidse sko']
   ]
 

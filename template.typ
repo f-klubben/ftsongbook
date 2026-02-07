@@ -80,20 +80,8 @@
 // LAYOUT HELPERS
 // ============================================================================
 
-// Improved column balancing - measures content and distributes evenly
-#let balanced-columns(cols, content, gutter: 1em) = {
-    layout(size => {
-        // Measure the full content height at full width first
-        let full-measure = measure(block(width: size.width, content))
-        let total-height = full-measure.height
-        
-        // Calculate the target height per column (with some buffer)
-        let target-height = (total-height / cols) * 1.1  // 10% buffer for better flow
-        
-        // Render columns with calculated height and gutter
-        block(height: target-height, columns(cols, gutter: gutter, content))
-    })
-}
+// Force a column break - moves to next column
+#let csplit = colbreak()
 
 // ============================================================================
 // TEXT FORMATTING UTILITIES
@@ -144,7 +132,7 @@
         width: 95%,
         spacing: 0em,
         if cols > 1 {
-            balanced-columns(cols, {
+            columns(cols, gutter: 1em, {
                 show linebreak: it => [ #parbreak() ]
                 set par(
                     first-line-indent: 0em,
@@ -153,7 +141,7 @@
                     leading: config.par-leading,
                 )
                 apply-song-text(body)
-            }, gutter: 1em)
+            })
         } else {
             show linebreak: it => [ #parbreak() ]
             set par(
@@ -300,11 +288,11 @@
             })
             v(0.5em)
             
-            // Add left padding to align with song title and reduce gutter
+            // Add left padding to align with song title
             if cols > 1 {
                 pad(
                     left: config.verse-indent + config.verse-gutter,
-                    balanced-columns(cols, body, gutter: 0.5em)  // Smaller gutter
+                    columns(cols, gutter: 1em, body)  // Use native columns with manual breaks
                 )
             } else {
                 pad(

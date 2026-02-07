@@ -4,8 +4,8 @@
   #omkvæd[
     Vi er ikke humanister \
     Vi har ikke samfundsfag \
-    Medicin er også noget for de andre #v(-2.5em) \ // Seb: dont ask me, det var sjovt for mig
-    #sl[Vi er ikke teologer og går ik' på Business School] #v(-2em)\
+    Medicin er også noget for de andre \
+    #sl[Vi er ikke teologer og går ik' på Business School] \
     og de andre synes ikke vi er cool
   ]
 
@@ -34,7 +34,7 @@
     Hey - hvem tror du dog du er? \
     Du er lige meget her \
     Men hvis de så har et spørgsmål til en vigtig statistik \
-    ved de godt at svaret er på #big[$"mat'matik"$]
+    ved de godt at svaret er på $m$$a$$t$$'$$m$$a$$t$$i$$k$
   ]
 
   #note[ 

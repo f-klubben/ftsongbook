@@ -10,17 +10,17 @@
     i Ballerup  \
     Men når jeg er her i mit gamle hus  \
     vejrer jeg jo fordums sus  \
-    Jeg drømmer mig tilbage til det gamle \
-      #h(2em) institut  \
+    Jeg drømmer mig tilbage til det gamle institut  \
     til de kurser som vi nød  \
-    til lærerpræk ved tavlen hvor vi talte \
-      #h(2em) hvert minut,  \
+    til lærerpræk ved tavlen hvor vi talte hvert minut,  \
     kaffestuens fredagsbrød  \
     En pause kunne strækkes meget længe,  \
     for kaf'maskin' var ganske uden fut  \
     Jo, vi forstod i kaffestuen at hænge  \
     på det gamle institut
   ]
+
+  #csplit
 
   #vers[
     Tænker på de fine F-klub-fester  \
@@ -31,11 +31,9 @@
     det er lidt hårdt  \
     For det er jo her at mit hjerte slår  \
     gennem mange skønne år  \
-    Jeg drømmer mig tilbage til det gamle \
-      #h(2em) institut  \
+    Jeg drømmer mig tilbage til det gamle institut  \
     Grupperummet hvor vi sad  \
-    Med pæne diskussioner uden gnist og \
-      #h(2em) uden krudt  \
+    Med pæne diskussioner uden gnist og uden krudt  \
     Kors i røven hvor vi gad  \
     Men samfundet er fuldt af direktioner   \
     der sørger for at freden den bli'r brudt  \

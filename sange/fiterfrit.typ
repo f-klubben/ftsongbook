@@ -25,6 +25,8 @@
     Så vi sender mer’ end vi får.
   ]
 
+  #csplit
+
   #vers[
     Brug emojis \
     I transaktioner \

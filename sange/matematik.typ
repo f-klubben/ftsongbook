@@ -22,6 +22,8 @@
     vil være reelle, men er det mon sandt?
   ]
 
+  #csplit
+
   #omkvæd[
     Ma´matik \
     Strider ofte mod en hver logik \

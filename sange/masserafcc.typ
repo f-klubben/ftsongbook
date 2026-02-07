@@ -29,6 +29,8 @@
     og taster temmeligt hårdt:
   ]
 
+  #csplit
+
   #omkvæd[
     Control X-S, og emacs gemmer nu. \
     Og Control C-C \

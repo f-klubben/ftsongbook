@@ -24,7 +24,7 @@
     Om at vi godt kan dele med dig (ish)
   ]
 
-  #note[ \ \ ]
+  #csplit
 
   #omkvæd[
     Vi tager ham om natten, med pose på hovedet \

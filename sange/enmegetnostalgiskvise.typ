@@ -5,10 +5,10 @@
     Se, hist i staden i midnatstimen \
     en stud.scientum i kam'ret sad \
     Mens vinved blegned af frostens rimen \
-    han lukked' bogen, ej mer han gad #v(-2.5em) \ // Hvis du er forundret
-    #sl[Thi han ku' Rudin og analysen] #v(-2.5em) \ // Rør det ikke
-    #sl[og gamle Kreisky, den ingeniør] #v(-2.5em) \
-    #sl[Men pædagoger gav fyren gysen] #v(-2.25em) \
+    han lukked' bogen, ej mer han gad \
+    #sl[Thi han ku' Rudin og analysen] \
+    #sl[og gamle Kreisky, den ingeniør] \
+    #sl[Men pædagoger gav fyren gysen] \
     #sl[Thi de har blå ble og andefø'r]
   ]
 
@@ -34,6 +34,8 @@
     med farvet ble og med andefø'r]
   ]
 
+  #csplit
+
   #vers[
     Som bifag valgte han EDB'en \
     med parserstakke og LIFO-list \
@@ -49,16 +51,12 @@
     På Mat 6 sku' han speciale skrive, \
     ideer havde han mange af \
     Men en af disse ku' ej det blive \
-    Thi studienævnet har sagt, man ska'
-    //#v(1mm) // Weird spacing fra det gamle latex
-    #v(-.9mm) // Ny weird spaceing
-    #small[#tt[Ta' lidt fra Rudin, lidt analyse \
-    #v(-.9mm)
-    og lidt fra Kreisky, den ingeniør \
-    #v(-.9mm)
-    Men pædagoger vil ud vi fryse \
-    #v(-.9mm)
-    Thi de har blå ble og andefø'r]]
+    Thi studienævnet har sagt, man ska' \
+    #context[#set par(spacing: 0.9em, leading: 0.5em)
+    #tt[#small[Ta' lidt fra Rudin, lidt analyse]] \
+    #tt[#small[og lidt fra Kreisky, den ingeniør]] \
+    #tt[#small[Men pædagoger vil ud vi fryse]] \
+    #tt[#small[Thi de har blå ble og andefø'r]]]
   ]
 
   #vers[

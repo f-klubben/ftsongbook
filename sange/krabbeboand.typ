@@ -31,6 +31,8 @@
     At man faktisk troede han var død
   ]
 
+  #csplit
+
   #vers[
     Han kom ham i en gryde \
     Og kogte ham i vand \
@@ -53,25 +55,33 @@
     Og nu er han faktisk rigtig død
   ]
 
-  #vers[
+  /* #vers[
     Og BoAnd var så sød \
-    På maven var han rød \
+    På maven var han blød \
     Han lå så stille \
-    Og nu er han faktisk rigtig død \
+    At man faktisk troede han var død \
     Og BoAnd var så sød \
     På maven var han rød \
     Han lå så stille \
     Og nu er han faktisk rigtig død
+  ] */
+
+  /* #vers[
+    Og BoAnd var så sød \
+    På maven var han blød \
+    Han lå så stille \
+    At man faktisk troede han var død \
+    Og BoAnd var så sød \
+    På maven var han rød \
+    Han lå så stille \
+    Og nu er han faktisk rigtig død
+  ] */
+
+  #vers[
+    _Og BoAnd var så sød ..._
   ]
 
   #vers[
-    Og BoAnd var så sød \
-    På maven var han rød \
-    Han lå så stille \
-    Og nu er han faktisk rigtig død \
-    Og BoAnd var så sød \
-    På maven var han rød \
-    Han lå så stille \
-    Og nu er han faktisk rigtig død
+    _Og BoAnd var så sød ..._
   ]
 ]
