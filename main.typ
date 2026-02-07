@@ -8,7 +8,7 @@
 
 #forside
 
-/* #forord
+#forord
 
 #indholdfortegnelse(cols: 2)
 
@@ -95,13 +95,13 @@
 #pagebreak()
 #kapitelside(titel: "Julesange", asset: "assets/eps2png/jule.png")
 #pagebreak()
-#kapitelside(titel: "Grå Sange", asset: "assets/eps2png/sex.png") */
+#kapitelside(titel: "Grå Sange", asset: "assets/eps2png/sex.png")
 
 
 
 
 
-#pagebreak()
+/* #pagebreak()
 #include "sange/alledatererfladeforporter.typ"
 #pagebreak()
 #include "sange/bingospilleren.typ"
@@ -173,4 +173,4 @@
 #include "sange/veteranensnostalgiskesang.typ"
 #pagebreak()
 #include "sange/vierikkehumanister.typ"
-
+ */

@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
 #sang("Du må få min C-compiler når jeg dør", subtext: [Simon Kongshøj, Jesper Brix Rosenkilde og Petur Olsen \ #h(4.5em) Mel: Du må få min gamle...], cols: 1)[
+  #note[#text(fill: luma(100))[16 vers over to sider!]]
+  
   #vers[
     :| Du må få min c-compiler når jeg dør, når jeg dør |: \
     Og hvis ld ter' sig tosset, ka' du dælme få den osse. \
