@@ -126,28 +126,34 @@
 // Note function - for annotations and instructions
 #let note(cols: 1, body) = {
     block(
-        width: 95%,
+        width: 100%,
         spacing: 0em,
-        if cols > 1 {
-            columns(cols, gutter: 1em, {
-                show linebreak: it => [ #parbreak() ]
-                set par(
-                    first-line-indent: 0em,
-                    hanging-indent: 0em,  // No hanging indent for notes
-                    spacing: config.par-spacing,
-                    leading: config.par-leading,
-                )
-                apply-song-text(body)
-            })
-        } else {
-            show linebreak: it => [ #parbreak() ]
-            set par(
-                first-line-indent: 0em,
-                hanging-indent: 0em,  // No hanging indent for notes
-                spacing: config.par-spacing,
-                leading: config.par-leading,
+        {
+            // Shift left to align with verse numbers
+            pad(
+                left: -(config.verse-indent + config.verse-gutter),
+                if cols > 1 {
+                    columns(cols, gutter: 1em, {
+                        show linebreak: it => [ #parbreak() ]
+                        set par(
+                            first-line-indent: 0em,
+                            hanging-indent: 0em,  // No hanging indent for notes
+                            spacing: config.par-spacing,
+                            leading: config.par-leading,
+                        )
+                        apply-song-text(body)
+                    })
+                } else {
+                    show linebreak: it => [ #parbreak() ]
+                    set par(
+                        first-line-indent: 0em,
+                        hanging-indent: 0em,  // No hanging indent for notes
+                        spacing: config.par-spacing,
+                        leading: config.par-leading,
+                    )
+                    apply-song-text(body)
+                }
             )
-            apply-song-text(body)
         }
     )
     v(config.song-element-spacing)
