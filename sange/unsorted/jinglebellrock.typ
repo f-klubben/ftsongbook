@@ -2,7 +2,7 @@
 
 // Hvis du tror denne sang er skreven forkert, er fordi den er det
 
-#sang("Jingle Bell Rock", subtext: "Bobby Helms", cols: 1)[
+#sang("Jingle Bell Rock", subtext: "Bobby Helms", cols: 2)[
   #vers[
     Jingle bell, jingle bell, jingle bell rock \
     Jingle bells swing and jingle bells ring	 \		
@@ -21,6 +21,8 @@
     What a bright time, it's the right time \
     To rock the night away
   ]
+
+  #csplit
 
   #vers[
     Jingle bell time is a swell time \

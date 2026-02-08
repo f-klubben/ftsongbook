@@ -14,6 +14,8 @@
     Hvis det er der, hvor man ikke bare \
     skal passe sig selv.
   ]
+
+  #csplit
   
   #vers[
     Ta' mig med til det store hav, \
@@ -22,12 +24,13 @@
     \-\- der hvor man ka' svæve.
   ]
 
+
   #note[Omkvæd: _Tag mig med til Joanna_ ...]
 
   #vers[
-    Ta' mig ud i den grønne skov,
-    \-\- der hvor man ka' spire.
-    Og ta' mig med ind i storbyens jag,
+    Ta' mig ud i den grønne skov, \
+    \-\- der hvor man ka' spire. \
+    Og ta' mig med ind i storbyens jag, \
     \-\- der hvor man ka' jage.
   ]
 

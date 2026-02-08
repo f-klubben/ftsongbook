@@ -23,6 +23,8 @@
     med en pilsner i snor
   ]
 
+  #csplit
+
   #note[Omkvæd: _I en lille båd ..._]
 
   #vers[

@@ -22,6 +22,8 @@
 
   #note[Omkvæd: _Tine pingvin du er min..._]
 
+  #csplit
+
   #vers[
     Hvorfor kan du ikke se det \
     At vi er samme slags \

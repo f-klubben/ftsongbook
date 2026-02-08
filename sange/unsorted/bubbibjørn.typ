@@ -15,6 +15,8 @@
     så'n er en bubbi bjørn 
   ]
 
+  #csplit
+
   #vers[
     Tryllerecepter gi'r bjørnene kræfter \
     de får deres styrke af supersaftens kraft \

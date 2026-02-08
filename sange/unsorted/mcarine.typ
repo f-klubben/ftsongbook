@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("McArine", subtext: "Shu-bi-dua", cols: 1)[
+#sang("McArine", subtext: "Shu-bi-dua", cols: 2)[
   #vers[
     A kender en skotte der hedder McArine, \
     han sejler en dejlig sø. \
@@ -24,6 +24,8 @@
     tolderen siger McArine ikke må, \
     men det vil McArine sgu da skide på.
   ]
+
+  #csplit
 
   #vers[
     Når han fyrer sækkepibe kommer slangen helt til live \

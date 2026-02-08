@@ -15,6 +15,8 @@
     Let It Snow! Let It Snow! Let It Snow!
   ]
 
+  #csplit
+
   #vers[
     When we finally kiss goodnight \
     How I'll hate going out in the storm! \

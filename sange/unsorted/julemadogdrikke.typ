@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Julemad og drikke---dur for nissen ikke", subtext: "Mel: På loftet sidder nissen", cols: 1)[
+#sang("Julemad og drikke---dur for nissen ikke", subtext: "Mel: På loftet sidder nissen", cols: 2)[
   #vers[
     På loftet sidder nissen med sin julemad, \
     et mægtigt fad---den gamle rad. \
@@ -17,6 +17,7 @@
     rosindusin med dioxin, \
     hans æggesnaps er sukker tilsat tartrazin, \
     der er pesticider i hans appelsin. \
+  #csplit
     Men rotterne de smisker, og de smasker, \
     de disker, og de dasker, \
     og uskyldsrene poterne de vasker. \

@@ -29,6 +29,8 @@
     og gnider sig på trynen
   ]
 
+  #csplit
+
   #vers[
     Buster kan noget andre ikke kan \
     han har nemlig lært at trylle \

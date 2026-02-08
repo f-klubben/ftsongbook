@@ -174,3 +174,91 @@
 #pagebreak()
 #include "sange/vierikkehumanister.typ"
  */
+
+/* #include "sange/unsorted/alleminevenner.typ"
+#pagebreak()
+#include "sange/unsorted/allesømændergladeforpiger.typ"
+#pagebreak()
+#include "sange/unsorted/brightsideoflife.typ"
+#pagebreak()
+#include "sange/unsorted/bubbibjørn.typ"
+#pagebreak()
+#include "sange/unsorted/buster.typ"
+#pagebreak()
+#include "sange/unsorted/costadelsol.typ"
+#pagebreak()
+#include "sange/unsorted/denrødetråd.typ"
+#pagebreak()
+#include "sange/unsorted/dereretølrigtland.typ"
+#pagebreak()
+#include "sange/unsorted/derernogetgaltidanmark.typ"
+#pagebreak()
+#include "sange/unsorted/dervarenskikkeligbondemand.typ"
+#pagebreak()
+#include "sange/unsorted/drunkensailor.typ"
+#pagebreak()
+#include "sange/unsorted/elskabssang.typ"
+#pagebreak()
+#include "sange/unsorted/enmandfaldtnedfraførstesal.typ"
+#pagebreak()
+#include "sange/unsorted/etbarnerfødtibethlehem.typ"
+#pagebreak()
+#include "sange/unsorted/forureningsvisen.typ"
+#pagebreak()
+#include "sange/unsorted/frujensenfratolne.typ"
+#pagebreak()
+#include "sange/unsorted/glædeligjul.typ"
+#pagebreak()
+#include "sange/unsorted/himmelhunden.typ"
+#pagebreak()
+#include "sange/unsorted/hjemmebrænderiet.typ"
+#pagebreak()
+#include "sange/unsorted/hvalenhvalborg.typ"
+#pagebreak()
+#include "sange/unsorted/ienlillebåddergynder.typ"
+#pagebreak()
+#include "sange/unsorted/imagine.typ"
+#pagebreak()
+#include "sange/unsorted/jegsåjulemandenkyssemor.typ"
+#pagebreak()
+#include "sange/unsorted/jinglebellrock.typ"
+#pagebreak()
+#include "sange/unsorted/joanna.typ"
+#pagebreak()
+#include "sange/unsorted/julebalinisseland.typ"
+#pagebreak()
+#include "sange/unsorted/julemadogdrikke.typ"
+#pagebreak()
+#include "sange/unsorted/kringsattaffiender.typ"
+#pagebreak()
+#include "sange/unsorted/lanftfrahjemmeudenøl.typ"
+#pagebreak()
+#include "sange/unsorted/letitsnow.typ"
+#pagebreak()
+#include "sange/unsorted/lilleprinsesse.typ"
+#pagebreak()
+#include "sange/unsorted/mcarine.typ"
+#pagebreak()
+#include "sange/unsorted/puffdenmagiskedrage.typ"
+#pagebreak()
+#include "sange/unsorted/påloftetsiddernissenmedsinjulegrød.typ"
+#pagebreak()
+#include "sange/unsorted/sandhans.typ"
+#pagebreak()
+#include "sange/unsorted/santaclausiscomingtotown.typ"
+#pagebreak()
+#include "sange/unsorted/sevenedigogdø.typ"
+#pagebreak()
+#include "sange/unsorted/skipperklementsmorgensang.typ"
+#pagebreak()
+#include "sange/unsorted/svantenslykkeligedag.typ"
+#pagebreak()
+#include "sange/unsorted/sørenbanjomus.typ"
+#pagebreak()
+#include "sange/unsorted/tinepingvin.typ"
+#pagebreak()
+#include "sange/unsorted/vendelboensfestsang.typ"
+#pagebreak()
+#include "sange/unsorted/viharlejrbålher.typ"
+#pagebreak()
+#include "sange/unsorted/whiskeyinthejar.typ" */

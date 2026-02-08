@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Danskens sande glæde", subtext: "Mel: Lille Lise", cols: 1)[
+#sang("Alle mine venner", cols: 2)[
   #vers[
     Der en dreng i mit kvarter, \
     der ser bedre ud end mig \
@@ -29,6 +29,8 @@
     og han er højere end far \
     så ham tør ingen slå
   ]
+
+  #csplit
 
   #omkvæd[
     Du sku' møde mine venner \

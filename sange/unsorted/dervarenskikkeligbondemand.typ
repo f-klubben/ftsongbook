@@ -2,12 +2,12 @@
 
 #sang("Der var en skikkelig bondemand...", subtext: "Mel: Den I ved nok ...", cols: 2)[
   #vers[
-  :| Der var en skikkelig bondemand, \
-  han skulle ud efter øl |: \
-  Han skulle ud efter øl, \
-  ja han skulle ud efter Carlsberg og \
-  Tuborg og THOR (uha) og tralala,  \
-  ja han skulle ud efter øl.
+    :| Der var en skikkelig bondemand, \
+    han skulle ud efter øl |: \
+    Han skulle ud efter øl, \
+    ja han skulle ud efter Carlsberg og \
+    Tuborg og THOR (uha) og tralala,  \
+    ja han skulle ud efter øl.
   ]
 
   #vers[
@@ -22,6 +22,8 @@
     og kyssed' hende på mund |: \
     mens manden var ud' efter øl ...
   ]
+
+  #csplit
 
   #vers[
     :| Men manden stod bag døren og så, \

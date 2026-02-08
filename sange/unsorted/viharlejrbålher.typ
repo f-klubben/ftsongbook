@@ -22,6 +22,8 @@
     har han myrdet ti.
   ]
 
+  #csplit
+
   #vers[
     Vor sherif er død \
     Det var Bill, der skød, \

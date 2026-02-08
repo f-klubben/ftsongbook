@@ -24,7 +24,7 @@
     Og du sang sonater i det klare måneskin.
   ]
 
-  #note[ \ ] // fill
+  #csplit
 
   #omkvæd[
     Åh, Luigi måneskin \

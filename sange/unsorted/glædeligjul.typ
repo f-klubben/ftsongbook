@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Glædelig jul", subtext: "Mel: Solskin ombord", cols: 1)[
+#sang("Glædelig jul", subtext: "Mel: Solskin ombord", cols: 2)[
   #vers[
     Vi nærmer os alle i denne tid, hvor hver mand \
     går rundt i butikker og lader sit \
@@ -28,6 +28,8 @@
     flettede hjerter i guld og sølv, \
     så fik de aldrig en glædelig jul.
   ]
+
+  #csplit
 
   #vers[
     Det tindrer i øjet på pige og dreng, \

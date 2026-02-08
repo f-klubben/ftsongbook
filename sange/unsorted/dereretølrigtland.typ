@@ -23,6 +23,8 @@
     Ja hver en bautasten
   ]
 
+  #csplit
+
   #vers[
     Den øl endnu er skøn \
     Og gid den aldrig vælter \

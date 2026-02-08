@@ -28,6 +28,8 @@
     og om lidt er kaffen klar.
   ]
 
+  #csplit
+
   #vers[
     Sang under brusebad. \
     Hun må vist være glad. \

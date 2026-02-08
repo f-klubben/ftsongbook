@@ -70,6 +70,8 @@
     Omkvæd: _Molak Molak MakMakMak ..._
   ]
 
+  #csplit
+
   #vers[
     Jeg gik i skoven med to pir' \
     den ene hun hed Musse, \

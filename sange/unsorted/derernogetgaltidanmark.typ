@@ -14,6 +14,8 @@
     noget der trænger til at skiftes ud
   ]
 
+  #csplit
+
   #vers[
     Jensen går ned til en å \
     for at fange sig en fisk \

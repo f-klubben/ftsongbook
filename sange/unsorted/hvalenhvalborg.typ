@@ -25,6 +25,7 @@
     kursen den var klar, \
     stolt du runded' Helsingør. \
     Og jeg fodred' dig med skidtfisk \
+  #csplit
     og kiks jeg havde i lommen. \
     Ka' du huske da du bøvsede,  \
     og flyvebåden sank? \
@@ -32,6 +33,7 @@
     en spoleorm har to. \
     Hvalborg -- havets Dario Fo
   ]
+
 
   #vers[
     Jeg har betalt en daler \

@@ -29,6 +29,8 @@
     _På Costa ..._
   ]
 
+  #csplit
+
   #vers[
     For øjeblikket har vi det herligt \
     her på Costa del Sol \

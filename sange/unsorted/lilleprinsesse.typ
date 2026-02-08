@@ -41,6 +41,8 @@
     det er en gammel vane
   ]
 
+  #csplit
+
   #vers[
     _Damer_: \
     :Store soldat \

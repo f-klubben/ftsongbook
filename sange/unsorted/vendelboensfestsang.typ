@@ -43,6 +43,8 @@
     Det er wi osse betinkle we.
   ]
 
+  #csplit
+
   #vers[
     Gawwen war jo nok wal dyer, \
     det vil de her kwejfolk styer, \

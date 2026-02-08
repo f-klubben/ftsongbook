@@ -26,6 +26,8 @@
     And the world will be as one
   ]
 
+  #csplit
+
   #vers[
     Imagine no possessions \
     I wonder if you can \

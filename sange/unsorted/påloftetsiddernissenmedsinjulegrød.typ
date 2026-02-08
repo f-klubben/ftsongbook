@@ -4,9 +4,9 @@
   #vers[
     På loftet sidder nissen med sin julegrød, \
     sin julegrød, så god og sød, \
-    han nikker, og han spiser, og han er så \ #h(1.5em) glad \
+    han nikker, og han spiser, og han er så glad \
     for julegrød er hans bedste mad. \
-    Men rundt omkring står alle de små \ #h(1.5em) rotter, \
+    Men rundt omkring står alle de små rotter, \
     og de skotter, og de skotter: \
     "Vi vil så gerne ha' lidt julegodter," \
     og de danser, danser rundt i ring.
@@ -17,6 +17,7 @@
     "Vil I nu se at komme væk, \
     for jeg vil ha' min julegrød i ro og fred, \
     og ingen, ingen vil jeg dele med." \
+  #csplit
     Men rotterne de hopper, og de danser, \
     og de svinser, og de svanser, \
     de kikker efter grøden, og de standser, \

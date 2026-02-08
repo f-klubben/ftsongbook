@@ -34,6 +34,8 @@
     Kast dine krefter inn:  \
     Døden skal tape!
   ]
+  
+  #csplit
 
   #vers[
     Edelt er mennesket, \

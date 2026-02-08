@@ -18,6 +18,8 @@
     sikken dulle sikken balle sikket numsehul
   ]
 
+  #csplit
+
   #vers[
     Endelig kommer dullen op af bølgen blå \
     jeg sigter med kanonen \

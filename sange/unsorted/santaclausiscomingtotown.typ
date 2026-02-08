@@ -21,6 +21,7 @@
     He knows when you're awake \
     He knows if you've been bad or good \
     So be good for goodness sake! \
+  #csplit
     O! You better watch out! \
     You better not cry \
     Better not pout \

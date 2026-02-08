@@ -24,6 +24,8 @@
 
   #note[Omkvæd: _Det syder af fusel og ..._ ]
 
+  #csplit
+
   #vers[
     Min far han brændte i 67 år,  \
     og så blev han snuppet af tolden i går, \

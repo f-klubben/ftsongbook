@@ -31,6 +31,8 @@
 
   #note[Omkvæd: _Bønder, tømrere, jydske ..._]
 
+  #csplit
+
   #vers[
     Rigdom si'r de er for de rige. \
     Biblen har noget andet at sige. \

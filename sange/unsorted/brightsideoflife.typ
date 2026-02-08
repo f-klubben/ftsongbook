@@ -36,8 +36,10 @@
     You must always face the curtain with a bow. \
     Forget about your sin, \
     give the audience a grin. \
-    Enjoy it, it's your last chance anyhow. So -
+    Enjoy it, it's your last chance anyhow. So
   ]
+
+  #csplit
 
   #omkvæd[
     _Always look on the bright side of death, \
@@ -56,25 +58,24 @@
   #omkvæd[
     _Always look on the bright side of life. \
     Always look on the right side of life._ \
-    #v(0em)
+    #v(1em)
     [Come on, Brian cheer up.] \
-    #v(0em)
     _Always look on the bright side of life. \
     Always look on the right side of life._ \
-    #v(0em)
+    #v(1em)
     [Worse things happen at sea, you know.] \
-    #v(0em)
+    #v(1em)
     _Always look on the bright side of life._ \
-    #v(0em)
+    #v(1em)
     [Worse things happen at sea, you know.] \
-    #v(0em)
+    #v(1em)
     _Always look on the bright side of life._ \
-    #v(0em)
+    #v(1em)
     [I mean, what do you have to lose? \
     You come from nothing, \
     you go back to nothing. \
     What have you lost? Nothing!] \
-    #v(0em)
+    #v(1em)
     (Moduler en tone op) \
     _Always look on the bright side of life._
   ]
