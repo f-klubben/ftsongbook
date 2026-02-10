@@ -31,7 +31,7 @@
     // Spacing configuration
     par-spacing: 0.65em,            // Line spacing WITHIN verses/chorus
     par-leading: 0.65em,            // Line height WITHIN verses/chorus
-    song-element-spacing: 1em,    // Space between all song elements (verses, chorus, notes)
+    song-element-spacing: 1em,      // Space between all song elements (verses, chorus, notes)
     omkvæd-label-gap: 0.0em,        // Space from "Omkvæd:" to its text
     // Document
     title: "F-Klubbens Sangbog",
@@ -336,8 +336,10 @@
         margin: (
             top: 1.5cm,
             bottom: 1.5cm,
-            left: 1.2cm,
-            right: 1.2cm,
+            /* left: 1.2cm,
+            right: 1.2cm, */
+            inside: 1.2cm,
+            outside: 1cm,
         ),
         numbering: none, // Disable default numbering
         footer: context {
