@@ -16,7 +16,7 @@
     Hvad skal vi gøre med poserne? \
     Det ikke vores skyld, det er bare F-otterne, \
     sagde facility... \
-    Om garagen. Om garagen
+    Om garagen. Om garagen.
   ]
 
   #vers[
@@ -25,7 +25,7 @@
     Nu glæder vi os til at bruge den igen, \
     før vi skal flytte fra vor hus og vor hjem. \
     Og dér kommer F-otterne vel næppe på besøg \
-    Igen... \
+    igen... \
     |: I garagen. I garagen. :| x2
   ]
 
