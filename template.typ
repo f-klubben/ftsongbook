@@ -487,7 +487,7 @@
                     let page-num = loc.page() - 1
                     link(
                         loc,
-                        [ #chapter.body #page-num \ ] ,
+                        [ #chapter.body, (*s. #page-num*) \ ] ,
                     )
                 }
             }
