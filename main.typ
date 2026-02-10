@@ -79,6 +79,8 @@
 #pagebreak()
 #include "sange/bingospilleren.typ"
 #include "sange/fottesangen.typ"
+#pagebreak()
+#include "sange/detkanmanc.typ"
 //#pagebreak()
 //#include "sange/veteranensnostalgiskesang-facology.typ"
 

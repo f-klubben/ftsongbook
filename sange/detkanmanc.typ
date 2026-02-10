@@ -1,0 +1,60 @@
+#import "//template.typ": *
+
+#sang("Det kan man C", subtext: "Morten Schou, 2026 - Mel: Røvervise (Vi lister os afsted på tå)", cols: 2)[
+  #vers[
+    Jeg finder datamaten frem \
+    når jeg skal programmere. \
+    Det er lidt svært, men bli'r først slemt, \
+    når det skal kompilere. \
+    Den kaster op og skaber sig. \
+    Jeg tænker ik' det rager mig \
+    om min parameter er const eller ej, \
+    eller navne må skrives med binde-streg.
+  ]
+  
+  #vers[
+    Jeg lærer lidt om modulo, \
+    forstår dog ikke resten. \
+    Bli'r jeg en rigtig datalog? \
+    Består jeg unit testen? \
+    Min nye ven ChatGPT \
+    fortæller mig, enhver kan C, \
+    at pointeren peger i ring på sig selv - \
+    induktionsalgoritmen bli'r triviel.
+  ]
+    
+  #vers[
+    Det går nok, hvis jeg skriver if, \
+    men hvem er hend' der Else? \
+    Kan nogen give mig et fif? \
+    Betingelser er trælse. \
+    De vigtigste får !udråbstegn \
+    men så' der noget andet i vej'n. \
+    Jeg bryder mig ik' om programmer med breaks, \
+    nu kan switchene udføre hver en case.
+  ]
+
+  #csplit
+    
+  #vers[
+    Programmet itererer ej \
+    min while er foruløkket, \
+    Kan rekursionen redde mig? \
+    Er linjen galt indrykket? \
+    Funktionen spørger kun sig selv, \
+    men fortsætter alligevel. \
+    Den hopper af kæden og lister afsted. \
+    Nu' der rod i mit træ uden fejlbesked.
+  ]
+    
+  #vers[
+    Min aflevering blev for lang, \
+    har glemt nul-terminering. \
+    Jeg havde ellers denne gang \
+    brugt tid på kommentering. \
+    Jeg caster typerne i flæng, \
+    men ASCII teksten er for streng. \
+    De siger det blot er en pointer til char, \
+    allokeret med malloc på heap - hurra!??
+  ]
+]
