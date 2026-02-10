@@ -80,7 +80,7 @@
 #include "sange/bingospilleren.typ"
 #include "sange/fottesangen.typ"
 #pagebreak()
-#include "sange/detkanmanc.typ"
+#include "sange/derkanmanc.typ"
 //#pagebreak()
 //#include "sange/veteranensnostalgiskesang-facology.typ"
 
