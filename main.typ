@@ -78,6 +78,7 @@
 #include "sange/resultateraffklubbensafgangsprøve.typ"
 #pagebreak()
 #include "sange/bingospilleren.typ"
+#include "sange/fottesangen.typ"
 //#pagebreak()
 //#include "sange/veteranensnostalgiskesang-facology.typ"
 

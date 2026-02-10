@@ -6,6 +6,7 @@ TODO:
 - kapitel tal-headings F G H osv.
 - forord
 - alternate covers
+- Create HTML5 artifact using PDF.js
 
 
 ## Req.
