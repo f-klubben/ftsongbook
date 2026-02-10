@@ -2,11 +2,11 @@
 
 #sang("Fottesangen", subtext: "Lorenzen, 2025 - Mel: Midt om natten af Kim Larsen", cols: 1)[
   #vers[
-    F-otterne kom helt uventet af dem, i garagen.
-    Så skraldet og panten var på den igen, i garagen.
-    De gnavede sig gennem pant-poserne,
-    så trillede på jorden alle dåserne.
-    Oh Ja...
+    F-otterne kom helt uventet af dem, i garagen. \
+    Så skraldet og panten var på den igen, i garagen. \
+    De gnavede sig gennem pant-poserne, \
+    så trillede på jorden alle dåserne. \
+    Oh Ja... \
     I garagen. I garagen.
   ]
 
