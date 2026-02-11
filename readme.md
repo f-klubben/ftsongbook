@@ -1,13 +1,6 @@
+# F-Klubbens sangbog skreven i Typst (WIP)
 
 typst 0.14.2
-
-TODO:
-- kapitler
-- kapitel tal-headings F G H osv.
-- forord
-- alternate covers
-- Create HTML5 artifact using PDF.js
-
 
 ## Req.
 

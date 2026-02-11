@@ -1,5 +1,11 @@
 // A5 Sangbog template, made by naitsa/lorenzen, and the typst gods (some chat)
 
+//TODO:
+//- kapitler
+//- kapitel tal-headings F G H osv.
+//- forord
+//- alternate covers
+
 // ============================================================================
 // CONFIGURATION
 // ============================================================================
