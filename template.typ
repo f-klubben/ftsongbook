@@ -1,5 +1,4 @@
 // A5 Sangbog template, made by naitsa/lorenzen, and the typst gods (some chat)
-// Refactored for better structure with consistent zero-indexing and working hanging indents
 
 // ============================================================================
 // CONFIGURATION
