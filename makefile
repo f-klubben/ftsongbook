@@ -6,6 +6,7 @@ DPI := 300
 PNG_DIR := $(INPUT_DIR)/eps2png
 SVG_DIR := $(INPUT_DIR)/eps2svg
 PDF_DIR := $(INPUT_DIR)/eps2pdf
+OUTPUT_DIR := output
 
 # Find all EPS files
 EPS_FILES := $(wildcard $(INPUT_DIR)/*.eps)
@@ -48,18 +49,18 @@ $(PDF_DIR)/%.pdf: $(INPUT_DIR)/%.eps | $(PDF_DIR)
 	@echo "Converting $< to $@"
 	@magick $< $@
 
-# Precursor targets
+# Targets
 .PHONY: kontinuertpdf
 kontinuertpdf: png
 	@echo "Compiling main.typ (kontinuert mode)"
-	@mkdir -p output
-	@typst c --font-path fonts --ignore-system-fonts main.typ output/sangbog.pdf
+	@mkdir -p $(OUTPUT_DIR)
+	@typst c --font-path fonts --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 
 .PHONY: bookletpdf
 bookletpdf: png
 	@echo "Compiling main.typ (booklet mode)"
-	@mkdir -p output
-	@typst c --font-path fonts --ignore-system-fonts main.typ output/sangbog.pdf
+	@mkdir -p $(OUTPUT_DIR)
+	@typst c --font-path fonts --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 	# add --signature=64, to change signature
 	@LC_ALL=C LANG=C pdfbook2 --paper a4 -o 10 -i 10 -t 10 -b 10 output/sangbog.pdf
 
@@ -71,8 +72,8 @@ watch: png
 # Clean targets
 .PHONY: clean
 clean:
-	@echo "Removing all conversion directories"
-	@rm -rf $(PNG_DIR) $(SVG_DIR) $(PDF_DIR)
+	@echo "Removing all conversion directories and output"
+	@rm -rf $(PNG_DIR) $(SVG_DIR) $(PDF_DIR) $(OUTPUT_DIR)
 
 .PHONY: clean-png
 clean-png:
@@ -88,6 +89,11 @@ clean-svg:
 clean-pdf:
 	@echo "Removing $(PDF_DIR)"
 	@rm -rf $(PDF_DIR)
+
+.PHONY: clean-output
+clean-output:
+	@echo "Removing $(OUTPUT_DIR)"
+	@rm -rf $(OUTPUT_DIR)
 
 # Help target
 .PHONY: help
