@@ -30,7 +30,7 @@
     og det' vådt, det edderbrodereme vådt
   ]
 
-  #note[Omkvæd: _Uhh sikken ..._]
+  #omkvæd(inline: true)[_Uhh sikken ..._]
 
   #vers[
     Op og tørre kroppen \
@@ -40,5 +40,5 @@
     den er edderbrodereme stor
   ]
 
-  #note[Omkvæd: _Uhh sikken ..._]
+  #omkvæd(inline: true)[_Uhh sikken ..._]
 ]

@@ -22,8 +22,8 @@
     kulsorte hår på hovedet.
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -33,8 +33,8 @@
     og killed' hende i siden
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -44,8 +44,8 @@
     og fedtet, flosset kittel
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -55,8 +55,8 @@
     at kysse dine kinder
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -66,8 +66,8 @@
     i mine lange røjser
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #csplit
@@ -79,8 +79,8 @@
     hun had' en mægtig hat på
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -90,8 +90,8 @@
     når de skal til at spise
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -101,8 +101,8 @@
     tog hun mig li' på ordet
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -112,8 +112,8 @@
     når nu de har det hvide
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[
@@ -123,8 +123,8 @@
     skam næppe op til halsen
   ]
 
-  #note[
-    Omkvæd: _Molak Molak MakMakMak ..._
+  #omkvæd(inline: true)[
+    _Molak Molak MakMakMak ..._
   ]
 
   #vers[

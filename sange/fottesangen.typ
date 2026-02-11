@@ -29,8 +29,8 @@
     |: I garagen. I garagen. :| x2
   ]
 
-  #note[
-    #h(1.5em) _|: Åh, vor' dukse, håber i læ-ser jeres mails. :| x6 \
-    #h(1.5em) Åh..._
+  #vers[
+    _|: Åh, vor' dukse, håber i læ-ser jeres mails. :| x6 \
+    Åh..._
   ]
 ]

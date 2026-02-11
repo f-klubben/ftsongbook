@@ -35,7 +35,7 @@
     spiller den fra Porgy and Bess.
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Gamle McArine har..._
   ]
 

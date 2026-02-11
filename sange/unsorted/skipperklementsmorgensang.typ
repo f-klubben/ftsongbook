@@ -20,7 +20,7 @@
     rustninger, skjolde og jorder og mønt.
   ]
 
-  #note[Omkvæd: _Bønder, tømrere, jydske ..._]
+  #omkvæd(inline: true)[_Bønder, tømrere, jydske ..._]
 
   #vers[
     Mennesker bytter de ud for penge, \
@@ -29,7 +29,7 @@
     jorden som havde de skabt den selv.
   ]
 
-  #note[Omkvæd: _Bønder, tømrere, jydske ..._]
+  #omkvæd(inline: true)[_Bønder, tømrere, jydske ..._]
 
   #csplit
 
@@ -40,7 +40,7 @@
     hented just ikke hos dem sin løn.
   ]
 
-  #note[Omkvæd: _Bønder, tømrere, jydske ..._]
+  #omkvæd(inline: true)[_Bønder, tømrere, jydske ..._]
 
   #vers[
     Kirkens sorte skadesværme \
@@ -49,8 +49,8 @@
     møde nu skal den danske mand.
   ]
 
-  #note[Omkvæd: _Bønder, tømrere, jydske ..._]
-
+  #omkvæd(inline: true)[_Bønder, tømrere, jydske ..._]
+  
   #vers[
     Hanen har galet trende gange; \
     stå nu fast for vi er de mange. \
@@ -58,5 +58,5 @@
     Rigdommen knægted os uden at slås.
   ]
 
-  #note[Omkvæd: _Bønder, tømrere, jydske ..._]
+  #omkvæd(inline: true)[_Bønder, tømrere, jydske ..._]
 ]

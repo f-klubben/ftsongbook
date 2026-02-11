@@ -26,7 +26,7 @@
     Da jeg sad der i bilen, tænkte jeg på manden igen.
   ]
 
-  #note[Omkvæd: _Hej du spillemand kan du sige ..._]
+  #omkvæd(inline: true)[_Hej du spillemand kan du sige ..._]
 
   #vers[
     For ham var sagen jo så vigtig \
@@ -35,5 +35,5 @@
     På om hunde der dør får plads hos himlens far
   ]
 
-  #note[Omkvæd: _Hej du spillemand kan du sige ..._]
+  #omkvæd(inline: true)[_Hej du spillemand kan du sige ..._]
 ]

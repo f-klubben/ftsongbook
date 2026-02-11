@@ -25,7 +25,7 @@
   ]
 
 
-  #note[Omkvæd: _Tag mig med til Joanna_ ...]
+  #omkvæd(inline: true)[_Tag mig med til Joanna_ ...]
 
   #vers[
     Ta' mig ud i den grønne skov, \
@@ -34,5 +34,5 @@
     \-\- der hvor man ka' jage.
   ]
 
-  #note[Omkvæd: _Tag mig med til Joanna_ ...]
+  #omkvæd(inline: true)[_Tag mig med til Joanna_ ...]
 ]

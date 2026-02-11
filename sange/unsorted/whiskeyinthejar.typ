@@ -29,7 +29,7 @@
     for they always lie so easy
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Musha ringum ..._
   ]
 
@@ -44,7 +44,7 @@
     to get ready for the slaughter
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Musha ringum ..._
   ]
 
@@ -59,7 +59,7 @@
     so a prisoner I was taken
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Musha ringum ..._
   ]
 
@@ -76,7 +76,7 @@
     to this tight fisted town
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Musha ringum ..._
   ]
 
@@ -91,7 +91,7 @@
     than me darlin' sportin' Jenny
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Musha ringum ..._
   ]
 
@@ -106,7 +106,7 @@
     in the mornin' oh so early
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _Musha ringum ..._
   ]
 

@@ -47,6 +47,4 @@
     Livet  er ikke det værste man har \
     og om lidt er kaffen klar.
   ]
-
-  #note[ \ \ \ ] //vfill
 ]

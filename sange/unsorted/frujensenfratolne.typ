@@ -21,8 +21,8 @@
     ja, så brugte han pengene til øl og pi'r.
   ]
 
-  #note[
-    Omkvæd: #em[Kom så tu-ra-ja ... ]
+  #omkvæd(inline: true)[
+    #em[Kom så tu-ra-ja ... ]
   ]
 
   #vers[
@@ -32,8 +32,8 @@
     da hun læste, at Kresten nu var blevet smidt ud.
   ]
 
-  #note[
-    Omkvæd: #em[Kom så tu-ra-ja ... ]
+  #omkvæd(inline: true)[
+    #em[Kom så tu-ra-ja ... ]
   ]
 
   #vers[
@@ -45,8 +45,8 @@
     fik jeg meget hurtigt lært, jeg blev en værre buk".
   ]
 
-  #note[
-    Omkvæd: #em[Kom så tu-ra-ja ... ]
+  #omkvæd(inline: true)[
+    #em[Kom så tu-ra-ja ... ]
   ]
 
   #vers[
@@ -56,7 +56,7 @@
     og alligevel gå i skole den næste dag.
   ]
 
-  #note[
-    Omkvæd: #em[Kom så tu-ra-ja ... ]
+  #omkvæd(inline: true)[
+    #em[Kom så tu-ra-ja ... ]
   ]
 ]

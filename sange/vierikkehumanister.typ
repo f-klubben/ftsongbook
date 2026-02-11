@@ -25,8 +25,8 @@
     er de blevet meget glade for #em[fysik]
   ]
   
-  #note[ 
-    Omkvæd: _Vi er ikke humanister ..._ 
+  #omkvæd(inline: true)[ 
+    _Vi er ikke humanister ..._ 
   ]
 
   #vers[
@@ -37,7 +37,7 @@
     ved de godt at svaret er på $m$$a$$t$$'$$m$$a$$t$$i$$k$
   ]
 
-  #note[ 
-    Omkvæd: _Vi er ikke humanister ..._ 
+  #omkvæd(inline: true)[ 
+    _Vi er ikke humanister ..._ 
   ]
 ]

@@ -20,7 +20,7 @@
     Der sku' gå samme vej 
   ]
 
-  #note[Omkvæd: _Tine pingvin du er min..._]
+  #omkvæd(inline: true)[_Tine pingvin du er min..._]
 
   #csplit
 

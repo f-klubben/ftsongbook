@@ -25,7 +25,7 @@
     Med pension hjemmefra i reserve
   ]
   
-  #omkvæd[
+  #omkvæd(inline: true)[
     _På Costa ..._
   ]
 
@@ -52,7 +52,7 @@
     og skvadderhoveder gasse
   ]
 
-  #omkvæd[
+  #omkvæd(inline: true)[
     _På Costa ..._
   ]
 

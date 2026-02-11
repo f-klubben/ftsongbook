@@ -196,55 +196,85 @@
 }
 
 // Chorus function with hanging indent (default behavior)
-#let omkvæd(body) = {    
-    block(
-        width: 95%,
-        spacing: 0em,
-        {
-            // "Omkvæd:" label - positioned to the left like verse numbers
-            block(
-                width: 100%,
-                spacing: 0em,
-                {
-                    place(
-                        dx: -(config.verse-indent + config.verse-gutter),
-                        dy: 0em,
+#let omkvæd(inline: false, body) = {
+    if inline {
+        // Inline mode - behaves like note with "Omkvæd: " prefix
+        block(
+            width: 100%,
+            spacing: 0em,
+            {
+                // Shift left to align with verse numbers
+                pad(
+                    left: -(config.verse-indent + config.verse-gutter),
+                    {
+                        show linebreak: it => [ #parbreak() ]
+                        set par(
+                            first-line-indent: 0em,
+                            hanging-indent: 0em,
+                            spacing: config.par-spacing,
+                            leading: config.par-leading,
+                        )
                         text(
                             font: config.song-text-font,
                             size: config.song-text-size,
                             weight: config.song-text-weight,
-                        )[Omkvæd:]
-                    )
-                    
-                    // Invisible spacer to push content down past the label
-                    v(1em)
-                }
-            )
-            
-            v(config.omkvæd-label-gap)
-            
-            // Content with hanging indent - starts at same position as verse text
-            block(
-                width: 100%,
-                spacing: 0em,
-                {
-                    show linebreak: it => [ #parbreak() ]
-                    set par(
-                        hanging-indent: config.hanging-indent,
-                        spacing: config.par-spacing,
-                        leading: config.par-leading,
-                    )
-                    text(
-                        font: config.song-text-font,
-                        size: config.song-text-size,
-                        weight: config.song-text-weight,
-                    )[#body]
-                }
-            )
-        }
-    )
-    
-    v(config.song-element-spacing)
+                        )[Omkvæd: #body]
+                    }
+                )
+            }
+        )
+        v(config.song-element-spacing)
+    } else {
+        // Normal mode - full chorus with label on left
+        block(
+            width: 95%,
+            spacing: 0em,
+            {
+                // "Omkvæd:" label - positioned to the left like verse numbers
+                block(
+                    width: 100%,
+                    spacing: 0em,
+                    {
+                        place(
+                            dx: -(config.verse-indent + config.verse-gutter),
+                            dy: 0em,
+                            text(
+                                font: config.song-text-font,
+                                size: config.song-text-size,
+                                weight: config.song-text-weight,
+                            )[Omkvæd:]
+                        )
+                        
+                        // Invisible spacer to push content down past the label
+                        v(1em)
+                    }
+                )
+                
+                v(config.omkvæd-label-gap)
+                
+                // Content with hanging indent - starts at same position as verse text
+                block(
+                    width: 100%,
+                    spacing: 0em,
+                    {
+                        show linebreak: it => [ #parbreak() ]
+                        set par(
+                            hanging-indent: config.hanging-indent,
+                            spacing: config.par-spacing,
+                            leading: config.par-leading,
+                        )
+                        text(
+                            font: config.song-text-font,
+                            size: config.song-text-size,
+                            weight: config.song-text-weight,
+                        )[#body]
+                    }
+                )
+            }
+        )
+        
+        v(config.song-element-spacing)
+    }
 }
 
 // Song function - main container for songs

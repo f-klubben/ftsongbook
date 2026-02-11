@@ -24,7 +24,7 @@
     med et hjerte der står kun dit navn
   ]
 
-  #note[Omkvæd: _Ved sid'n af ..._]
+  #omkvæd(inline: true)[_Ved sid'n af ..._]
 
   #vers[
     Alle sømænd tager ud i det fjerne \
@@ -33,5 +33,5 @@
     er i tanken jeg altid hos dig
   ]
 
-  #note[Omkvæd: _Og lidt hos ..._]
+  #omkvæd(inline: true)[_Og lidt hos ..._]
 ]

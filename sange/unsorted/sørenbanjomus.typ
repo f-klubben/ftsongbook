@@ -23,7 +23,7 @@
     en munter lille banjosang \
   ]
 
-  #note[Omkvæd: _Skillemadinkadinkadu ..._]
+  #omkvæd(inline: true)[_Skillemadinkadinkadu ..._]
 
   #vers[
     Kom med sagde Søren Banjomus, de sover begge to \

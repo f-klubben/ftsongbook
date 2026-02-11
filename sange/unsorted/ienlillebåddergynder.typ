@@ -25,7 +25,7 @@
 
   #csplit
 
-  #note[Omkvæd: _I en lille båd ..._]
+  #omkvæd(inline: true)[_I en lille båd ..._]
 
   #vers[
     Prøv at mærke hvor luften sitrer \
@@ -37,5 +37,5 @@
     tørre fisk på en rist fra et gammelt komfur
   ]
 
-  #note[Omkvæd: _I en lille båd ..._]
+  #omkvæd(inline: true)[_I en lille båd ..._]
 ]

@@ -31,8 +31,8 @@
 
   #csplit
 
-  #note[ 
-    Omkvæd: _Den starter med Insertion Sort ..._ 
+  #omkvæd(inline: true)[ 
+    _Den starter med Insertion Sort ..._ 
   ]
 
   #vers[
@@ -45,8 +45,8 @@
     _Var det seg fault?_
   ]
 
-  #note[ 
-    Omkvæd: _Den starter med Insertion Sort ..._ 
+  #omkvæd(inline: true)[ 
+    _Den starter med Insertion Sort ..._ 
   ]
 
   #vers[

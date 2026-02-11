@@ -27,7 +27,7 @@
 
   #csplit
 
-  #note[Omkvæd: _For Kildekoden den ..._]
+  #omkvæd(inline: true)[_For Kildekoden den ..._]
 
   #vers[
     Han opdatered' vor lille $pi$, \
@@ -37,7 +37,7 @@
     På Cassiopeia til FooBar.
   ]
 
-  #note[Omkvæd: _For Kildekoden den ..._]
+  #omkvæd(inline: true)[_For Kildekoden den ..._]
 
   #vers[
     Så Bo han fik sig et rigtigt job, \
@@ -47,5 +47,5 @@
     På Cassiopeia til FooBar.
   ]
 
-  #note[Omkvæd: _For Kildekoden den ..._]
+  #omkvæd(inline: true)[_For Kildekoden den ..._]
 ]

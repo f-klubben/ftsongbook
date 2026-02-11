@@ -22,7 +22,7 @@
     brænderiet røg i luften med et ordentligt brag.
   ]
 
-  #note[Omkvæd: _Det syder af fusel og ..._ ]
+  #omkvæd(inline: true)[_Det syder af fusel og ..._ ]
 
   #csplit
 
@@ -33,7 +33,7 @@
     og sat produktionen i gang i en fart.
   ]
 
-  #note[Omkvæd: _Det syder af fusel og ..._ ]
+  #omkvæd(inline: true)[_Det syder af fusel og ..._ ]
 
   #vers[
     Det hænder jeg selv ta'r en ordentlig syp, \
@@ -42,7 +42,7 @@
     men jeg ved, det er sprit på omkring 60 procent.
   ]
 
-  #note[Omkvæd: _Det syder af fusel og ..._ ]
+  #omkvæd(inline: true)[_Det syder af fusel og ..._ ]
 
   #vers[
     Hvis du har fået lyst til at smage det selv,
@@ -51,5 +51,5 @@
     så får du en sjat af min livseliksir.
   ]
 
-  #note[Omkvæd: _Det syder af fusel og ..._ ]
+  #omkvæd(inline: true)[_Det syder af fusel og ..._ ]
 ]
