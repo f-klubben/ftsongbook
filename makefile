@@ -52,13 +52,16 @@ $(PDF_DIR)/%.pdf: $(INPUT_DIR)/%.eps | $(PDF_DIR)
 .PHONY: kontinuertpdf
 kontinuertpdf: png
 	@echo "Compiling main.typ (kontinuert mode)"
-	@typst c --font-path fonts --ignore-system-fonts main.typ
+	@mkdir -p output
+	@typst c --font-path fonts --ignore-system-fonts main.typ output/sangbog.pdf
 
 .PHONY: bookletpdf
 bookletpdf: png
 	@echo "Compiling main.typ (booklet mode)"
-	@typst c --font-path fonts --ignore-system-fonts main.typ
-	@echo "TODO: Add booklet-specific post-processing"
+	@mkdir -p output
+	@typst c --font-path fonts --ignore-system-fonts main.typ output/sangbog.pdf
+	# add --signature=64, to change signature
+	@LC_ALL=C LANG=C pdfbook2 --paper a4 -o 10 -i 10 -t 10 -b 10 output/sangbog.pdf
 
 .PHONY: watch
 watch: png

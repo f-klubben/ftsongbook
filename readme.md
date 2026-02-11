@@ -7,9 +7,11 @@ typst 0.14.2
 - ImageMagick
 - GhgostScript (used by ImageMagick)
 - Typst
+- texlive-binextra (for pdfbook2)
+- libpaper (because, because)
 
 ```bash
-sudo pacman -S typst imagemagick ghostscript
+sudo pacman -S typst imagemagick ghostscript texlive-binextra libpaper; echo "a4" | sudo tee /etc/papersize
 ```
 
 ## Usage
