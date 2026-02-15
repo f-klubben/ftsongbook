@@ -160,6 +160,8 @@
 // Veteranens nostalgiske sang, tideligere FVJ udgave
 //#include "sange/veteranensnostalgiskesang-facology.typ"
 
+// G Sektionen
+#nynummerpræfiks("G")
 
 #kapitelside(titel: "Lejerbålsange", asset: "assets/eps2png/lejrbaal.png")
 #pagebreak()
@@ -185,6 +187,10 @@
 #pagebreak()
 #include "sange/unsorted/viharlejrbålher.typ"
 #include "sange/unsorted/sevenedigogdø.typ"
+
+// H sektion
+#nynummerpræfiks("H")
+
 
 #kapitelside(titel: "Festsange", asset: "assets/eps2png/dream.png")
 #pagebreak()
@@ -221,6 +227,9 @@
 #pagebreak()
 #include "sange/specielle/dereretølrigtland.typ" // F-klub?
 
+// J sektion
+#nynummerpræfiks("J")
+
 #kapitelside(titel: "Julesange", asset: "assets/eps2png/jule.png")
 #pagebreak()
 
@@ -236,6 +245,9 @@
 #pagebreak()
 #include "sange/engelske/santaclausiscomingtotown.typ"
 #include "sange/unsorted/julebalinisseland.typ"
+
+// K sektion
+#nynummerpræfiks("K")
 
 #kapitelside(titel: "Grå Sange", asset: "assets/eps2png/sex.png")
 #pagebreak()

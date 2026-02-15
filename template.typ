@@ -22,7 +22,7 @@
     song-title-size: 14pt,
     subtext-text-size: 9pt,
     song-text-size: 8pt,
-    indhold-entry-size: 8pt,
+    indhold-entry-size: 9pt,
     // Weight
     main-text-weight: "regular",
     song-title-weight: "bold",
@@ -79,9 +79,33 @@
     weight: config.song-text-weight,
 )[#body]
 
-// ============================================================================
+// Song number prefix management
+#let song-number-prefix = state("song-number-prefix", "")
+
+#let nynummerpræfiks(prefix) = {
+    song-number-prefix.update(prefix)
+    counter("song").update(0)
+}
+
+// Helper function to display song number with prefix
+#let display-song-number() = context {
+    let prefix = song-number-prefix.get()
+    let number = counter("song").get().first()
+    if prefix != "" {
+        [#prefix#number]
+    } else {
+        [#number]
+    }
+}
+
+// Function to set the song counter to a specific number
+#let sætsangnummer(number) = {
+    counter("song").update(number)
+}
+
+// ==============
 // LAYOUT HELPERS
-// ============================================================================
+// ==============
 
 // Force a column break - moves to next column
 #let csplit = colbreak()
@@ -297,7 +321,7 @@
             layout(size => {
                 let title-with-number = [
                     #text(font: config.song-title-font, size: config.song-title-size, weight: config.song-title-weight)[
-                        #context counter("song").display(). #title
+                         #display-song-number(). #title
                     ] #song-label
                 ]
 
@@ -456,7 +480,6 @@
     )[Indholdsfortegnelse])
 
     v(0.5cm)
-    set par(leading: 0.30em)
 
     columns(cols, gutter: 0.5cm, {
         context {
@@ -508,12 +531,19 @@
                     if key == "non-letter" { "0" } else { key }
                 })
 
+            // Set paragraph spacing for all entries
+            set par(
+                leading: 0.30em,
+                spacing: 0.30em,
+                hanging-indent: 1em,
+            )
+
             // Print each group
             let first_group = true
             for group_key in group_keys {
                 // Add spacing between groups (except before first group)
                 if not first_group {
-                    v(0.1em)
+                    v(1em)
                 }
                 first_group = false
 
@@ -522,10 +552,8 @@
                     let loc = chapter.location()
                     // Zero-indexed page numbering (single subtraction)
                     let page-num = loc.page() - 1
-                    link(
-                        loc,
-                        [ #chapter.body, (*s. #page-num*) \ ] ,
-                    )
+                    
+                    par[#link(loc, [#chapter.body, (*s. #page-num*)])]
                 }
             }
         }
