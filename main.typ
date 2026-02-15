@@ -4,7 +4,7 @@
     title: "F-Klubbens Fabelagtige Sangbog"
 )
 
-#set block(stroke: 2pt + red)
+//#set block(stroke: 2pt + red)
 
 #forside
 
