@@ -373,8 +373,10 @@
             bottom: 1.5cm,
             /* left: 1.2cm,
             right: 1.2cm, */
-            inside: 1.5cm,
-            outside: .5cm,
+            /* inside: 1.5cm,
+            outside: .5cm, */
+            inside: 1cm,
+            outside: 1cm,
         ),
         numbering: none, // Disable default numbering
         footer: context {

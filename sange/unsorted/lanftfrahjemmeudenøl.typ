@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Langt fra hjemmet uden øl", subtext: "Mel: Stenka Rasin", cols: 2)[
+#sang("Langt fra hjemmet uden øl", subtext: [Stenka Rasin på dansk Mel: Russisk Trad. ], cols: 2)[
   #vers[
     Faret vild fra karavanen \
     soveposen fyldt med (møl). \

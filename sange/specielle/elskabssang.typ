@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
 #sang("Elskabssang", subtext: "Mel: I en kælder sort som kul", cols: 2)[
+  #note[Set "S" foran alt]
+
   #vers[
     elskabsvenner, oleklart, \
     tadig mukkest unger. \

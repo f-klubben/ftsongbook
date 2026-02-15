@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Forureningsvisen", subtext: "Mel: Danmark nu blunder", cols: 2)[
+#sang("Forureningsvisen", subtext: "Halfdan Rasmussen (digter), 1971 - Mel: Danmark nu blunder", cols: 2)[
   #vers[
     Danmark nu blunder den lyse nat \
     bagved din seng, når du sover. \
