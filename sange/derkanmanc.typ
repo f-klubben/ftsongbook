@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
 #sang("Der kan man C", subtext: "Morten Schou, 2026 - Mel: Røvervise (Vi lister os afsted på tå)", cols: 2)[
+  #note[(Ikke en del af pensum)]
+  
   #vers[
     Jeg finder datamaten frem \
     når jeg skal programmere. \
