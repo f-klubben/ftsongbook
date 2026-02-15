@@ -1,8 +1,7 @@
 // A5 Sangbog template, made by naitsa/lorenzen, and the typst gods (some chat)
+// Inspired by Tågekamemrt rus tempalte from the 90's and more modern work
 
 //TODO:
-//- kapitler
-//- kapitel tal-headings F G H osv.
 //- forord
 //- alternate covers
 
@@ -11,34 +10,66 @@
 // =============
 
 #let config = (
-    // Font
-    main-font: "Source Serif 4",
-    song-title-font: "Source Sans 3",
-    subtext-font: "Source Serif 4",
-    song-text-font: "Source Serif 4",
-    indhold-entry-font: "Source Serif 4",
-    // Size
-    main-text-size: 10pt,
-    song-title-size: 14pt,
-    subtext-text-size: 9pt,
-    song-text-size: 8pt,
-    indhold-entry-size: 9pt,
+    // Font families (3 fonts)
+    body-font: "Source Serif 4",      // For all body text, subtext, song text
+    heading-font: "Source Sans 3",    // For all headings (Indholdsfortegnelse, chapter titles)
+    title-font: "Source Sans 3",      // For song titles
+    
+    // Font sizes (4 sizes)
+    body-size: 8pt,                   // Song lyrics, notes, subtext
+    toc-size: 9pt,                    // Table of contents entries
+    title-size: 14pt,                 // Song titles
+    heading-size: 14pt,               // Section headings (Indholdsfortegnelse, chapters)
+    
     // Weight
-    main-text-weight: "regular",
-    song-title-weight: "bold",
-    subtext-text-weight: "regular",
-    song-text-weight: "medium",
-    indhold-entry-weight: "regular",
-    // Layout
-    verse-indent: 0.5em,
-    verse-gutter: 0.75em,
-    hanging-indent: 1.5em,
+    body-weight: "medium",            // Song text weight
+    subtext-weight: "regular",        // Subtext weight
+    title-weight: "bold",             // Song title weight
+    heading-weight: "bold",           // Section heading weight
+    toc-weight: "regular",            // TOC entry weight
+    
+    // Page layout
+    paper: "a5",
+    margin-top: 1.5cm,
+    margin-bottom: 1.5cm,
+    margin-inside: 1cm,
+    margin-outside: 1cm,
+    
+    // Song layout
+    verse-indent: 0.5em,              // Space reserved for verse numbers
+    verse-gutter: 0.75em,             // Space between verse number and text
+    hanging-indent: 1.5em,            // Hanging indent for wrapped lines
+    subtext-indent: 4em,              // Indent for subtext on new line
+    
     // Spacing configuration
-    par-spacing: 0.65em,            // Line spacing WITHIN verses/chorus
-    par-leading: 0.65em,            // Line height WITHIN verses/chorus
-    song-element-spacing: 1em,      // Space between all song elements (verses, chorus, notes)
-    omkvæd-label-gap: 0.0em,        // Space from "Omkvæd:" to its text
-    // Document
+    par-spacing: 0.65em,              // Space between paragraphs within verses/chorus
+    par-leading: 0.65em,              // Line height within verses/chorus
+    song-element-spacing: 1em,        // Space between song elements (verses, chorus, notes)
+    omkvæd-label-gap: 0.0em,          // Space from "Omkvæd:" label to its text
+    song-title-spacing: 0.25em,       // Space between song title and first verse
+    song-title-subtext-gap: 2em,      // Horizontal space between title and inline subtext
+    
+    // TOC layout
+    toc-columns: 3,                   // Number of columns in table of contents
+    toc-gutter: 0.5cm,                // Space between TOC columns
+    toc-par-leading: 0.30em,          // Line height within TOC entries
+    toc-par-spacing: 0.30em,          // Space between TOC entries
+    toc-hanging-indent: 1em,          // Hanging indent for wrapped TOC entries
+    toc-group-spacing: 1em,           // Space between letter groups in TOC
+    toc-top-spacing: 0.5cm,           // Space between heading and TOC content
+    
+    // Cover page layout
+    cover-top-spacing: 1cm,
+    cover-title-spacing: 0.4cm,
+    cover-image-spacing: 1.5cm,
+    cover-image-width: 70%,
+    
+    // Chapter page layout
+    chapter-top-spacing: 1cm,
+    chapter-image-spacing: 2cm,
+    chapter-image-width: 70%,
+    
+    // Document metadata
     title: "F-Klubbens Sangbog",
     description: "F-Klubbens Fabelagtige Sangbog",
     authors: (
@@ -74,9 +105,9 @@
 
 // Helper to apply song text styling consistently
 #let apply-song-text(body) = text(
-    font: config.song-text-font,
-    size: config.song-text-size,
-    weight: config.song-text-weight,
+    font: config.body-font,
+    size: config.body-size,
+    weight: config.body-weight,
 )[#body]
 
 // Song number prefix management
@@ -199,9 +230,9 @@
                 dx: -(config.verse-indent + config.verse-gutter),
                 dy: 0em,
                 text(
-                    font: config.song-text-font,
-                    size: config.song-text-size,
-                    weight: config.song-text-weight,
+                    font: config.body-font,
+                    size: config.body-size,
+                    weight: config.body-weight,
                 )[#context counter("verse").display().]
             )
             
@@ -213,9 +244,9 @@
                 leading: config.par-leading,
             )
             text(
-                font: config.song-text-font,
-                size: config.song-text-size,
-                weight: config.song-text-weight,
+                font: config.body-font,
+                size: config.body-size,
+                weight: config.body-weight,
             )[#body]
         }
     )
@@ -244,9 +275,9 @@
                             leading: config.par-leading,
                         )
                         text(
-                            font: config.song-text-font,
-                            size: config.song-text-size,
-                            weight: config.song-text-weight,
+                            font: config.body-font,
+                            size: config.body-size,
+                            weight: config.body-weight,
                         )[Omkvæd: #body]
                     }
                 )
@@ -268,9 +299,9 @@
                             dx: -(config.verse-indent + config.verse-gutter),
                             dy: 0em,
                             text(
-                                font: config.song-text-font,
-                                size: config.song-text-size,
-                                weight: config.song-text-weight,
+                                font: config.body-font,
+                                size: config.body-size,
+                                weight: config.body-weight,
                             )[Omkvæd:]
                         )
                         
@@ -293,9 +324,9 @@
                             leading: config.par-leading,
                         )
                         text(
-                            font: config.song-text-font,
-                            size: config.song-text-size,
-                            weight: config.song-text-weight,
+                            font: config.body-font,
+                            size: config.body-size,
+                            weight: config.body-weight,
                         )[#body]
                     }
                 )
@@ -320,7 +351,7 @@
         {
             layout(size => {
                 let title-with-number = [
-                    #text(font: config.song-title-font, size: config.song-title-size, weight: config.song-title-weight)[
+                    #text(font: config.title-font, size: config.title-size, weight: config.title-weight)[
                          #display-song-number(). #title
                     ] #song-label
                 ]
@@ -329,26 +360,26 @@
                 let spacing-width = measure(h(2em)).width
                 let subtext-content = if subtext != none {
                     text(
-                        font: config.subtext-font,
-                        size: config.subtext-text-size,
-                        weight: config.subtext-text-weight,
+                        font: config.body-font,
+                        size: config.body-size,
+                        weight: config.subtext-weight,
                         style: "italic",
                     )[#subtext]
                 } else { none }
 
                 if subtext != none and title-width + spacing-width + measure(subtext-content).width > size.width {
                     // Title too long - put subtext on new line with indent
-                    [#title-with-number #linebreak() #h(subtext-indent) #subtext-content]
+                    [#title-with-number #linebreak() #h(config.subtext-indent) #subtext-content]
                 } else if subtext != none {
                     // Title fits - put subtext inline with 2em spacing
-                    [#title-with-number #h(2em) #subtext-content]
+                    [#title-with-number #h(config.song-title-subtext-gap) #subtext-content]
                 } else {
                     // No subtext
                     title-with-number
                 }
                 hide(place[#heading(level: 1, numbering: none, outlined: true)[#title]])
             })
-            v(0.25em)
+            v(config.song-title-spacing)
             
             // Add left padding to align with song title
             if cols > 1 {
@@ -391,25 +422,21 @@
 
     // Page setup
     set page(
-        paper: "a5",
+        paper: config.paper,
         margin: (
-            top: 1.5cm,
-            bottom: 1.5cm,
-            /* left: 1.2cm,
-            right: 1.2cm, */
-            /* inside: 1.5cm,
-            outside: .5cm, */
-            inside: 1cm,
-            outside: 1cm,
+            top: config.margin-top,
+            bottom: config.margin-bottom,
+            inside: config.margin-inside,
+            outside: config.margin-outside,
         ),
         numbering: none, // Disable default numbering
         footer: context {
             // Zero-indexed page numbers
             let page-num = here().page() - 1
             if calc.odd(here().page()) {
-                align(right)[#page-num]
+                align(right)[#text(font: config.heading-font, size: config.heading-size, weight: config.heading-weight)[#page-num]]
             } else {
-                align(left)[#page-num]
+                align(left)[#text(font: config.heading-font, size: config.heading-size, weight: config.heading-weight)[#page-num]]
             }
         },
     )
@@ -419,9 +446,9 @@
 
     // Normal text appearance
     set text(
-        font: config.main-font,
-        size: config.main-text-size,
-        weight: config.main-text-weight,
+        font: config.body-font,
+        size: config.body-size,
+        weight: config.body-weight,
         lang: "dk",
     )
 
@@ -430,14 +457,14 @@
     // Paragraph spacing
     set par(
         justify: false,
-        leading: 0.65em,
+        leading: config.par-leading,
     )
 
     show link: it => {
         text(
-            font: config.main-font,
-            size: config.indhold-entry-size,
-            weight: config.main-text-weight,
+            font: config.body-font,
+            size: config.toc-size,
+            weight: config.toc-weight,
             it,
         )
     }
@@ -450,16 +477,16 @@
 // ==============
 
 #let forside = page[
-    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+    #set text(font: config.body-font, size: config.body-size, weight: config.body-weight)
     #align(center)[
-        #v(1cm)
+        #v(config.cover-top-spacing)
         #text(size: 2.5em, weight: "regular")[#smallcaps[#config.title]]
-        #v(0.4cm)
+        #v(config.cover-title-spacing)
         #text(size: 1em, weight: "regular")[
             Made by #format-authors(config.authors) - #config.date.year()
         ]
-        #v(1.5cm)
-        #image("assets/fklubben.svg", width: 70%)
+        #v(config.cover-image-spacing)
+        #image("assets/fklubben.svg", width: config.cover-image-width)
     ]
 ]
 
@@ -472,16 +499,16 @@
     *error*: unknown function `undefinedcontrolsequence`
 ]
 
-#let indholdfortegnelse(cols: 3) = page({
+#let indholdfortegnelse(cols: config.toc-columns) = page({
     heading(level: 1, numbering: none, outlined: false, text(
-        font: config.song-title-font,
-        size: config.song-title-size,
-        weight: config.song-title-weight,
+        font: config.heading-font,
+        size: config.heading-size,
+        weight: config.heading-weight,
     )[Indholdsfortegnelse])
 
-    v(0.5cm)
+    v(config.toc-top-spacing)
 
-    columns(cols, gutter: 0.5cm, {
+    columns(cols, gutter: config.toc-gutter, {
         context {
             let chapters = query(
                 heading.where(
@@ -533,9 +560,9 @@
 
             // Set paragraph spacing for all entries
             set par(
-                leading: 0.30em,
-                spacing: 0.30em,
-                hanging-indent: 1em,
+                leading: config.toc-par-leading,
+                spacing: config.toc-par-spacing,
+                hanging-indent: config.toc-hanging-indent,
             )
 
             // Print each group
@@ -543,7 +570,7 @@
             for group_key in group_keys {
                 // Add spacing between groups (except before first group)
                 if not first_group {
-                    v(1em)
+                    v(config.toc-group-spacing)
                 }
                 first_group = false
 
@@ -560,14 +587,14 @@
     })
 })
 
-#let kapitelside(titel: none, asset: "assets/fklubben.svg", spacing: 2cm) = page[
-    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+#let kapitelside(titel: none, asset: "assets/fklubben.svg", spacing: config.chapter-image-spacing) = page[
+    #set text(font: config.body-font, size: config.body-size, weight: config.body-weight)
     #align(center)[
-        #v(1cm)
+        #v(config.chapter-top-spacing)
         #text(size: 2.5em, weight: "regular")[#smallcaps[#titel]]
         #v(spacing)
         #if asset != none [
-            #image(asset, width: 70%)
+            #image(asset, width: config.chapter-image-width)
         ]
     ]
 ]
