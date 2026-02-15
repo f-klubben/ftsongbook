@@ -406,10 +406,11 @@
         footer: context {
             // Zero-indexed page numbers
             let page-num = here().page() - 1
+            let num-text = text(font: config.song-title-font, size: 12pt, weight: config.song-title-weight)[#page-num]
             if calc.odd(here().page()) {
-                align(right)[#page-num]
+                align(right)[#num-text]
             } else {
-                align(left)[#page-num]
+                align(left)[#num-text]
             }
         },
     )
