@@ -26,6 +26,7 @@ official open-source releases the first time you run any compile target.
 The following fonts are used:
 - [Source Serif 4](https://github.com/adobe-fonts/source-serif) (Adobe)
 - [Source Sans 3](https://github.com/adobe-fonts/source-sans) (Adobe)
+- [Courier Prime](https://github.com/quoteunquoteapps/CourierPrime)  (quoteunquoteapps)
 
 They are downloaded into `fonts/` (which is git-ignored) and cached via a
 `fonts/.downloaded` sentinel file — so they are only fetched once.

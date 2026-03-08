@@ -1,11 +1,12 @@
 # Configuration
 INPUT_DIR := assets
 DPI := 300
-FONTS_DIR := fonts
 
-# Font download URLs (zip releases from GitHub)
-SOURCE_SERIF_URL := https://github.com/adobe-fonts/source-serif/releases/download/4.005R/source-serif-4.005R.zip
-SOURCE_SANS_URL  := https://github.com/adobe-fonts/source-sans/releases/download/3.052R/OTF-source-sans-3.052R.zip
+# Font sources (downloaded on demand, not stored in repo)
+FONTS_DIR := fonts
+SOURCE_SERIF_URL  := https://github.com/adobe-fonts/source-serif/releases/download/4.005R/source-serif-4.005_Desktop.zip
+SOURCE_SANS_URL   := https://github.com/adobe-fonts/source-sans/releases/download/3.052R/OTF-source-sans-3.052R.zip
+COURIER_PRIME_URL := https://quoteunquoteapps.com/courierprime/downloads/courier-prime.zip
 
 # Output directories
 PNG_DIR := $(INPUT_DIR)/eps2png
@@ -45,13 +46,13 @@ $(FONTS_DIR)/.downloaded:
 	@unzip -q -o /tmp/source-sans.zip "*.otf" -d /tmp/source-sans-extracted
 	@find /tmp/source-sans-extracted -name "*.otf" -exec cp {} $(FONTS_DIR)/ \;
 	@rm -rf /tmp/source-sans.zip /tmp/source-sans-extracted
+	@echo "  -> Courier Prime"
+	@curl -L --fail "$(COURIER_PRIME_URL)" -o /tmp/courier-prime.zip
+	@unzip -q -o /tmp/courier-prime.zip "*.ttf" -d /tmp/courier-prime-extracted
+	@find /tmp/courier-prime-extracted -name "*.ttf" -exec cp {} $(FONTS_DIR)/ \;
+	@rm -rf /tmp/courier-prime.zip /tmp/courier-prime-extracted
 	@touch $(FONTS_DIR)/.downloaded
 	@echo "Fonts ready."
-
-.PHONY: clean-fonts
-clean-fonts:
-	@echo "Removing fonts directory"
-	@rm -rf $(FONTS_DIR)
 
 # ====================== 
 # IMAGE CONVERSION RULES 
@@ -118,6 +119,12 @@ clean:
 	@echo "Removing all conversion directories and output"
 	@rm -rf $(PNG_DIR) $(SVG_DIR) $(PDF_DIR) $(OUTPUT_DIR)
 
+.PHONY: clean-all
+clean-all: 
+	@echo "Removing all conversion directories, fonts and output"
+	@rm -rf $(PNG_DIR) $(SVG_DIR) $(PDF_DIR) $(OUTPUT_DIR) ${FONTS_DIR}
+
+
 .PHONY: clean-png
 clean-png:
 	@echo "Removing $(PNG_DIR)"
@@ -137,3 +144,8 @@ clean-pdf:
 clean-output:
 	@echo "Removing $(OUTPUT_DIR)"
 	@rm -rf $(OUTPUT_DIR)
+
+.PHONY: clean-fonts
+clean-fonts:
+	@echo "Removing fonts directory"
+	@rm -rf $(FONTS_DIR)
