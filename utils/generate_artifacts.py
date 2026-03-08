@@ -10,6 +10,106 @@ JSON_PATH = CWD.joinpath("songs.json")
 
 
 # =============================================================================
+# FORMATTING CONFIG
+# =============================================================================
+# Controls how Typst markup is transformed in the output text.
+#
+# commands:
+#   Maps each named Typst command to a (prefix, suffix) tuple that wraps the
+#   inner content. Use ("", "") to simply unwrap (keep text, strip markup).
+#   Examples:
+#       "bf": (r"\textbf{", "}")   →  LaTeX bold
+#       "em": (r"\textit{", "}")   →  LaTeX italic
+#       "tt": (r"\texttt{", "}")   →  LaTeX monospace
+#       "bf": ("", "")             →  plain text, no formatting
+#
+# math:
+#   (prefix, suffix) wrapping inline math content from $...$
+#   ("", "")    →  strip delimiters, keep content as plain text
+#   ("$", "$")  →  re-emit as LaTeX inline math
+#
+# native_bold:
+#   (prefix, suffix) for Typst native *bold* syntax
+#   ("", "")           →  strip asterisks, keep text
+#   (r"\textbf{", "}") →  LaTeX bold
+#
+# native_italic:
+#   (prefix, suffix) for Typst native _italic_ syntax
+#   ("", "")            →  strip underscores, keep text
+#   (r"\textit{", "}")  →  LaTeX italic
+#
+# include_notes:
+#   Whether #note[...] blocks appear in the output (as type "v").
+#   Default: False
+
+FORMATTING_CONFIG: dict = {
+    # ── Named command wrappers ─────────────────────────────────────────────
+    "commands": {
+        "bf":      (r"{\bf{", "}"),   # bold
+        "sf":      (r"{\sf", "}"),   # sans-serif
+        "sl":      (r"{\sl", "}"),   # slanted
+        "sc":      (r"{\sc", "}"),   # small caps
+        "em":      (r"\textit{", "}"),   # emphasis / italic
+        "tt":      (r"{\tt", "}"),   # monospace
+        "small":   ("", ""),   # smaller text
+        "big":     ("", ""),   # bigger text
+        "strong":  (r"{\bf", "}"),   # strong / bold
+        "emph":    (r"\textit{", "}"),   # emphasis
+        "context": ("", ""),   # layout wrapper
+    },
+
+
+    # ── Inline math: $...$ ────────────────────────────────────────────────
+    # ("", "")    →  strip delimiters, emit content as plain text
+    # ("$", "$")  →  re-emit as LaTeX inline math (with symbol translation)
+    "math": ("$", "$"),
+
+    # Typst math uses bare identifiers (nabla, alpha, sum) while LaTeX needs
+    # a backslash (\nabla, \alpha, \sum).
+    #
+    # math_translate:
+    #   "auto"  →  prepend \ to any bare word that matches a known LaTeX
+    #              math command (handles the common case automatically)
+    #   "map"   →  only apply explicit entries in math_symbol_map, no auto
+    #   "none"  →  no translation, emit Typst math content as-is
+    "math_translate": "auto",
+
+    # Explicit symbol overrides applied before auto-translation.
+    # Use for cases where Typst and LaTeX differ structurally, or where
+    # auto-translation would produce the wrong result.
+    # Example:
+    #   "infinity": r"\infty",     # auto would give \infinity (wrong)
+    #   "arrow.r":  r"\rightarrow",
+    "math_symbol_map": {
+        "infinity": r"\infty",
+        "arrow.r":  r"\rightarrow",
+        "arrow.l":  r"\leftarrow",
+        "arrow.t":  r"\uparrow",
+        "arrow.b":  r"\downarrow",
+        "<=":       r"\leq",
+        ">=":       r"\geq",
+        "!=":       r"\neq",
+        "in":       r"\in",
+        "subset":   r"\subset",
+        "union":    r"\cup",
+        "sect":     r"\cap",
+        "times":    r"\times",
+        "dot":      r"\cdot",
+        "...":      r"\ldots",
+        "nabla":    r"\nabla",
+    },
+
+    # ── Native Typst bold: *text* ─────────────────────────────────────────
+    "native_bold": (r"{\bf", "}"),
+
+    # ── Native Typst italic: _text_ ───────────────────────────────────────
+    "native_italic": (r"\textit{", "}"),
+
+    # ── Notes ─────────────────────────────────────────────────────────────
+    "include_notes": False,
+}
+
+# =============================================================================
 # UTILS
 # =============================================================================
 
@@ -116,54 +216,194 @@ def parse_sang_header(content: str) -> tuple[str | None, str | None]:
 # LYRIC TEXT CLEANING
 # =============================================================================
 
-# Inline style wrappers whose content should be kept but markup stripped
-_UNWRAP_CMDS = (
-    "bf", "sf", "sl", "sc", "em", "tt", "small", "strong", "emph",
-    "big", "context",
-)
+def _apply_command_mapping(text: str, cmd: str) -> str:
+    """
+    Apply a named command mapping from FORMATTING_CONFIG to all occurrences
+    of #cmd[...] in text.
 
+    The inner content is preserved; prefix/suffix from the config are wrapped
+    around it. Handles nested brackets correctly.
+    """
+    prefix, suffix = FORMATTING_CONFIG["commands"].get(cmd, ("", ""))
+    result = []
+    i = 0
+    pattern = re.compile(rf'#{re.escape(cmd)}\s*\[')
+    while i < len(text):
+        m = pattern.search(text, i)
+        if not m:
+            result.append(text[i:])
+            break
+        result.append(text[i:m.start()])
+        bracket_start = m.end() - 1  # index of '['
+        try:
+            inner, end = extract_bracket_content(text, bracket_start)
+            result.append(f"{prefix}{inner}{suffix}")
+            i = end
+        except ValueError:
+            # Malformed — emit as-is and move on
+            result.append(text[m.start()])
+            i = m.start() + 1
+    return "".join(result)
+
+
+# A large set of known LaTeX math command names (no backslash).
+# Any bare word in Typst math matching one of these gets \\word in LaTeX output.
+_LATEX_MATH_COMMANDS: frozenset[str] = frozenset({
+    # Greek lowercase
+    "alpha", "beta", "gamma", "delta", "epsilon", "varepsilon", "zeta", "eta",
+    "theta", "vartheta", "iota", "kappa", "lambda", "mu", "nu", "xi",
+    "pi", "varpi", "rho", "varrho", "sigma", "varsigma", "tau", "upsilon",
+    "phi", "varphi", "chi", "psi", "omega",
+    # Greek uppercase
+    "Gamma", "Delta", "Theta", "Lambda", "Xi", "Pi", "Sigma", "Upsilon",
+    "Phi", "Psi", "Omega",
+    # Calculus / analysis
+    "nabla", "partial", "infty", "int", "oint", "iint", "iiint",
+    "sum", "prod", "lim", "limsup", "liminf", "sup", "inf", "max", "min",
+    "frac", "dfrac", "tfrac", "sqrt", "overline", "underline",
+    "hat", "tilde", "vec", "dot", "ddot", "bar", "check", "acute", "grave",
+    # Operators
+    "cdot", "times", "div", "pm", "mp", "oplus", "otimes", "circ",
+    "wedge", "vee", "cap", "cup", "setminus",
+    # Relations
+    "leq", "geq", "neq", "approx", "equiv", "sim", "simeq", "cong",
+    "subset", "supset", "subseteq", "supseteq", "in", "notin", "ni",
+    "ll", "gg", "prec", "succ",
+    # Arrows
+    "to", "rightarrow", "leftarrow", "Rightarrow", "Leftarrow",
+    "leftrightarrow", "Leftrightarrow", "mapsto",
+    "uparrow", "downarrow", "nearrow", "searrow",
+    # Sets / logic
+    "forall", "exists", "neg", "land", "lor", "implies", "iff",
+    "emptyset", "varnothing",
+    # Functions
+    "sin", "cos", "tan", "cot", "sec", "csc",
+    "arcsin", "arccos", "arctan",
+    "sinh", "cosh", "tanh",
+    "log", "ln", "exp", "det", "dim", "ker", "hom", "arg",
+    "gcd", "lcm", "deg", "tr", "rank",
+    # Brackets / delimiters
+    "left", "right", "big", "Big", "bigg", "Bigg",
+    "lfloor", "rfloor", "lceil", "rceil", "langle", "rangle",
+    # Misc
+    "ldots", "cdots", "vdots", "ddots",
+    "mathbb", "mathbf", "mathit", "mathrm", "mathcal", "mathfrak",
+    "text", "mbox", "hspace", "vspace",
+    "matrix", "pmatrix", "bmatrix", "vmatrix", "Vmatrix",
+    "begin", "end", "quad", "qquad",
+    "underbrace", "overbrace", "stackrel",
+    "boldsymbol", "bm",
+})
 
 def clean_typst_text(text: str) -> str:
     """
-    Strip Typst markup from lyric text while preserving the actual words.
+    Transform Typst markup in lyric text according to FORMATTING_CONFIG.
 
-    - Inline style wrappers (#bf[...] etc.)  → unwrap content
-    - #set ... lines                          → remove
-    - #h(...) spacing                         → remove
-    - $...$ math                              → strip delimiters, keep content
-    - #LaTeX                                  → "LaTeX"
-    - backslash at end of line                → newline
-    - remaining unknown #cmd                  → remove
-    - stray brackets from unwrapping          → remove
+    Processing order:
+    1. Named command wrappers (#bf[...] etc.)  → prefix+content+suffix per config
+    2. #set ... lines                           → remove
+    3. #h(...) spacing                          → remove
+    4. $...$ inline math                        → prefix+content+suffix per config
+    5. Native *bold*                            → prefix+content+suffix per config
+    6. Native _italic_                          → prefix+content+suffix per config
+    7. #LaTeX                                   → "LaTeX"
+    8. Backslash line-break                     → newline
+    9. Remaining unknown #cmd                   → remove
+    10. Stray brackets from unwrapping          → remove
+    11. Collapse excess blank lines
     """
-    # Unwrap known style wrappers: mark opening tag, strip it, clean up ] later
-    for cmd in _UNWRAP_CMDS:
-        text = re.sub(rf'#{re.escape(cmd)}\s*\[', "\x00", text)
-    text = text.replace("\x00", "")
+    # 1. Named command wrappers — process longest names first to avoid
+    #    partial matches (e.g. "strong" before "s")
+    for cmd in sorted(FORMATTING_CONFIG["commands"], key=len, reverse=True):
+        text = _apply_command_mapping(text, cmd)
 
-    # Remove #set ... lines
+    # 2. Remove #set ... lines
     text = re.sub(r'#set\s+[^\n]*\n?', "", text)
 
-    # Remove #h(...) horizontal spacing
+    # 3. Remove #h(...) horizontal spacing
     text = re.sub(r'#h\s*\([^)]*\)', "", text)
 
-    # Strip $...$ math delimiters, keep content
-    text = re.sub(r'\$([^$]*)\$', r'\1', text)
+    # 4. Stash math spans — must happen first so that _ and * inside $...$
+    #    are not consumed by the bold/italic regexes, and so that backslashes
+    #    inside math are not eaten by the line-break sub.
+    math_spans: list[str] = []
 
-    # Named constants
-    text = re.sub(r'#LaTeX\b', "LaTeX", text)
+    def _stash_math(m: re.Match) -> str:
+        math_spans.append(m.group(0))
+        return f"\x01MATH{len(math_spans) - 1}\x01"
 
-    # Typst line-break: backslash at end of line
+    text = re.sub(r'\$[^$]*\$', _stash_math, text)
+
+    # 5. Typst line-break: backslash at end of line
     text = re.sub(r'\s*\\\s*\n', "\n", text)
 
-    # Remove remaining unknown #word commands
+    # 6. Native bold/italic — safe now that math is stashed
+    bold_pre, bold_suf = FORMATTING_CONFIG["native_bold"]
+    text = re.sub(r'\*(.+?)\*', lambda m: f"{bold_pre}{m.group(1)}{bold_suf}", text)
+
+    ital_pre, ital_suf = FORMATTING_CONFIG["native_italic"]
+    text = re.sub(r'(?<!\\)_(\S.*?\S|\S)_', lambda m: f"{ital_pre}{m.group(1)}{ital_suf}", text)
+
+    # 7. Restore math, translate Typst identifiers to LaTeX, apply delimiters
+    math_pre, math_suf = FORMATTING_CONFIG["math"]
+    translate_mode = FORMATTING_CONFIG.get("math_translate", "auto")
+    symbol_map = FORMATTING_CONFIG.get("math_symbol_map", {})
+
+    def _translate_math(inner: str) -> str:
+        if translate_mode == "auto":
+            # Prepend \ to bare words matching known LaTeX math commands.
+            # Skips words already preceded by a backslash.
+            def _maybe_prefix(m: re.Match) -> str:
+                word = m.group(1)
+                start = m.start(1)
+                if start > 0 and inner[start - 1] == "\\":
+                    return word
+                return f"\\{word}" if word in _LATEX_MATH_COMMANDS else word
+
+            inner = re.sub(r'(?<![A-Za-z\\])([A-Za-z]+)(?![A-Za-z])', _maybe_prefix, inner)
+
+        # Apply explicit symbol map last — overrides auto-translation.
+        # Longest keys first to avoid partial replacements (e.g. "arrow.r" before "arrow").
+        # Uses word boundaries so "in" doesn't match inside "sin", "infinity", etc.
+        # Also replaces the auto-prefixed form (\infinity → \infty).
+        for typst_sym, latex_sym in sorted(
+            symbol_map.items(), key=lambda kv: len(kv[0]), reverse=True
+        ):
+            repl = latex_sym.replace("\\", "\\\\")  # escape for re.sub replacement string
+            if re.match(r'^[A-Za-z]+$', typst_sym):
+                # Word — match with boundaries, replace both raw and auto-prefixed forms
+                inner = re.sub(rf'\\{re.escape(typst_sym)}\b', repl, inner)
+                inner = re.sub(rf'(?<![A-Za-z\\]){re.escape(typst_sym)}(?![A-Za-z])', repl, inner)
+            else:
+                # Operator/symbol — simple string replace (no regex needed)
+                inner = inner.replace(f"\\{typst_sym}", latex_sym)
+                inner = inner.replace(typst_sym, latex_sym)
+
+        return inner
+
+    def _restore_math(m: re.Match) -> str:
+        original = math_spans[int(m.group(1))]
+        inner = original[1:-1]  # strip $ delimiters
+        if translate_mode != "none":
+            inner = _translate_math(inner)
+        return f"{math_pre}{inner}{math_suf}"
+
+    text = re.sub(r'\x01MATH(\d+)\x01', _restore_math, text)
+
+    # 8. Named constants
+    text = re.sub(r'#LaTeX\b', "LaTeX", text)
+
+    # 9. Remove remaining unknown #word commands
     text = re.sub(r'#[A-Za-zÆæØøÅå]\w*\b', "", text)
 
-    # Remove stray brackets left from unwrapping
+    # 10. Remove stray brackets left from unwrapping
     text = re.sub(r'\[', "", text)
     text = re.sub(r'\]', "", text)
 
-    # Collapse excess blank lines
+    # 11. Strip leading whitespace from each line (Typst source indentation)
+    text = "\n".join(line.lstrip() for line in text.splitlines())
+
+    # 12. Collapse excess blank lines
     text = re.sub(r'\n{3,}', "\n\n", text)
 
     return text.strip()
@@ -293,7 +533,8 @@ def get_song_body(content: str) -> list:
             result.append((line_no, "c", clean_typst_text(raw)))
 
         elif btype == "note":
-            result.append((line_no, "v", clean_typst_text(raw)))
+            if FORMATTING_CONFIG["include_notes"]:
+                result.append((line_no, "v", clean_typst_text(raw)))
 
         elif btype == "image":
             # raw is the image path as written in source, e.g.
@@ -391,7 +632,7 @@ class Counter:
             idx, prefix = self._lookup[file_stem]
             number = self._section_numbers[idx]
         else:
-            prefix = self._last_prefix
+            prefix = "x"
             self._overflow_counts[prefix] = (
                 self._overflow_counts.get(prefix, 0) + 1
             )
