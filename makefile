@@ -1,6 +1,11 @@
 # Configuration
 INPUT_DIR := assets
 DPI := 300
+FONTS_DIR := fonts
+
+# Font download URLs (zip releases from GitHub)
+SOURCE_SERIF_URL := https://github.com/adobe-fonts/source-serif/releases/download/4.005R/source-serif-4.005R.zip
+SOURCE_SANS_URL  := https://github.com/adobe-fonts/source-sans/releases/download/3.052R/OTF-source-sans-3.052R.zip
 
 # Output directories
 PNG_DIR := $(INPUT_DIR)/eps2png
@@ -19,6 +24,38 @@ PDF_FILES := $(patsubst $(INPUT_DIR)/%.eps,$(PDF_DIR)/%.pdf,$(EPS_FILES))
 # Default target
 .PHONY: all
 all: png
+
+# ================
+# FONT DOWNLOADING
+# ================
+
+.PHONY: fonts
+fonts: $(FONTS_DIR)/.downloaded
+
+$(FONTS_DIR)/.downloaded:
+	@echo "Downloading fonts..."
+	@mkdir -p $(FONTS_DIR)
+	@echo "  -> Source Serif 4"
+	@curl -L --fail "$(SOURCE_SERIF_URL)" -o /tmp/source-serif.zip
+	@unzip -q -o /tmp/source-serif.zip "*/OTF/*.otf" -d /tmp/source-serif-extracted
+	@find /tmp/source-serif-extracted -name "*.otf" -exec cp {} $(FONTS_DIR)/ \;
+	@rm -rf /tmp/source-serif.zip /tmp/source-serif-extracted
+	@echo "  -> Source Sans 3"
+	@curl -L --fail "$(SOURCE_SANS_URL)" -o /tmp/source-sans.zip
+	@unzip -q -o /tmp/source-sans.zip "*.otf" -d /tmp/source-sans-extracted
+	@find /tmp/source-sans-extracted -name "*.otf" -exec cp {} $(FONTS_DIR)/ \;
+	@rm -rf /tmp/source-sans.zip /tmp/source-sans-extracted
+	@touch $(FONTS_DIR)/.downloaded
+	@echo "Fonts ready."
+
+.PHONY: clean-fonts
+clean-fonts:
+	@echo "Removing fonts directory"
+	@rm -rf $(FONTS_DIR)
+
+# ====================== 
+# IMAGE CONVERSION RULES 
+# ====================== 
 
 # Main conversion targets
 .PHONY: png
@@ -49,27 +86,33 @@ $(PDF_DIR)/%.pdf: $(INPUT_DIR)/%.eps | $(PDF_DIR)
 	@echo "Converting $< to $@"
 	@magick $< $@
 
-# Targets
+# =====================
+# TYPST COMPILE TARGETS 
+# =====================
+
 .PHONY: kontinuertpdf
-kontinuertpdf: png
+kontinuertpdf: fonts png
 	@echo "Compiling main.typ (kontinuert mode)"
 	@mkdir -p $(OUTPUT_DIR)
-	@typst c --font-path fonts --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
+	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 
 .PHONY: bookletpdf
-bookletpdf: png
+bookletpdf: fonts png
 	@echo "Compiling main.typ (booklet mode)"
 	@mkdir -p $(OUTPUT_DIR)
-	@typst c --font-path fonts --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
+	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 	# add --signature=64, to change signature
 	@LC_ALL=C LANG=C pdfbook2 --paper a4 -o 10 -i 10 -t 10 -b 10 output/sangbog.pdf
 
 .PHONY: watch
-watch: png
+watch: fonts png
 	@echo "Starting typst watch mode"
-	@typst watch --font-path fonts --ignore-system-fonts main.typ
+		@typst watch --font-path $(FONTS_DIR) --ignore-system-fonts main.typ
 
-# Clean targets
+# ======= 
+# CLEANUP 
+# ======= 
+
 .PHONY: clean
 clean:
 	@echo "Removing all conversion directories and output"
@@ -94,39 +137,3 @@ clean-pdf:
 clean-output:
 	@echo "Removing $(OUTPUT_DIR)"
 	@rm -rf $(OUTPUT_DIR)
-
-# Help target
-.PHONY: help
-help:
-	@echo "EPS Conversion Makefile"
-	@echo ""
-	@echo "Conversion targets:"
-	@echo "  make png               # Convert all EPS to PNG"
-	@echo "  make svg               # Convert all EPS to SVG"
-	@echo "  make pdf               # Convert all EPS to PDF"
-	@echo ""
-	@echo "Typst compilation targets:"
-	@echo "  make kontinuertpdf     # Convert to PNG, then compile main.typ"
-	@echo "  make bookletpdf        # Convert to PNG, compile main.typ, then booklet processing"
-	@echo "  make watch             # Convert to PNG, then start typst watch mode"
-	@echo ""
-	@echo "Clean targets:"
-	@echo "  make clean             # Remove all conversion directories"
-	@echo "  make clean-png         # Remove PNG directory only"
-	@echo "  make clean-svg         # Remove SVG directory only"
-	@echo "  make clean-pdf         # Remove PDF directory only"
-	@echo ""
-	@echo "Configuration:"
-	@echo "  INPUT_DIR: $(INPUT_DIR)"
-	@echo "  DPI: $(DPI)"
-
-# Print detected files
-.PHONY: list
-list:
-	@echo "EPS files found in $(INPUT_DIR):"
-	@for file in $(EPS_FILES); do echo "  $$file"; done
-	@echo ""
-	@echo "Output directories:"
-	@echo "  PNG: $(PNG_DIR)"
-	@echo "  SVG: $(SVG_DIR)"
-	@echo "  PDF: $(PDF_DIR)"
