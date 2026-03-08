@@ -1,4 +1,3 @@
 *.eps linguist-vendored
 *.ai linguist-vendored
 *.svg linguist-vendored
-fonts/** linguist-vendored
