@@ -18,11 +18,11 @@
     song-text-font: "Source Serif 4",
     indhold-entry-font: "Source Serif 4",
     // Size
-    main-text-size: 10pt,
-    song-title-size: 14pt,
-    subtext-text-size: 9pt,
-    song-text-size: 8pt,
-    indhold-entry-size: 9pt,
+    main-text-size: 9pt,
+    song-title-size: 1.5em,
+    subtext-text-size: 1em,
+    song-text-size: 1em,
+    indhold-entry-size: 0.9em,
     // Weight
     main-text-weight: "regular",
     song-title-weight: "bold",
@@ -393,14 +393,14 @@
     set page(
         paper: "a5",
         margin: (
-            top: 1.5cm,
-            bottom: 1.5cm,
+            top: 0.5cm,
+            bottom: 0.5cm,
             /* left: 1.2cm,
             right: 1.2cm, */
             /* inside: 1.5cm,
             outside: .5cm, */
-            inside: 1cm,
-            outside: 1cm,
+            inside: 0.5cm,
+            outside: 0.5cm,
         ),
         numbering: none, // Disable default numbering
         footer: context {
@@ -453,10 +453,10 @@
 #let forside = page[
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1cm)
-        #text(size: 2.5em, weight: "regular")[#smallcaps[#config.title]]
-        #v(0.4cm)
-        #text(size: 1em, weight: "regular")[
+        #v(1.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
+        #v(0.5cm)
+        #text(size: 1.2em, weight: "regular")[
             Made by #format-authors(config.authors) - #config.date.year()
         ]
         #v(1.5cm)
@@ -564,8 +564,8 @@
 #let kapitelside(titel: none, asset: "assets/fklubben.svg", spacing: 2cm) = page[
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1cm)
-        #text(size: 2.5em, weight: "regular")[#smallcaps[#titel]]
+        #v(1.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[#titel]]
         #v(spacing)
         #if asset != none [
             #image(asset, width: 70%)

@@ -21,8 +21,8 @@
   ]
 
   #omkvæd[
-    JEG' EN NØRD! \
-    (og er stolt af det!) \
+    #em[JEG' EN NØRD! \
+    og er stolt af det!] \
     Jeg' stolt af det.#h(1.5em)#small[\/\/ SV] \
     Jeg læser XKCD. \
 
@@ -30,14 +30,14 @@
     Skriiiver i #LaTeX \
     og jeg tænder på $d x$. \
 
-    JEG' EN NØRD! \
-    (og er stolt af det!) \
+    #em[JEG' EN NØRD! \
+    og er stolt af det!] \
     Nu er jeg ved #h(1.5em)#small[\/\/ SV] \
     at finde en at nørde med, \
     som kan ta' min uskyldighed \
 
-    JEG' EN NØRD! \
-    (og er stolt af det!) \
+    #em[JEG' EN NØRD! \
+    og er stolt af det!] \
     Og er stolt af det ! #h(1.5em)#small[\/\/ SV] \
     Yeaaaah ..
   ]
@@ -59,8 +59,8 @@
   ]
 
   #omkvæd[
-    JEG' EN NØRD! \
-    (og er stolt af det!) \
+    #em[JEG' EN NØRD! \
+    og er stolt af det!] \
     Jeg' stolt af det. #h(1.5em)#small[\/\/ SV]\
     Jeg læser XKCD \
   
@@ -68,14 +68,14 @@
     Skriiiiver i #LaTeX \
     og jeg tænder på $d x$ \
 
-    JEG EN' NØRD! \
-    (og er stolt af det!) \
+    #em[JEG EN' NØRD! \
+    og er stolt af det!] \
     Nu er jeg ved #h(1.5em)#small[\/\/ SV] \
     at finde en at nørde med, \
     som kan ta' min uskyldighed \
 
-    JEG' EN NØRD! \
-    (og er stolt af det!) \
+    #em[JEG' EN NØRD! \
+    og er stolt af det!] \
     Jeg er stolt af de #h(1.5em)#small[\/\/ SV]\
     Yeaah ...
   ]

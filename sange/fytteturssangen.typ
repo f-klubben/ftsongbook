@@ -57,7 +57,7 @@
     På fytteturen fået \
     Til næste oktober \
     Tar' jeg af sted igen \
-    På fyttetur, på fytte-#small[#small[fytte-fytte-fytte]]-fyttetur. \
+    På fyttetur, på fytte-#small[#small[fytte#small[-fytte-]fytte]]-fyttetur. \
     Det' på tide at holde femberkur.
   ]
 ]
