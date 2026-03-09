@@ -97,6 +97,7 @@ FORMATTING_CONFIG: dict = {
         "dot":      r"\cdot",
         "...":      r"\ldots",
         "nabla":    r"\nabla",
+        "_a":    r"_{a}",
     },
 
     # ── Native Typst bold: *text* ─────────────────────────────────────────

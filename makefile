@@ -97,13 +97,13 @@ kontinuertpdf: fonts png
 	@mkdir -p $(OUTPUT_DIR)
 	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 
-.PHONY: bookletpdf
-bookletpdf: fonts png
-	@echo "Compiling main.typ (booklet mode)"
-	@mkdir -p $(OUTPUT_DIR)
-	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
-	# add --signature=64, to change signature
-	@LC_ALL=C LANG=C pdfbook2 --paper a4 -o 10 -i 10 -t 10 -b 10 output/sangbog.pdf
+#.PHONY: bookletpdf
+#bookletpdf: fonts png
+#	@echo "Compiling main.typ (booklet mode)"
+#	@mkdir -p $(OUTPUT_DIR)
+#	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
+#	# add --signature=64, to change signature
+#	@LC_ALL=C LANG=C pdfbook2 --paper a4 -o 10 -i 10 -t 10 -b 10 output/sangbog.pdf
 
 .PHONY: watch
 watch: fonts png

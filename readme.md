@@ -1,9 +1,10 @@
 # F-Klubbens sangbog skreven i Typst (WIP)
 
-typst 0.14.2
+
 
 ## Req.
 
+- typst 0.14.2
 - ImageMagick
 - GhostScript (used by ImageMagick)
 - Typst
@@ -18,7 +19,7 @@ sudo pacman -S typst imagemagick ghostscript texlive-binextra libpaper curl unzi
 It might be that you have not listed A4 paper in you paper sizes (known issue on wsl). 
 For this do the followin: `echo "a4" | sudo tee /etc/papersize`
 
-## Fonts
+### Fonts
 
 Fonts are **not** included in the repo. They are downloaded automatically from their
 official open-source releases the first time you run any compile target.
@@ -33,12 +34,28 @@ They are downloaded into `fonts/` (which is git-ignored) and cached via a
 
 To force a re-download:
 
-```bash
-make clean-fonts
-make fonts   # or just run any compile target
-```
 
-## Usage
+
+## Building from source
+
+Here, for Debian- and Arch-based systems
+
+1. Fetch source code
+```bash
+git clone #INSERT LINK HERE
+```
+2. Install prerequisites
+```bash
+#Debian
+sudo apt install typst imagemagick ghostscript 
+
+#Arch
+sudo pacman -S typst imagemagick ghostscript libpaper curl unzip
+``` 
+4. Build the sangbog make `kontinuertpdf` for non-booklet (continuous) format, `make bookletpdf` for booklet format. (Fonts downlaod automatically).
+
+
+## Make Usage
 
 ### Basic Conversion
 
@@ -63,11 +80,13 @@ make clean            # Remove all converted files and output
 make clean-png        # Remove PNG files only
 make clean-svg        # Remove SVG files only
 make clean-pdf        # Remove PDF files only
-make clean-output     # Remove output directory only
 ```
 
-## Structure
+### Fonts
 
-- Input: `assets/*.eps`
-- Output: `assets/eps2png/`, `assets/eps2svg/`, `assets/eps2pdf/`
-- Fonts: `fonts/` (downloaded on demand, not tracked in git)
+```bash
+make clean-fonts
+make fonts   # or just run any compile target
+```
+
+## Adding Songs
