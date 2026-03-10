@@ -81,6 +81,7 @@ make pdf    # Convert EPS files to PDF
 make kontinuertpdf    # Download fonts + convert to PNG + compile main.typ
 make bookletpdf       # Download fonts + convert to PNG + compile + booklet processing
 make watch            # Download fonts + convert to PNG + start typst watch mode
+# If in watch-mode, it is reccomnded to disable any autosave, and save amnually, ebcause of problems with autofocus when recompiling
 ```
 
 ### Cleanup
