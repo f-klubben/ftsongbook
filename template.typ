@@ -18,11 +18,11 @@
     song-text-font: "Source Serif 4",
     indhold-entry-font: "Source Serif 4",
     // Size
-    main-text-size: 9pt,
-    song-title-size: 1.5em,
-    subtext-text-size: 1em,
-    song-text-size: 1em,
-    indhold-entry-size: 0.9em,
+    main-text-size: 10pt,
+    song-title-size: 14pt,
+    subtext-text-size: 9pt,
+    song-text-size: 8pt,
+    indhold-entry-size: 9pt,
     // Weight
     main-text-weight: "regular",
     song-title-weight: "bold",
@@ -393,14 +393,14 @@
     set page(
         paper: "a5",
         margin: (
-            top: 0.5cm,
-            bottom: 0.5cm,
+            top: 1.5cm,
+            bottom: 1.5cm,
             /* left: 1.2cm,
             right: 1.2cm, */
             /* inside: 1.5cm,
             outside: .5cm, */
-            inside: 0.5cm,
-            outside: 0.5cm,
+            inside: 1.2cm,
+            outside: 1.0cm,
         ),
         numbering: none, // Disable default numbering
         footer: context {
