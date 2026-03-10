@@ -9,13 +9,23 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+            - uses: typst-community/setup-typst@v4
+              with:
+                typst-version: 0.14.2
+                allow-prereleases: false
+
+            - uses: actions/setup-python@v6
+              with:
+                python-version: '3.13' 
+
             - name: Install prerequisites
               run: |
                 sudo apt update
-                sudo apt install -y typst imagemagick curl unzip python3
+                sudo apt install -y imagemagick curl unzip
             
             - name: Checkout repository
               uses: actions/checkout@v4
+              
             
             - name: Compile the documents
               run: |
