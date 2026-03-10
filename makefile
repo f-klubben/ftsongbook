@@ -1,6 +1,7 @@
 # Configuration
 INPUT_DIR := assets
 DPI := 300
+IM_CMD := $(shell command -v magick || command -v convert)
 
 # Font sources (downloaded on demand, not stored in repo)
 FONTS_DIR := fonts
@@ -74,18 +75,18 @@ $(PNG_DIR) $(SVG_DIR) $(PDF_DIR):
 
 # Conversion rules for PNG
 $(PNG_DIR)/%.png: $(INPUT_DIR)/%.eps | $(PNG_DIR)
-	@echo "Converting $< to $@"
-	@magick -density $(DPI) $< -flatten $@
+    @echo "Converting $< to $@"
+    @$(IM_CMD) -density $(DPI) $< -flatten $@
 
 # Conversion rules for SVG
 $(SVG_DIR)/%.svg: $(INPUT_DIR)/%.eps | $(SVG_DIR)
 	@echo "Converting $< to $@"
-	@magick $< $@
+	@$(IM_CMD) $< $@
 
 # Conversion rules for PDF
 $(PDF_DIR)/%.pdf: $(INPUT_DIR)/%.eps | $(PDF_DIR)
 	@echo "Converting $< to $@"
-	@magick $< $@
+	@$(IM_CMD) $< $@
 
 # =====================
 # TYPST COMPILE TARGETS 
