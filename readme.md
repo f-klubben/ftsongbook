@@ -6,12 +6,9 @@
 
 - typst 0.14.2
 - ImageMagick
-- GhostScript (used by ImageMagick)
 - Typst
 - pyhton 3
-- libpaper (because, because)
 - curl + unzip (for font downloading)
-
 
 ## Building from source
 
@@ -24,10 +21,10 @@ git clone #INSERT LINK HERE
 2. Install prerequisites
 ```bash
 #Debian
-sudo apt install typst imagemagick ghostscript curl unzip python3
+sudo apt install typst imagemagick curl unzip python3
 
 #Arch
-sudo pacman -S typst imagemagick ghostscript curl unzip pyhton
+sudo pacman -S typst imagemagick curl unzip pyhton
 ``` 
 4. Build the sangbog make `kontinuertpdf` for non-booklet (continuous) format, `make bookletpdf` for booklet format. (Fonts downlaod automatically).
 
