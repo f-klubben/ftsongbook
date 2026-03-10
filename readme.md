@@ -100,3 +100,12 @@ make fonts   # or just run any compile target
 ```
 
 ## Adding Songs
+
+Songs are stored in `/sange` so the process of adding a new song
+1. `touch ./sange/[songname].typ`
+2. Edit `./sange[songname].typ`
+3. Add the following in `main.typ`
+```typst
+#pagebreak() // pagebreak may not be needed, depending on spacing of songs!
+#include "sange/[songname].typ"
+```
