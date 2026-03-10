@@ -97,9 +97,10 @@ kontinuertpdf: fonts png
 	@mkdir -p $(OUTPUT_DIR)
 	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 
-#.PHONY: bookletpdf
-#bookletpdf: fonts png
-#	@echo "Compiling main.typ (booklet mode)"
+.PHONY: bookletpdf
+bookletpdf: kontinuertpdf
+	@echo "Compiling main.typ (booklet mode)"
+	@echo "Booklet mode not implemented"
 #	@mkdir -p $(OUTPUT_DIR)
 #	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
 #	# add --signature=64, to change signature

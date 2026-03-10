@@ -1,0 +1,44 @@
+name: Typst build
+
+on:
+    push:
+        branches: '***'
+    workflow_dispatch:
+    
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Install prerequisites
+              run: |
+                sudo apt update
+                sudo apt install -y typst imagemagick curl unzip python3
+            
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            
+            - name: Compile the documents
+              run: |
+                make bookletpdf
+
+            - name: Compile artifacts
+              run: |
+                python3 utils/generate_artifacts.py
+            
+            #- name: Upload songbook (booklet)
+            #  uses: actions/upload-artifact@v4
+            #  with:
+            #    name: Sangbog
+            #    path: output/sangbog.pdf
+            
+            - name: Upload songbook (continuous)
+              uses: actions/upload-artifact@v4
+              with:
+                name: Sangbog-kontinuert
+                path: output/sangbog-kontinuert.pdf
+            
+            - name: Upload artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                name: Artifacts
+                path: output/songs.json

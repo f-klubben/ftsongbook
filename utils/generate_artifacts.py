@@ -6,7 +6,7 @@ import base64
 from pathlib import Path
 
 CWD = Path.cwd()
-JSON_PATH = CWD.joinpath("songs.json")
+JSON_PATH = CWD.joinpath("output/songs.json")
 
 
 # =============================================================================
