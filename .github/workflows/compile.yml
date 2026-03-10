@@ -17,6 +17,10 @@ jobs:
             - uses: actions/setup-python@v6
               with:
                 python-version: '3.13' 
+            - name: Install Python dependencies
+              run: |
+                python3 -m pip install --upgrade pip
+                python3 -m pip install pypdf
 
             - name: Install prerequisites
               run: |
@@ -39,6 +43,12 @@ jobs:
               with:
                 name: Sangbog-kontinuert
                 path: output/sangbog.pdf
+
+            - name: Upload songbook (booklet)
+              uses: actions/upload-artifact@v4
+              with:
+                name: Sangbog-booklet
+                path: output/sangbog-booklet.pdf
             
             - name: Upload artifacts
               uses: actions/upload-artifact@v4

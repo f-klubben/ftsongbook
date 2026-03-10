@@ -101,11 +101,9 @@ kontinuertpdf: fonts png
 .PHONY: bookletpdf
 bookletpdf: kontinuertpdf
 	@echo "Compiling main.typ (booklet mode)"
-	@echo "Booklet mode not implemented"
-#	@mkdir -p $(OUTPUT_DIR)
-#	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
-#	# add --signature=64, to change signature
-#	@LC_ALL=C LANG=C pdfbook2 --paper a4 -o 10 -i 10 -t 10 -b 10 output/sangbog.pdf
+	@echo "If running locally"
+	@python3 -m pip install --user --quiet pypdf
+	@python3 utils/generate_booklet.py $(OUTPUT_DIR)/sangbog.pdf $(OUTPUT_DIR)/sangbog-booklet.pdf
 
 .PHONY: watch
 watch: fonts png
