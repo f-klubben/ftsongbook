@@ -50,7 +50,7 @@ The following fonts are used:
 They are downloaded into `fonts/` (which is git-ignored) and cached via a
 `fonts/.downloaded` sentinel file — so they are only fetched once.
 
-## Building using nix
+## Building using nix (NOT PRESENT, idk how to do nix)
 
 For nix based systems with flakes enabled:
 
