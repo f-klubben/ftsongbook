@@ -120,7 +120,7 @@
 // emulere latex sf effekt fra latex sangbog (the best that a Sebastian can atm)
 #let sf(content) = text(spacing: 0.5em, tracking: 0.05em, weight: 375)[#content]
 #let sc(content) = smallcaps[#content]
-#let tt(content) = text(font: "Courier New")[#content]
+#let tt(content) = text(font: "Courier Prime")[#content]
 #let small(content) = text(size: 0.9em)[#content]
 #let em(content) = emph[#content]
 #let big(content) = text(size: 1.1em)[#content]
@@ -426,7 +426,7 @@
         lang: "dk",
     )
 
-    show raw: set text(font: "Courier New")
+    show raw: set text(font: "Courier Prime")
 
     // Paragraph spacing
     set par(
