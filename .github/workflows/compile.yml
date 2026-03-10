@@ -2,7 +2,7 @@ name: Typst build
 
 on:
     push:
-        branches: '***'
+        branches: '*'
     workflow_dispatch:
     
 jobs:
@@ -29,7 +29,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                 name: Sangbog-kontinuert
-                path: output/sangbog-kontinuert.pdf
+                path: output/sangbog.pdf
             
             - name: Upload artifacts
               uses: actions/upload-artifact@v4
