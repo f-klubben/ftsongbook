@@ -450,7 +450,9 @@
 // PAGE TEMPLATES
 // ==============
 
-#let forside = page[
+#let forside = page(
+    footer: none,
+)[
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
         #v(1cm)
