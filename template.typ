@@ -46,6 +46,7 @@
         (name: "Simlau"),
         (name: "AI"),
         (name: "Jesus"),
+        (name: "Lorenzen"),
         (name: "For-mændene"),
     ),
     date: datetime.today(),
@@ -457,10 +458,14 @@
         #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
         #v(0.5cm)
         #text(size: 1.2em, weight: "regular")[
-            Made by #format-authors(config.authors) - #config.date.year()
+            Made by #format-authors(config.authors)
         ]
         #v(1.5cm)
         #image("assets/fklubben.svg", width: 70%)
+        #v(1.5cm)
+        #text(size: 1.2em, weight: "regular")[
+            #config.date.year()
+        ]
     ]
 ]
 
