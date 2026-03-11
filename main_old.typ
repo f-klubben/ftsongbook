@@ -195,8 +195,15 @@
 #kapitelside(titel: "Festsange", asset: "assets/eps2png/dream.png")
 #pagebreak()
 
+// Kranie med kranier
+#align(center)[
+    #image("assets/eps2png/party.png", width: 70%)
+]
 #include "sange/unsorted/allesømændergladeforpiger.typ"
-#v(-1em)
+#align(center)[
+    #image("assets/eps2png/calvinanswer.png",width: 80%)
+]
+#pagebreak()
 #include "sange/engelske/brightsideoflife.typ"
 #pagebreak()
 #include "sange/unsorted/dervarenskikkeligbondemand.typ"
@@ -205,11 +212,19 @@
 ]
 #pagebreak()
 #include "sange/unsorted/himmelhunden.typ"
-#include "sange/unsorted/mcarine.typ"
-#include "sange/unsorted/bubbibjørn.typ"
-#include "sange/unsorted/puffdenmagiskedrage.typ"
+#include "sange/unsorted/drunkensailor.typ"
 #pagebreak()
+#include "sange/unsorted/mcarine.typ"
+#align(center)[
+    #image("assets/eps2png/compiling.png",width: 80%)
+]
+#pagebreak()
+#include "sange/engelske/imagine.typ"
+#include "sange/unsorted/bubbibjørn.typ"
+#pagebreak()
+#include "sange/unsorted/puffdenmagiskedrage.typ"
 #include "sange/unsorted/buster.typ"
+#pagebreak()
 #include "sange/specielle/dereretølrigtland.typ" // F-klub?
 
 // J sektion
@@ -240,3 +255,20 @@
 #include "sange/unsorted/enmandfaldtnedfraførstesal.typ"
 #pagebreak()
 #include "sange/unsorted/lilleprinsesse.typ"
+
+
+/* 
+mangler, som er til rådighed:
+
+alleminevenner.typ
+elskabssang.typ
+forureningsvisen.typ
+frujensenfratolne.typ
+glædeligjul.typ
+jegsåjulemandenkyssemor.typ
+lanftfrahjemmeudenøl.typ
+sandhans.typ
+skipperklementsmorgensang.typ
+tinepingvin.typ
+vendelboensfestsang.typ
+ */

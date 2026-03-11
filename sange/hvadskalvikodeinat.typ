@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Hvad skal vi kode i nat", subtext: "Lorenzen, 2025 - Mel: Hvor skal vi sove i nat / Julebal i Nisseland", cols: 2)[
+#sang("Hvad skal vi kode i nat", subtext: "Lorenzen, 2025 - Mel: Hvor skal vi sove i nat", cols: 2)[
   #vers[
     #em["Hun"]: \
     Du skriv'r som lynet,  \
@@ -47,7 +47,7 @@
   #vers[
     #em["Hun"]: \
     Det er utroligt,  \
-    hvilke sprog der findes \
+    alle de sprog der findes \
     Kender du COBOL,  \
     det er sku ik så simpel \
     Min kære Nim lang,  \
@@ -71,7 +71,7 @@
     *Hvad skal vi kode i nat?* \
     Sangbogen, ja så går det \
     *Hvis du vil lave commits* \
-    Se, Typst er - overlegne, \
+    Se, Typst er det overlegne, \
     #LaTeX gir' migræne \
     Når man skriver i det \
     *Hvad skal vi kode i nat?* \

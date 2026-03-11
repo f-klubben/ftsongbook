@@ -46,6 +46,7 @@
         (name: "Simlau"),
         (name: "AI"),
         (name: "Jesus"),
+        (name: "Lorenzen"),
         (name: "For-mændene"),
     ),
     date: datetime.today(),
@@ -399,8 +400,8 @@
             right: 1.2cm, */
             /* inside: 1.5cm,
             outside: .5cm, */
-            inside: 1cm,
-            outside: 1cm,
+            inside: 1.2cm,
+            outside: 1.0cm,
         ),
         numbering: none, // Disable default numbering
         footer: context {
@@ -455,14 +456,18 @@
 )[
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1cm)
-        #text(size: 2.5em, weight: "regular")[#smallcaps[#config.title]]
-        #v(0.4cm)
-        #text(size: 1em, weight: "regular")[
-            Made by #format-authors(config.authors) - #config.date.year()
+        #v(1.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
+        #v(0.5cm)
+        #text(size: 1.2em, weight: "regular")[
+            Made by #format-authors(config.authors)
         ]
         #v(1.5cm)
         #image("assets/fklubben.svg", width: 70%)
+        #v(1.5cm)
+        #text(size: 1.2em, weight: "regular")[
+            #config.date.year()
+        ]
     ]
 ]
 
@@ -566,8 +571,8 @@
 #let kapitelside(titel: none, asset: "assets/fklubben.svg", spacing: 2cm) = page[
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1cm)
-        #text(size: 2.5em, weight: "regular")[#smallcaps[#titel]]
+        #v(1.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[#titel]]
         #v(spacing)
         #if asset != none [
             #image(asset, width: 70%)
