@@ -17,5 +17,3 @@
 #include "sange/jegerennørd.typ"
 #pagebreak()
 #include "sange/fytteturssangen.typ"
-#pagebreak()
-#image("rn_image_picker_lib_temp_ae3ed3c1-758e-4c30-8035-d33e631c12b6.jpg")
