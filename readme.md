@@ -1,4 +1,4 @@
-# F-Klubbens sangbog skreven i Typst (WIP)
+# F-Klubbens sangbog skreven i Typst
 
 
 
