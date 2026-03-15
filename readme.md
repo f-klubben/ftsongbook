@@ -1,7 +1,5 @@
 # F-Klubbens sangbog skreven i Typst
 
-
-
 ## Req.
 
 - typst 0.14.2
@@ -16,7 +14,7 @@ Here, for Debian- and Arch-based systems
 
 1. Fetch source code
 ```bash
-git clone #INSERT LINK HERE
+git clone https://github.com/f-klubben/ftsangbog.git
 ```
 2. Install prerequisites
 ```bash
@@ -53,7 +51,7 @@ For nix based systems with flakes enabled:
 
 - Fetch the source code
 ```bash
-git clone #INSET LINK HERE
+git clone https://github.com/f-klubben/ftsangbog.git
 ```
 - Enter environment
 ```bash
@@ -110,3 +108,7 @@ Songs are stored in `/sange` so the process of adding a new song
 #pagebreak() // pagebreak may not be needed, depending on spacing of songs!
 #include "sange/[songname].typ"
 ```
+
+## Ownership change
+
+This repo was originally owned by ever handsome [Naitsa (also known as Sebastian Lorenzen, a F-ordmand)](https://github.com/Naitsabot), but had its ownership transferred to F-Klubben as that was the aspiration for the repo.
