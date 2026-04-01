@@ -55,3 +55,9 @@ jobs:
               with:
                 name: Artifacts
                 path: output/songs.json
+            
+            - name: Release
+              uses: actions/upload-artifact@v6
+              with:
+                name: sange
+                path: output/
