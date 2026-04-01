@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("F-utlandia (50-års-jubilærumssang)", subtext: "Lorenzen, 2026 - Mel: Jutlandia af Kim Larsen & Bellami", cols: 2)[
+#sang("F-utlandia (50-års-jubilærumssang)", subtext: "Lorenzen et al., 2026 - Mel: Jutlandia af Kim Larsen & Bellami", cols: 2)[
   #vers[
     Det var i midten af 70'erne \
     Da klubben den kom til
@@ -8,7 +8,7 @@
     Køleskabet kørte, der var nog'n folk omkring \
     For der var tørste på campus \
     Den havde øl for den lystne tår \
-    Der hvor de studerende går
+    Der hvor de studerende\* går
   ]
 
   #omkvæd[
@@ -21,7 +21,7 @@
 
   #vers[
     Når der holdes fredagsbar, går vi alle arm i arm \
-    For der er altid tørste på campus \
+    I en stor overfyldt kantine \
     Og alle klubbens F-embers synger lidt "Ma'matik" \
     Når der er brød at spise \
     Stegsystemet spiller højste dur \
@@ -42,21 +42,22 @@
     *LEVENDE OG DØDE!* \
     Hvid som en jomfru og tapper som en smed \
     Går vi tiden i møde \
-    Frivillige på ~20 år \
-    Bruger her der's studieår
+    Frivillige på \~20 år \
+    Bruger her der's stu-di-e-år
   ]
 
   #omkvæd[
     Hey-ho for F-embers i dag \
-    Også dem ude i verden \
+    Ja også dem ude i verden \
     Hjemme i jæger-stu'n hjemme på Cass \
     Får de en error på skærmen 
   ]
 
   #note[
     #small[
-    Noget man kan sige imellem: \
-    #h(2em) _||: Kom for kaffe, en øl og lidt snak \
-    #h(2em) Det lyder godt :||_]
+    Noget man kan synge imellem vers: \
+    #h(2em) _||: Kom for kaffe, en øl og lidt snak.Det lyder godt :||_
+    \
+    \* og ansatte! ]
   ]
 ]
