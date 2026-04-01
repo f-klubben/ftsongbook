@@ -471,9 +471,62 @@
     ]
 ]
 
-#let forord = page()[
+#let forside = page(
+    footer: none,
+)[
+    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+    #align(center)[
+        #v(1.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
+        #v(0.5cm)
+        #text(size: 1.2em, weight: "regular")[
+            Made by #format-authors(config.authors)
+        ]
+        #v(1.5cm)
+        #image("assets/fklubben.svg", width: 70%)
+        #v(1.5cm)
+        #text(size: 3em, weight: "regular")[
+            #smallcaps[#config.date.year()]
+        ]
+    ]
+]
+
+#let jubiiiii = page(
+    footer: none,
+)[
+    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+    #align(center)[
+        #v(1cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Jubilærumssangbog]]
+        #v(1.5cm)
+        #image("assets/fklubben.svg", width: 70%)
+        #v(1.5cm)
+        #place(
+            top + right,
+            dx: 0.5cm,
+            dy: 8cm,
+            image("assets/milepæl50.png", width: 4cm),
+        )
+        #text(size: 3em, weight: "regular")[
+            #smallcaps[1976-2026]
+        ]
+    ]
+]
+
+#let fritfor = page()[
     \#fritfit\
     \#fritfor
+]
+
+#let forord = page()[
+    Værhilset til #smallcaps[F-Klubbens] 50-års-jubilæumssangbog!
+    
+    
+    Denne sangbog, (som nok ligner et "sanghæfte"), er 
+    
+    Med venlig hilsen den regerende for-mand, \
+    _Sebastian H. Lorenzen_
+
 ]
 
 #let meme_page_spacer = page()[
