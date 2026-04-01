@@ -8,7 +8,7 @@
 
 #forside
 
-#forord
+#fritfor
 
 #indholdfortegnelse(cols: 2)
 
