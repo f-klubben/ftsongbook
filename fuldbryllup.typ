@@ -8,7 +8,16 @@
 
 #jubiiiii
 
-#forord
+Værhilset til #smallcaps[F-Klubbens] 50-års-jubilæumssangbog!
+
+
+Denne sangbog, (som nok ligner et "sanghæfte"), er 
+
+Med venlig hilsen den regerende for-mand, \
+_Sebastian H. Lorenzen_
+
+#pagebreak()
+
 
 #indholdfortegnelse(cols: 2)
 

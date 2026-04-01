@@ -35,10 +35,10 @@
 #include "sange/dumåfåminccompilernårjegdør.typ"
 
 #place(
-  bottom + right,
+  right,
   dx: 0cm,
-  dy: -3cm,
-  image("assets/amiga.png", width: 4cm),
+  dy: -4cm,
+  image("assets/amiga.png", width: 5cm),
 )
 
 // Danskens sande glæade (tal/mad sangen)
@@ -144,7 +144,7 @@
   bottom + right,
   dx: 0cm,
   dy: 0cm,
-  image("assets/fotte.png", width: 4cm),
+  image("assets/fotte.png", width: 5cm),
 )
 
 #pagebreak()

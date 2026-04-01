@@ -496,7 +496,7 @@
 )[
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1cm)
+        #v(.5cm)
         #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Jubilærumssangbog]]
         #v(1.5cm)
         #image("assets/fklubben.svg", width: 70%)
@@ -516,17 +516,6 @@
 #let fritfor = page()[
     \#fritfit\
     \#fritfor
-]
-
-#let forord = page()[
-    Værhilset til #smallcaps[F-Klubbens] 50-års-jubilæumssangbog!
-    
-    
-    Denne sangbog, (som nok ligner et "sanghæfte"), er 
-    
-    Med venlig hilsen den regerende for-mand, \
-    _Sebastian H. Lorenzen_
-
 ]
 
 #let meme_page_spacer = page()[
