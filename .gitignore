@@ -1,4 +1,6 @@
 *.pdf
+!assets/*.pdf
+!assets/**/*.pdf
 *.html
 old/
 eps2*/

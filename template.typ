@@ -149,6 +149,8 @@
     [L#h(A.offset.x)#text(size: A.size, baseline: A.offset.y)[A]#h(T.x_offset)T#h(E.x_offset)#text(size: E.size, baseline: E.y_offset)[E]#h(X.x_offset)X]
 }
 
+#let f50 = {place(bottom + center, dy: 1.2cm, image("assets/50.png", width: 2cm))}
+
 // ===============
 // SONG COMPONENTS
 // ===============
@@ -528,7 +530,7 @@
         size: config.song-title-size,
         weight: config.song-title-weight,
     )[Indholdsfortegnelse])
-    place(bottom + center, dy: 1.2cm, image("assets/50.png", width: 2cm))
+    f50
 
     v(0.5cm)
 
@@ -625,4 +627,5 @@
             #image(asset, width: 70%)
         ]
     ]
+    #f50
 ]

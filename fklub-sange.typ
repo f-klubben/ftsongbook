@@ -74,6 +74,13 @@
 #f50
 #pagebreak()
 
+#page(
+    footer: none, header: none, margin: 0pt
+)[
+    #image("assets/toilet indslag.pdf", page: 1)
+]
+#pagebreak()
+
 // Mat'matik (Bubbi Bjørn)
 #include "sange/matematik.typ"
 

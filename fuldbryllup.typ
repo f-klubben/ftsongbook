@@ -1,6 +1,6 @@
 #import "template.typ": *
 
-#let f50 = {place(bottom + center, dy: 1.2cm, image("assets/50.png", width: 2cm))}
+
 
 #show: songbook.with(
     title: "F-Klubbens Fabelagtige Sangbog"
@@ -8,7 +8,43 @@
 
 //#set block(stroke: 2pt + red)
 
-#jubiiiii
+//#jubiiiii
+
+
+#page(
+    footer: none, header: none, margin: 0pt
+)[
+    #image("assets/forside fuldbryllup.pdf", page: 1)
+]
+
+#page(
+    footer: none, header: none, margin: 0pt
+)[
+    #image("assets/inderside_for.pdf", page: 1)
+]
+
+#pagebreak()
+
+#text(2em, weight: "bold")[#smallcaps[Et Tilbageblik]]
+
+#f50
+#pagebreak()
+
+#align(center)[
+_Tusind tak til Fuldbrylllupudvalget_: \
+Oliver Viller Neilsen (Foliver) \
+Kresten Laust Faaborg Sckrel \
+Jakob Topholt Jensen \
+Anders Rask Sørensen \
+Patrick Kaas Reiffenstein \
+Theis Møller Nørby Jensen \
+Emil Kristensen Vorre
+]
+
+#f50
+#pagebreak()
+
+//#jubiiiii
 
 Værhilset til #smallcaps[F-Klubbens] 50-års-jubilæumssangbog!
 
@@ -19,17 +55,12 @@ PS. Hvis man er i besiddelse af ældre (eller nye!) sange. tag endeligt kontakt!
 Med venlig hilsen den regerende for-mand, \
 _Sebastian Haahr Lorenzen_
 
-\
-
-_Tusind tak til Fuldbrylllupudvalget_:
-Oliver Viller Neilsen (Foliver)
-Kresten Laust Faaborg Sckrel
-Jakob Topholt Jensen
-Anders Rask Sørensen
-Patrick Kaas Reiffenstein
-Theis Møller Nørby Jensen
-Emil Kristensen Vorre
-
+#place(
+            top + right,
+            dx: 0.5cm,
+            dy: 8cm,
+            image("assets/milepæl50.png", width: 4cm),
+        )
 
 #f50
 #pagebreak()
@@ -45,7 +76,20 @@ Emil Kristensen Vorre
 #pagebreak()
 
 #kapitelside(titel: "F-Klub Sange")
-#f50
 #pagebreak()
 
 #include "fklub-sange.typ"
+
+#pagebreak()
+#align(center)[
+#text(2em, weight: "bold")[
+#smallcaps()[Hilsner]]
+]
+
+#f50
+#pagebreak()
+#page(
+    footer: none, header: none, margin: 0pt
+)[
+    #image("assets/bagside.pdf", page: 1)
+]
