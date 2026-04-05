@@ -89,6 +89,7 @@
 
 // Hvorfor skal vi hejse et flag
 #include "sange/flagsang.typ"
+#pagebreak()
 
 // CLRS 
 #include "sange/clrs.typ"
