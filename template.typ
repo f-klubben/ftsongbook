@@ -528,8 +528,11 @@
         size: config.song-title-size,
         weight: config.song-title-weight,
     )[Indholdsfortegnelse])
+    place(bottom + center, dy: 1.2cm, image("assets/50.png", width: 2cm))
 
     v(0.5cm)
+
+    block(height: 12cm, width: auto, {
 
     columns(cols, gutter: 0.5cm, {
         context {
@@ -607,6 +610,8 @@
                 }
             }
         }
+    })
+
     })
 })
 
