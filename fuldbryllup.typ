@@ -25,13 +25,16 @@
 
 #pagebreak()
 
-#text(2em, weight: "bold")[#smallcaps[Et Tilbageblik]]
+#text(font: config.song-title-font, size: config.song-title-size, weight: config.song-title-weight)[Et Tilbageblik]
 
 #f50
 #pagebreak()
 
 #align(center)[
-_Tusind tak til Fuldbrylllupudvalget_: \
+#text(font: config.song-title-font, size: config.song-title-size, weight: config.song-title-weight)[Tusind tak til Fuldbrylllupudvalget]: \
+]
+\
+#align(center)[
 Oliver Viller Neilsen (Foliver) \
 Kresten Laust Faaborg Sckrel \
 Jakob Topholt Jensen \
@@ -82,9 +85,7 @@ _Sebastian Haahr Lorenzen_
 
 #pagebreak()
 #align(center)[
-#text(2em, weight: "bold")[
-#smallcaps()[Hilsner]]
-]
+#text(font: config.song-title-font, size: config.song-title-size, weight: config.song-title-weight)[Hilsner]]
 
 #f50
 #pagebreak()
