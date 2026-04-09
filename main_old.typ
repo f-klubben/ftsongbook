@@ -124,7 +124,7 @@
 #pagebreak()
 
 // Eksaminandernes kort
-#include "sange/eksaminanderneskort.typ"
+#include "sange/eksaminanderneskor.typ"
 
 // Meyers vise
 #include "sange/meyersvise.typ"
