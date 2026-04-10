@@ -56,6 +56,7 @@ FORMATTING_CONFIG: dict = {
         "strong":  (r"{\bf", "}"),   # strong / bold
         "emph":    (r"\textit{", "}"),   # emphasis
         "context": ("", ""),   # layout wrapper
+        "super":   ("", ""),   # layout wrapper
     },
 
 
