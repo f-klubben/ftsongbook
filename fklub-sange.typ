@@ -1,10 +1,21 @@
+#import "template.typ": *
+
+// Gammel forside (ikke en forside her)
+#place(
+    center + bottom,
+    dx: 0cm,
+    dy: -.5cm,
+    image("assets/fklub-sange-forside.png", width: 70%),
+)
+// Futlandia
+#include "sange/futlandia.typ"
+#pagebreak()
+
 // En målrettet vise
 #include "sange/målrettetvise.typ"
 #pagebreak()
 
-// En meget nostalgisk vise
-#include "sange/enmegetnostalgiskvise.typ"
-#pagebreak()
+
 
 // Tegning af Rudin
 #v(2cm)
@@ -20,6 +31,8 @@
 #include "sange/masserafcc.typ"
 #pagebreak()
 
+
+
 // En kort en lang (billedsangen)
 #include "sange/enkortenlang.typ"
 #pagebreak()
@@ -30,6 +43,25 @@
 // Hvem sidder foran skærmen
 #include "sange/hvemsidderforanskærmen.typ"
 #pagebreak()
+
+
+
+#place(
+  center,
+  dx: 0cm,
+  dy: 3.25cm,
+  image("assets/franskbrod.png", width: 8cm),
+)
+
+// Fredagsfranskbrød
+#include "sange/brødsangen.typ"
+
+#v(3cm)
+
+// Vi er ikek humanister
+#include "sange/vierikkehumanister.typ"
+#pagebreak()
+
 
 // C compiler
 #include "sange/dumåfåminccompilernårjegdør.typ"
@@ -45,22 +77,25 @@
 #include "sange/danskernessaneglæde.typ"
 #pagebreak()
 
-// Fredagsfranskbrød
-#include "sange/brødsangen.typ"
 
-// Lilel grønen frø
-#include "sange/denlillegrønnefrø.typ"
-
-// Vi er ikek humanister
-#include "sange/vierikkehumanister.typ"
+// En meget nostalgisk vise
+#include "sange/enmegetnostalgiskvise.typ"
 #pagebreak()
+
+
 
 // Regn-sangen (42)
 #include "sange/regnsangen.typ"
 
+// Lilel grønen frø
+#include "sange/denlillegrønnefrø.typ"
+
 // Kampsangen
 #include "sange/dat62.typ"
 #pagebreak()
+
+
+
 
 // Mat'matik (Bubbi Bjørn)
 #include "sange/matematik.typ"
@@ -83,9 +118,21 @@
 // Alle DAT'er er emget glade for Mini
 #include "sange/miniblirbortført.typ"
 
+#v(-1em)
 // Veteranens nostalgiske vise (nyere version af FVJ variaent)
 #include "sange/veteranensnostalgiskesang.typ"
 #pagebreak()
+
+
+// Halvejs kylling
+#place(
+  right
+  +bottom,
+  dx: 0cm,
+  dy: 0cm,
+  image("assets/halvejs.png", width: 5cm),
+)
+
 
 // Hvorfor skal vi hejse et flag
 #include "sange/flagsang.typ"
@@ -127,6 +174,13 @@
 //#include "sange/enpædagogiskvise.typ"
 //#pagebreak()
 
+#place(
+  center+bottom,
+  dx: 0cm,
+  dy: 1cm,
+  image("assets/eksamen.png", width: 100%),
+)
+
 // Et sidte farvel
 #include "sange/etsidstefarvel.typ"
 #pagebreak()
@@ -152,8 +206,15 @@
 
 // Der kan man C
 #include "sange/derkanmanc.typ"
+
+// F-nüt 1985 f-klub-sangkonkurence - vindersangen
+#include "sange/fnut1985vindersangen.typ"
 #pagebreak()
 
-// Futlandia
-#include "sange/futlandia.typ"
-//#pagebreak()
+
+// F-nüt 1985 f-klub-sangkonkurence - hold 1
+#include "sange/fnut1985rossethold1.typ"
+// F-nüt 1985 f-klub-sangkonkurence - hold 2
+#include "sange/fnut1985rossethold2.typ"
+// F-nüt 1985 f-klub-sangkonkurence - hold 3
+#include "sange/fnut1985rossethold3.typ"

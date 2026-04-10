@@ -42,8 +42,4 @@
     redt os spor til eksamen \
     Se dit femtal og dø
   ]
-
-  #note[
-    #small[Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988.]
-  ]
 ]
