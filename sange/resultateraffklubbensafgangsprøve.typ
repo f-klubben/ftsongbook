@@ -89,7 +89,6 @@
   ]
 
   #note[
-    #small[Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. \
-    F-klubbens afgangsprøve til kandidatfesten februar 1987 resulterede i et antal besvarelser, bl.a. disse vers. ]
+    #small[F-klubbens afgangsprøve til kandidatfesten februar 1987 resulterede i et antal besvarelser, bl.a. disse vers. ]
   ]
 ]

@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Eksaminandernes kort", subtext: "Finn Verner Jensen og Hans Hüttel - Mel: Se Venedig og dø ...
+#sang("Eksaminandernes kor", subtext: "Finn Verner Jensen og Hans Hüttel - Mel: Se Venedig og dø ...
 ", cols: 1)[
   
   #note[
@@ -41,9 +41,5 @@
     til eksamen \
     redt os spor til eksamen \
     Se dit femtal og dø
-  ]
-
-  #note[
-    #small[Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988.]
   ]
 ]

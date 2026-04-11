@@ -8,7 +8,7 @@
 
 #forside
 
-#forord
+#fritfor
 
 #indholdfortegnelse(cols: 2)
 
@@ -124,7 +124,7 @@
 #pagebreak()
 
 // Eksaminandernes kort
-#include "sange/eksaminanderneskort.typ"
+#include "sange/eksaminanderneskor.typ"
 
 // Meyers vise
 #include "sange/meyersvise.typ"

@@ -13,7 +13,7 @@
 #include "sange/målrettetvise.typ"
 #pagebreak()
 #include "sange/fottesangen.typ"
-#pagebreak()  
+#pagebreak()
 #include "sange/jegerennørd.typ"
 #pagebreak()
 #include "sange/fytteturssangen.typ"
