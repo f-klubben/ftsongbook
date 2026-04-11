@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("F-utlandia (50-års-jubilærumssang)", subtext: "Lorenzen et al., 2026 - Mel: Jutlandia af Kim Larsen & Bellami", cols: 2)[
+#sang("En hyldest (50-års-jubilæumssang)", subtext: "Lorenzen & Victoria Kraghede, 2026 - Mel: Jutlandia", cols: 2)[
   #vers[
     Det var i midten af 70'erne \
     Da klubben den kom til
@@ -8,7 +8,7 @@
     Køleskabet kørte, der var nog'n folk omkring \
     For der var tørste på campus \
     Den havde øl for den lystne tår \
-    Der hvor de studerende\* går
+    Der hvor de studerende#super[†] går
   ]
 
   #omkvæd[
@@ -58,6 +58,6 @@
     Noget man kan synge imellem vers: \
     #h(2em) _||: Kom for kaffe, en øl og lidt snak.Det lyder godt :||_
     \
-    \* og ansatte! ]
+    † og ansatte! ]
   ]
 ]

@@ -4,7 +4,7 @@
 #place(
     center + bottom,
     dx: 0cm,
-    dy: -.5cm,
+    dy: 0cm,
     image("assets/fklub-sange-forside.png", width: 70%),
 )
 // Futlandia
