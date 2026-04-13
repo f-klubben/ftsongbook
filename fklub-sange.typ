@@ -159,6 +159,14 @@
 #include "sange/hvadskalvikodeinat.typ"
 #pagebreak()
 
+// Kvindelig eksaminstor
+#place(
+  right+horizon,
+  dx: .5cm,
+  dy: 0cm,
+  image("assets/eksaminator.png", width: 6cm),
+)
+
 // Eksaminandernes kort
 #include "sange/eksaminanderneskor.typ"
 
