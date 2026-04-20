@@ -61,10 +61,10 @@
 
 // Franskbrød billede
 #place(
-  center,
-  dx: 0cm,
-  dy: 3.25cm,
-  image("assets/franskbrod.png", width: 8cm),
+    center,
+    dx: 0cm,
+    dy: 3.25cm,
+    image("assets/franskbrod.png", width: 8cm),
 )
 
 // Fredagsfranskbrød
@@ -76,15 +76,14 @@
 #include "sange/vierikkehumanister.typ"
 #pagebreak()
 
-
 // C compiler
 #include "sange/dumåfåminccompilernårjegdør.typ"
 
 #place(
-  right,
-  dx: 0cm,
-  dy: -4cm,
-  image("assets/amiga.png", width: 5cm),
+    right,
+    dx: 0cm,
+    dy: -4cm,
+    image("assets/amiga.png", width: 5cm),
 )
 
 // Danskens sande glæade (tal/mad sangen)
@@ -97,6 +96,12 @@
 #pagebreak()
 
 
+// Tegning af Sofa Fra F-nüt
+#align(center+horizon)[
+    #image("assets/fnut-sofa.png", width: 110%)
+]
+
+#pagebreak()
 
 // Regn-sangen (42)
 #include "sange/regnsangen.typ"
@@ -106,15 +111,19 @@
 
 // Kampsangen
 #include "sange/dat62.typ"
+
 #pagebreak()
 
-
-
-
-
+#place(
+    center+bottom,
+    dx: 0cm,
+    dy: 0cm,
+    image("assets/øre.png", width: 7cm),
+)
 
 // Jeg en nørd (Pokémon)
 #include "sange/jegerennørd.typ"
+
 #pagebreak()
 
 // På Cassiopeia til Foobar
@@ -122,6 +131,7 @@
 
 // Fit er Frit (bella chao)
 #include "sange/fiterfrit.typ"
+
 #pagebreak()
 
 // Alle DAT'er er emget glade for Mini
@@ -130,6 +140,7 @@
 #v(-1em)
 // Veteranens nostalgiske vise (nyere version af FVJ variaent)
 #include "sange/veteranensnostalgiskesang.typ"
+
 #pagebreak()
 
 
@@ -145,6 +156,7 @@
 
 // Hvorfor skal vi hejse et flag
 #include "sange/flagsang.typ"
+
 #pagebreak()
 
 // CLRS 
@@ -152,6 +164,14 @@
 
 // Drunken BoAnd
 #include "sange/drunkenboand.typ"
+
+#pagebreak()
+
+// Tegning af eksamens-angst
+#align(center+horizon)[
+    #image("assets/eksamens-angst.png", width: 90%)
+]
+
 #pagebreak()
 
 // F-Luciasangen på normal
@@ -162,9 +182,8 @@
 
 // Alle Dat'er er galde for poster
 #include "sange/alledatererfladeforporter.typ"
+
 #pagebreak()
-
-
 
 // Kvindelig eksaminstor
 #place(
@@ -179,15 +198,13 @@
 
 // Meyers vise
 #include "sange/meyersvise.typ"
+
 #pagebreak()
 
 // BoAnd Krabebsangen
 #include "sange/krabbeboand.typ"
-#pagebreak()
 
-// En pædagogisk vise (same as en meget nostalgisk vise)
-//#include "sange/enpædagogiskvise.typ"
-//#pagebreak()
+#pagebreak()
 
 #place(
   center+bottom,
@@ -198,10 +215,12 @@
 
 // Et sidte farvel
 #include "sange/etsidstefarvel.typ"
+
 #pagebreak()
 
 // Resultater af klubbens afgangsprøve
 #include "sange/resultateraffklubbensafgangsprøve.typ"
+
 #pagebreak()
 
 // Bingospillren
@@ -224,12 +243,15 @@
 
 // F-nüt 1985 f-klub-sangkonkurence - vindersangen
 #include "sange/fnut1985vindersangen.typ"
-#pagebreak()
 
+#pagebreak()
 
 // F-nüt 1985 f-klub-sangkonkurence - hold 1
 #include "sange/fnut1985rossethold1.typ"
+
 // F-nüt 1985 f-klub-sangkonkurence - hold 2
 #include "sange/fnut1985rossethold2.typ"
+
 // F-nüt 1985 f-klub-sangkonkurence - hold 3
 #include "sange/fnut1985rossethold3.typ"
+

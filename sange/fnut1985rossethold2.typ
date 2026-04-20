@@ -21,7 +21,7 @@
     vi næsten ej ku' spis' :||
   ]
   
-  #note[#small[Fra sangkonkurrence i F-nüt 1985 1. årgang nr. 2]]
+  #note[#small[Fra fest-sangkonkurrence i F-nüt 1985 1. årgang nr. 2.]]
   
   #csplit
 

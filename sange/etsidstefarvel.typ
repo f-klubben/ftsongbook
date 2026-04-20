@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("Et sidste farvel", subtext: "Mel: Hvor smiler fager (den danske kyst?)", cols: 2)[
+// Hans H: "Et sidste farvel” er skrevet af mig under en kandidatfest. AUC var navnet på AAU, før verden gik af lave.
+
+#sang("Et sidste farvel", subtext: "Hans Hüttel - Mel: Hvor smiler fager den danske kyst", cols: 2)[
   
   #vers[
     Her skal der lyde et højt #sc[HURRA] \
@@ -65,5 +67,9 @@
     nu hvor I står og er kandidater \
     Så her skal lyde et højt #underline[FARVEL]! \
     Tag jeres tøj på og lev så vel \u{2026}
+  ]
+
+  #note[
+    #small[Denne sang er skreven _under_ en kandidatfest]
   ]
 ]

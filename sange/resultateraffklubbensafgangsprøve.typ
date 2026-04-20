@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("Resultater af F-klubbens afgangsprøve", subtext: "Mel: What did you learn in school today", cols: 2)[
+// Hans H: Sang 33 er i stort omfang skrevet af deltagerne til F-klubbens generalforsamling i 1987. MS var ikke Mellemfolkeligt Samvirke, men en borgerlig studenterorganisation.
+
+#sang("Resultater af F-klubbens afgangsprøve", subtext: "Deltagerne til F-Klubbens GF, 1987 Mel: What did you learn in school today?", cols: 2)[
   #vers[
     #em[|: Hvad fik du lært på AUC, F-sektorkandidat ? :|] \
     Jeg lært' at elske matematik \
@@ -89,6 +91,7 @@
   ]
 
   #note[
-    #small[F-klubbens afgangsprøve til kandidatfesten februar 1987 resulterede i et antal besvarelser, bl.a. disse vers. ]
+    #small[/* Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. \ */
+    F-klubbens afgangsprøve til kandidatfesten februar 1987 resulterede i et antal besvarelser, bl.a. disse vers. ]
   ]
 ]

@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Eksaminandernes kor", subtext: "Finn Verner Jensen og Hans Hüttel - Mel: Se Venedig og dø ...
+#sang("Eksaminandernes kor", subtext: "Finn Verner Jensen (FVJ) og Hans Hüttel - Mel: Se Venedig og dø ...
 ", cols: 1)[
   
   #note[

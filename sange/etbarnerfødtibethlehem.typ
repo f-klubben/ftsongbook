@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("Et barn er født i Bethlehem", subtext: "Mel: Gæt selv ...", cols: 2)[
+// Hans H: De to julesange er skrevet af Finn Verner Jensen.
+
+#sang("Et barn er født i Bethlehem", subtext: "Finn Verner Jensen (FVJ) - Mel: Gæt selv...", cols: 2)[
   #vers[
     Et barn er født i Bethlehem, \
     Bethlehem. \

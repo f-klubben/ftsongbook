@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("Julemad og drikke---dur for nissen ikke", subtext: "Mel: På loftet sidder nissen", cols: 2)[
+// Hans H: De to julesange er skrevet af Finn Verner Jensen.
+
+#sang("Julemad og drikke---dur for nissen ikke", subtext: "Finn Verner Jensen (FVJ) - Mel: På loftet sidder nissen", cols: 2)[
   #vers[
     På loftet sidder nissen med sin julemad, \
     et mægtigt fad---den gamle rad. \

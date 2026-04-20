@@ -35,3 +35,63 @@ _Sebastian Haahr Lorenzen_
 #pagebreak()
 
 #include "fklub-sange.typ"
+
+#kapitelside(titel: "Sange fra verden", asset: "assets/verden.png", spacing: 1cm)
+
+#include "sange/unsorted/costadelsol.typ"
+
+#include "sange/unsorted/hjemmebrænderiet.typ"
+
+#pagebreak()
+
+// Vendelbomanden
+#place(
+  bottom + right,
+  dx: 0cm,
+  dy: .25cm,
+  image("assets/vendelbo.png", width: 5.5cm),
+)
+
+#include "sange/unsorted/vendelboensfestsang.typ"
+
+#pagebreak()
+
+#include "sange/unsorted/frujensenfratolne.typ"
+
+#pagebreak()
+
+#include "sange/unsorted/dervarenskikkeligbondemand.typ"
+
+#align(center)[#image("assets/eps2png/bondemand.png", width: 12cm)]
+
+#pagebreak()
+
+#place(
+  horizon + right,
+  dx: .5cm,
+  dy: -1.5cm,
+  image("assets/nobeer.png", width: 10cm),
+)
+
+#include "sange/unsorted/lanftfrahjemmeudenøl.typ"
+
+#v(4.5cm)
+
+#include "sange/specielle/dereretølrigtland.typ"
+
+#pagebreak()
+
+#include "sange/tågekammeret/tågekamemret-feaster-2025.typ"
+
+#kapitelside(titel: "Julesange", asset: "assets/julemand.png", spacing: 1cm)
+
+#place(
+  bottom + center,
+  dx: 0cm,
+  dy: 1cm,
+  image("assets/julemad.png", width: 5.5cm),
+)
+
+#include "sange/etbarnerfødtibethlehem.typ"
+
+#include "sange/julemadogdrikke.typ"

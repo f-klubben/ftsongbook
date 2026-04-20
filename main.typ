@@ -305,9 +305,9 @@
 
 #include "sange/unsorted/sørenbanjomus.typ"
 #pagebreak()
-#include "sange/specielle/etbarnerfødtibethlehem.typ"
+#include "sange/etbarnerfødtibethlehem.typ"
 #include "sange/specielle/jegsåjulemandenkyssemor.typ"
-#include "sange/specielle/julemadogdrikke.typ" // F-klub?
+#include "sange/julemadogdrikke.typ" // F-klub?
 #pagebreak()
 #include "sange/engelske/jinglebellrock.typ"
 #include "sange/engelske/letitsnow.typ"

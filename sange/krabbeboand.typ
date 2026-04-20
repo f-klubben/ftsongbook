@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("BoAnd", subtext: "Mel: Krabbesangen", cols: 2)[
+#sang("BoAnd", subtext: "Kyrke og Leapigen - Mel: Krabbesangen", cols: 2)[
   #vers[
     Og BoAnd var så sød \
     På maven var han blød \
