@@ -454,18 +454,29 @@
 #let forside = page(
     footer: none,
 )[
+//    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+//    #align(center)[
+//        #v(1.5cm)
+//        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
+//        #v(0.5cm)
+//        #text(size: 1.2em, weight: "regular")[
+//            Made by #format-authors(config.authors)
+//        ]
+//        #v(1.5cm)
+//        #image("assets/fklubben.svg", width: 70%)
+//        #v(1.5cm)
+//        #text(size: 1.2em, weight: "regular")[
+//            #config.date.year()
+//        ]
+//    ]
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1.5cm)
-        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
-        #v(0.5cm)
-        #text(size: 1.2em, weight: "regular")[
-            Made by #format-authors(config.authors)
-        ]
+        #v(.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Sangbog]]
         #v(1.5cm)
         #image("assets/fklubben.svg", width: 70%)
         #v(1.5cm)
-        #text(size: 1.2em, weight: "regular")[
+        #text(size: 3em, weight: "regular")[
             #config.date.year()
         ]
     ]
@@ -497,7 +508,7 @@
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
         #v(.5cm)
-        #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Jubilærumssangbog]]
+        #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Jubilæumssangbog]]
         #v(1.5cm)
         #image("assets/fklubben.svg", width: 70%)
         #v(1.5cm)

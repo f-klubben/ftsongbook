@@ -1,5 +1,8 @@
 name: Typst build
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -61,9 +64,12 @@ jobs:
               with:
                 name: Artifacts
                 path: output/songs.json
-            
-            - name: Release
-              uses: actions/upload-artifact@v6
+
+            - name: Upload release assets
+              if: github.event_name == 'release'
+              uses: softprops/action-gh-release@v2
               with:
-                name: sange
-                path: output/
+                files: |
+                  output/sangbog.pdf
+                  output/sangbog-booklet.pdf
+                  output/songs.json

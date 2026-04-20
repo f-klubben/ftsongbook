@@ -25,11 +25,11 @@
   ]
   #v(-.25em)
   #note[#small[
-    † I tideligere udgaver var det "Brønderslev". \
-    ‡ Tideligere: "landsat". \
-    § Tideligere: "måske ansat". \
-    ¶ Tideligere: "Harboør". \
-    ‖ Tideligere: "lærersnak som jo aldrig Kunne slutt'". \
+    † I tidligere udgaver var det "Brønderslev". \
+    ‡ Tidligere: "landsat". \
+    § Tidligere: "måske ansat". \
+    ¶ Tidligere: "Harboør". \
+    ‖ Tidligere: "lærersnak som jo aldrig Kunne slutt'". \
   ]]
 
   #csplit
@@ -54,11 +54,11 @@
   ]
   #v(-.25em)
   #note[#small[
-    ⁕ Tideligere: "og drak af klubbens kasser, mens vi  gumled' en cerut". \
-    ⁑ Tideligere: "snakked' lidt om hvem ved hvad". \
-    ⁂ Tideligere: "I Brønderslev er fuldt af amazoner". \
-    ※ Tideligere "rare koner". #super[⁜] \
-    ⁜ Tideligere "ingen koner".
+    ⁕ Tidligere: "og drak af klubbens kasser, mens vi  gumled' en cerut". \
+    ⁑ Tidligere: "snakked' lidt om hvem ved hvad". \
+    ⁂ Tidligere: "I Brønderslev er fuldt af amazoner". \
+    ※ Tidligere "rare koner". #super[⁜] \
+    ⁜ Tidligere "ingen koner".
   ]]
 ]
 
