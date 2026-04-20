@@ -73,7 +73,7 @@ _Sebastian Haahr Lorenzen_
   image("assets/nobeer.png", width: 10cm),
 )
 
-#include "sange/unsorted/lanftfrahjemmeudenøl.typ"
+#include "sange/specielle/langtfrahjemmeudenøl.typ"
 
 #v(4.5cm)
 
@@ -82,6 +82,10 @@ _Sebastian Haahr Lorenzen_
 #pagebreak()
 
 #include "sange/tågekammeret/tågekamemret-feaster-2025.typ"
+
+#pagebreak()
+
+#include "sange/tågekammeret/tågekamemret-bestpåtur.typ"
 
 #kapitelside(titel: "Julesange", asset: "assets/julemand.png", spacing: 1cm)
 

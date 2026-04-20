@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("TÅGEKAMMERET på besøg", subtext: "CERM, 2025 - Mel: Til julebal i Nisseland ")[
+#sang("TÅGEKAMMERET på besøg", subtext: [$bb(C)$ERM, 2025 - Mel: Til julebal i Nisseland #h(1em) ])[
   #vers[
     Det er blevet fredag nu, lige hvad, vi sku' brug' \
     Aftenen den blir suver fed, for nu går det ned
