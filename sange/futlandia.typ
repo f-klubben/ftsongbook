@@ -1,9 +1,8 @@
 #import "//template.typ": *
 
-#sang("En hyldest (50-års-jubilæumssang)", subtext: "Lorenzen & Victoria Kraghede, 2026 - Mel: Jutlandia", cols: 2)[
+#sang("En hyldest (50-års-jubilæumssang)", subtext: "Sebastian Lorenzen & Victoria Kraghede, 2026 - Mel: Jutlandia", cols: 2)[
   #vers[
-    Det var i midten af 70'erne \
-    Da klubben den kom til
+    Det var i midten af 70'erne, da klubben den kom til \
     Da der var tørste på campus \
     Køleskabet kørte, der var nog'n folk omkring \
     For der var tørste på campus \
@@ -21,8 +20,8 @@
 
   #vers[
     Når der holdes fredagsbar, går vi alle arm i arm \
-    I en stor overfyldt kantine \
-    Og alle klubbens F-embers synger lidt "Ma'matik" \
+    I en /* stor over */fyldt kantine \
+    Og alle klubbens F-embers synger, lidt "Ma'matik" \
     Når der er brød at spise \
     Stegsystemet spiller højste dur \
     Come on, soldier - tag med på F-yttetur
@@ -40,7 +39,7 @@
   #vers[
     Efter halve hundred' år ka' vi stadig følge med \
     *LEVENDE OG DØDE!* \
-    Hvid som en jomfru og tapper som en smed \
+    Hvid som en jomfru og lugter lidt af sved/* tapper som en smed */ \
     Går vi tiden i møde \
     Frivillige på \~20 år \
     Bruger her der's stu-di-e-år

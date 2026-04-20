@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("Introduktionsvise", subtext: "Mel: Jeg er havren", cols: 2)[
+//Hans H: “Introduktionsvise” (sang nummer 2) er skrevet af mig og er fra 1984. Jeg er blevet undervist af BBK, PDV, JS, AaN, AD, SLB, PSE, MR og KGL. Kun KGL er her endnu. JS var Jan Stage, som gik på pension med udgangen af 2025.
+
+#sang("Introduktionsvise", subtext: "Hans Hüttel, 1984 - Mel: Jeg er havren", cols: 2)[
   #vers[
     Kære unge venner på Mat 1 ! \
     Jeres nye studium blir #em[fedt], \

@@ -7,21 +7,22 @@
     dy: 0cm,
     image("assets/fklub-sange-forside.png", width: 70%),
 )
+
 // Futlandia
 #include "sange/futlandia.typ"
+
 #pagebreak()
 
 // En målrettet vise
 #include "sange/målrettetvise.typ"
+
 #pagebreak()
 
-
-
 // Tegning af Rudin
-#v(2cm)
-#align(center)[
-    #image("assets/rudin.png")
+#align(center+horizon)[
+    #image("assets/rudin.png", width: 70%)
 ]
+
 #pagebreak()
 
 // En introduktionsvise
@@ -29,12 +30,25 @@
 
 // Masser af cc
 #include "sange/masserafcc.typ"
+
 #pagebreak()
 
+// Mat'matik (Bubbi Bjørn)
+#include "sange/matematik.typ"
 
+// Fytteturssangen
+#include "sange/fytteturssangen.typ"
+
+#pagebreak()
+
+// Havd skal vi kode i nat
+#include "sange/hvadskalvikodeinat.typ"
+
+#pagebreak()
 
 // En kort en lang (billedsangen)
 #include "sange/enkortenlang.typ"
+
 #pagebreak()
 
 // Livet (im a lumberjack and I'm okay)
@@ -42,10 +56,10 @@
 
 // Hvem sidder foran skærmen
 #include "sange/hvemsidderforanskærmen.typ"
+
 #pagebreak()
 
-
-
+// Franskbrød billede
 #place(
   center,
   dx: 0cm,
@@ -97,12 +111,7 @@
 
 
 
-// Mat'matik (Bubbi Bjørn)
-#include "sange/matematik.typ"
 
-// Fytteturssangen
-#include "sange/fytteturssangen.typ"
-#pagebreak()
 
 // Jeg en nørd (Pokémon)
 #include "sange/jegerennørd.typ"
@@ -155,9 +164,7 @@
 #include "sange/alledatererfladeforporter.typ"
 #pagebreak()
 
-// Havd skal vi kode i nat
-#include "sange/hvadskalvikodeinat.typ"
-#pagebreak()
+
 
 // Kvindelig eksaminstor
 #place(

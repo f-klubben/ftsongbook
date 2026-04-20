@@ -22,7 +22,7 @@ _Sebastian Haahr Lorenzen_
 #pagebreak()
 
 
-#indholdfortegnelse(cols: 2)
+#indholdfortegnelse(cols: 2, block_height: 12cm)
 
 #v(1cm)
 #align(center)[

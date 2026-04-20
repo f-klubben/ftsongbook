@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Fredagsfranskbrødsreglsangen", subtext: "Lorenzen & Kresten - Mel: Fødselsdagssangen", cols: 2)[
+#sang("Fredagsfranskbrødsreglsangen", subtext: "Sebastian Lorenzen & Kresten Laust, 2025 - Mel: Fødselsdagssangen", cols: 2)[
   #vers[
     I dag er der brød til hver en mand \
     Furra, Furra, Furraa \

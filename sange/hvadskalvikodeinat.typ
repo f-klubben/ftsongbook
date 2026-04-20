@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Hvad skal vi kode i nat", subtext: "Lorenzen, 2025 - Mel: Hvor skal vi sove i nat", cols: 2)[
+#sang("Hvad skal vi kode i nat", subtext: "Sebastian Lorenzen, 2025 - Mel: Hvor skal vi sove i nat", cols: 2)[
   #vers[
     #em["Hun"]: \
     Du skriv'r som lynet,  \
