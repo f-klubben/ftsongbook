@@ -1,6 +1,10 @@
 #import "//template.typ": *
 
-#sang("En meget nostalgisk vise", subtext: "Mel: Jeg plukker fløjlsgræs", cols: 2)[
+// Hans H: “En meget nostalgisk vise” er skrevet af Jens Heile Hejlesen, som var blevet kandidat, før jeg begyndte på 3. semester i 1983. Dengang var semestrene nummereret ganske anderledes, så 11. semester (scient-uddannelserne var tofagsuddannelser på 5 1/2 år dengang) var speciale-semesteret og hed hhvs. Mat 6 eller Dat 6. Vi havde næsten alle en to-fags-kombination i matematik og datalogi. Rundt regnet hvert andet år var der én, der valgte matematik og fysik. Software-uddannelsen så dagens lys i 2001.
+
+// Hans H: Rudin henviser til Walter Rudin, der var en østrigsk-amerikansk matematiker, som skrev Principles of Real Analysis og Real and Complex Analysis, som var to udbredte (og let frygtede) lærebøger på matematikstudiet, mens jeg gik der. BBK var (og er ) Bent Bruun Kristensen, en legendarisk datalog (som vejledte mig flere gange, mens jeg var på datalogistudiet) og en af bagmændene bag det objektorienterede programmeringssprog BETA.
+
+#sang("En meget nostalgisk vise", subtext: "Jens Heile Hejlesen, før 1983 -  Mel: Jeg plukker fløjlsgræs", cols: 2)[
   #vers[
     Se, hist i staden i midnatstimen \
     en stud.scientum i kam'ret sad \

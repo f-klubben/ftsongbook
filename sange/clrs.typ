@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("CLRS", subtext: "Topholt et al. - Mel: Tørfisk - VLTJ", cols: 2)[
+#sang("CLRS", subtext: "Topholt et al., 2024 - Mel: VLTJ", cols: 2)[
   #vers[
     Et sted derude mod store O \
     Derude hvor $n^2$ er go' #text(fill: luma(100))[\/\/ n i anden] \

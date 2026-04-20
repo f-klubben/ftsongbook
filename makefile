@@ -108,7 +108,7 @@ bookletpdf: kontinuertpdf
 .PHONY: watch
 watch: fonts png
 	@echo "Starting typst watch mode"
-		@typst watch --font-path $(FONTS_DIR) --ignore-system-fonts main.typ
+	@typst watch --font-path $(FONTS_DIR) --ignore-system-fonts main.typ
 
 # ======= 
 # CLEANUP 

@@ -1,8 +1,9 @@
 #import "//template.typ": *
 
 #sang(
-  [Alle dat'er er #underline[meget] glade for Mini], 
-  subtext: [Lorenzen, 2025 - Bagmænd: Alle $without$ Forkat, Bagmand: Mini \ #h(4.5em) Mel: Alle sømænd er glade for piger], cols: 2)[
+  "Alle dat'er er meget glade for Mini", 
+  subtext: [Sebastian Lorenzen, 2025 - Bagmænd: Alle $without$ Forkat, Mini: Mini \ #h(4.5em) Mel: Alle sømænd er glade for piger], cols: 2)[
+  #place(dx:3.2cm, dy: -1.35cm,)[#line(length: 41pt)]
   #vers[
     Alle dat'er er glade for Mini \
     Men vor' Kat du kan stole på at \

@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Danskens sande glæde", subtext: "Mel: Lille Lise", cols: 2)[
+#sang("Danskens sande glæde", subtext: "Trad. - Mel: Lille Lise", cols: 2)[
   #vers[
     Skal jeg spise \
     20 grise \

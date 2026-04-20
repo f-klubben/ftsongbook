@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("Et sidste farvel", subtext: "Mel: Hvor smiler fager (den danske kyst?)", cols: 2)[
+// Hans H: "Et sidste farvel” er skrevet af mig under en kandidatfest. AUC var navnet på AAU, før verden gik af lave.
+
+#sang("Et sidste farvel", subtext: "Hans Hüttel - Mel: Hvor smiler fager den danske kyst", cols: 2)[
   
   #vers[
     Her skal der lyde et højt #sc[HURRA] \
@@ -68,6 +70,6 @@
   ]
 
   #note[
-    #small[Denne sang er fundet i F-klubens SANGBOG til hverdag og fest (IR-88-2001) fra juni 1988. ]
+    #small[Denne sang er skreven _under_ en kandidatfest]
   ]
 ]

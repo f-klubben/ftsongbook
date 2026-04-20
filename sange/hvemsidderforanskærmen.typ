@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Hvem sidder foran skærmen", subtext: "Mel: Hvem sidder der bag skærmen", cols: 2)[
+#sang("Hvem sidder foran skærmen", subtext: "Mel: Hvem sidder der bag skærmen (Jens Vejmand)", cols: 2)[
   #vers[
     Hvem sidder foran skærmen \
     Med Cola i sin hånd \

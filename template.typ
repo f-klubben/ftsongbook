@@ -454,24 +454,57 @@
 #let forside = page(
     footer: none,
 )[
+//    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+//    #align(center)[
+//        #v(1.5cm)
+//        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
+//        #v(0.5cm)
+//        #text(size: 1.2em, weight: "regular")[
+//            Made by #format-authors(config.authors)
+//        ]
+//        #v(1.5cm)
+//        #image("assets/fklubben.svg", width: 70%)
+//        #v(1.5cm)
+//        #text(size: 1.2em, weight: "regular")[
+//            #config.date.year()
+//        ]
+//    ]
     #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
     #align(center)[
-        #v(1.5cm)
-        #text(size: 3em, weight: "regular")[#smallcaps[#config.title]]
-        #v(0.5cm)
-        #text(size: 1.2em, weight: "regular")[
-            Made by #format-authors(config.authors)
-        ]
-        #v(1.5cm)
-        #image("assets/fklubben.svg", width: 70%)
-        #v(1.5cm)
-        #text(size: 1.2em, weight: "regular")[
+        #v(.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Sangbog]]
+        #v(1cm)
+        #image("assets/fklubben.svg", width: 80%)
+        #v(1cm)
+        #text(size: 3em, weight: "regular")[
             #config.date.year()
         ]
     ]
 ]
 
-#let forord = page()[
+#let jubiiiii = page(
+    footer: none,
+)[
+    #set text(font: config.main-font, size: config.main-text-size, weight: config.main-text-weight)
+    #align(center)[
+        #v(.5cm)
+        #text(size: 3em, weight: "regular")[#smallcaps[F-Klubbens\ Jubilæumssangbog]]
+        #v(1cm)
+        #image("assets/fklubben.svg", width: 80%)
+        #v(1cm)
+        #place(
+            top + right,
+            dx: 0.5cm,
+            dy: 8cm,
+            image("assets/milepæl50.png", width: 4cm),
+        )
+        #text(size: 3em, weight: "regular")[
+            #smallcaps[1976-2026]
+        ]
+    ]
+]
+
+#let fritfor = page()[
     \#fritfit\
     \#fritfor
 ]
@@ -480,7 +513,7 @@
     *error*: unknown function `undefinedcontrolsequence`
 ]
 
-#let indholdfortegnelse(cols: 3) = page({
+#let indholdfortegnelse(cols: 3, block_height: 100%) = page({
     heading(level: 1, numbering: none, outlined: false, text(
         font: config.song-title-font,
         size: config.song-title-size,
@@ -489,82 +522,84 @@
 
     v(0.5cm)
 
-    columns(cols, gutter: 0.5cm, {
-        context {
-            let chapters = query(
-                heading.where(
-                    level: 1,
-                    outlined: true,
-                ),
-            ).sorted(key: chapter => {
-                lower(repr(chapter.body))
-            })
+    block(height: block_height, width: auto, {
+        columns(cols, gutter: 0.5cm, {
+            context {
+                let chapters = query(
+                    heading.where(
+                        level: 1,
+                        outlined: true,
+                    ),
+                ).sorted(key: chapter => {
+                    lower(repr(chapter.body))
+                })
 
-            // Group all chapters by their starting character
-            let groups = (:)
+                // Group all chapters by their starting character
+                let groups = (:)
 
-            for chapter in chapters {
-                // Get the string representation and extract content
-                let chapter_repr = repr(chapter.body)
-                let actual_content = ""
-                if chapter_repr.starts-with("[") and chapter_repr.ends-with("]") {
-                    actual_content = chapter_repr.slice(1, -1)
-                } else {
-                    actual_content = chapter_repr
-                }
+                for chapter in chapters {
+                    // Get the string representation and extract content
+                    let chapter_repr = repr(chapter.body)
+                    let actual_content = ""
+                    if chapter_repr.starts-with("[") and chapter_repr.ends-with("]") {
+                        actual_content = chapter_repr.slice(1, -1)
+                    } else {
+                        actual_content = chapter_repr
+                    }
 
-                let chapter_text = lower(actual_content)
+                    let chapter_text = lower(actual_content)
 
-                // Determine group
-                let group_key = "non-letter" // Default
-                if chapter_text.len() > 0 {
-                    let first_char = chapter_text.first()
-                    if first_char >= "a" and first_char <= "z" {
-                        group_key = first_char
+                    // Determine group
+                    let group_key = "non-letter" // Default
+                    if chapter_text.len() > 0 {
+                        let first_char = chapter_text.first()
+                        if first_char >= "a" and first_char <= "z" {
+                            group_key = first_char
+                        }
+                    }
+
+                    // Add to groups
+                    if group_key in groups {
+                        groups.at(group_key).push(chapter)
+                    } else {
+                        groups.insert(group_key, (chapter,))
                     }
                 }
 
-                // Add to groups
-                if group_key in groups {
-                    groups.at(group_key).push(chapter)
-                } else {
-                    groups.insert(group_key, (chapter,))
+                // Sort group keys so non-letter comes first, then alphabetical
+                let group_keys = groups
+                    .keys()
+                    .sorted(key: key => {
+                        if key == "non-letter" { "0" } else { key }
+                    })
+
+                // Set paragraph spacing for all entries
+                set par(
+                    leading: 0.30em,
+                    spacing: 0.30em,
+                    hanging-indent: 1em,
+                )
+
+                // Print each group
+                let first_group = true
+                for group_key in group_keys {
+                    // Add spacing between groups (except before first group)
+                    if not first_group {
+                        v(1em)
+                    }
+                    first_group = false
+
+                    // Print all chapters in this group
+                    for chapter in groups.at(group_key) {
+                        let loc = chapter.location()
+                        // Zero-indexed page numbering (single subtraction)
+                        let page-num = loc.page() - 1
+                        
+                        par[#link(loc, [*s. #page-num* - #chapter.body, ])]
+                    }
                 }
             }
-
-            // Sort group keys so non-letter comes first, then alphabetical
-            let group_keys = groups
-                .keys()
-                .sorted(key: key => {
-                    if key == "non-letter" { "0" } else { key }
-                })
-
-            // Set paragraph spacing for all entries
-            set par(
-                leading: 0.30em,
-                spacing: 0.30em,
-                hanging-indent: 1em,
-            )
-
-            // Print each group
-            let first_group = true
-            for group_key in group_keys {
-                // Add spacing between groups (except before first group)
-                if not first_group {
-                    v(1em)
-                }
-                first_group = false
-
-                // Print all chapters in this group
-                for chapter in groups.at(group_key) {
-                    let loc = chapter.location()
-                    // Zero-indexed page numbering (single subtraction)
-                    let page-num = loc.page() - 1
-                    
-                    par[#link(loc, [#chapter.body, (*s. #page-num*)])]
-                }
-            }
-        }
+        })
     })
 })
 

@@ -1,6 +1,8 @@
 #import "//template.typ": *
 
-#sang("En kort en lang")[
+// Hans H: “En kort, en lang” skyldes Søren Lundbye-Christensen, der engang var lektor i statistik (og den dag i dag er en dygtig jazzpianist) og også var en dygtig karikaturtegner.
+
+#sang("En kort en lang", subtext: "Tegnet af Søren Lundbye-Christensen")[
   #align(center)[
     #image("/sange/assets/enkortenlang/enkortenlangs1.png")
     #image("/sange/assets/enkortenlang/enkortenlangs2.png")

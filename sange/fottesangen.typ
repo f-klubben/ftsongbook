@@ -1,6 +1,6 @@
 #import "//template.typ": *
 
-#sang("Fottesangen", subtext: "Lorenzen, 2025 - Mel: Midt om natten af Kim Larsen", cols: 1)[
+#sang("Fottesangen", subtext: "Sebastian Lorenzen, 2025 - Mel: Midt om natten", cols: 1)[
   #vers[
     F-otterne kom helt uventet af os, i garagen. \
     Så skraldet og panten var på den igen, i garagen. \
