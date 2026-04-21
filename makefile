@@ -97,6 +97,7 @@ kontinuertpdf: fonts png
 	@echo "Compiling main.typ (kontinuert mode)"
 	@mkdir -p $(OUTPUT_DIR)
 	@typst c --font-path $(FONTS_DIR) --ignore-system-fonts main.typ $(OUTPUT_DIR)/sangbog.pdf
+# typst c --font-path fonts/ --ignore-system-fonts
 
 .PHONY: bookletpdf
 bookletpdf: kontinuertpdf
